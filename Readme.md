@@ -2,7 +2,7 @@
 
 A CycleGAN implementation to translate between mouse and human single-cell RNA sequencing data.
 
-## Setup
+## Setup - placeholder
 
 ```bash
 # Clone repository
@@ -17,7 +17,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Usage
+## Usage - placeholder
 
 ### Training
 ```bash
