@@ -1,0 +1,14 @@
+{"time":"2025-01-12T15:43:13.853838+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250112_154313-4axtq9ik/logs/debug-core.log"}
+{"time":"2025-01-12T15:43:13.962729+02:00","level":"INFO","msg":"created new stream","id":"4axtq9ik"}
+{"time":"2025-01-12T15:43:13.962778+02:00","level":"INFO","msg":"stream: started","id":"4axtq9ik"}
+{"time":"2025-01-12T15:43:13.962784+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"4axtq9ik"}
+{"time":"2025-01-12T15:43:13.962789+02:00","level":"INFO","msg":"handler: started","stream_id":"4axtq9ik"}
+{"time":"2025-01-12T15:43:13.96283+02:00","level":"INFO","msg":"sender: started","stream_id":"4axtq9ik"}
+{"time":"2025-01-12T15:43:14.338779+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-12T16:21:15.238118+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.30.28.136:64048->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-01-12T16:33:07.380383+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-12T16:34:05.654866+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-12T16:34:07.087496+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-12T16:34:07.087897+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-12T16:34:08.094112+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.559269708,"progress":"345.7KB/345.7KB"},{"desc":"uploading run_20250112_154358_dataset/generator_20250112_154358_dataset.pt","runtime_seconds":0.357707458,"progress":"208.0KB/1.3MB"},{"desc":"uploading run_20250112_154358_dataset/discriminator_20250112_154358_dataset.pt","runtime_seconds":0.357711708,"progress":"224.0KB/1.2MB"},{"desc":"uploading run_20250112_163225_dataset/generator_20250112_163225_dataset.pt","runtime_seconds":0.357704125,"progress":"656.0KB/1.3MB"},{"desc":"uploading run_20250112_163225_dataset/discriminator_20250112_163225_dataset.pt","runtime_seconds":0.357701542,"progress":"432.0KB/1.2MB"}],"total_operations":5}}
+{"time":"2025-01-12T16:34:09.152652+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

@@ -3,6 +3,8 @@ title: "Data_processing_aim2"
 author: "Guy Shani"
 date: "2025-01-06"
 output: pdf_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -21,83 +23,8 @@ library(homologene)
 library(progressr)
 library(cowplot)
 library(RColorBrewer)
+library(harmony)
 #library(biomaRt)
-```
-
-
-## Tabula Muris
-
-```{r}
-# Function to create Seurat object from CSV
-create_seurat_from_csv <- function(file_path, min_cells = 3, min_features = 200) {
-  # Read the CSV file
-  data <- read.csv(file_path, row.names = 1)
-  
-  # Create Seurat object
-  seurat_obj <- CreateSeuratObject(counts = data,
-                                  min.cells = min_cells,
-                                  min.features = min_features,
-                                  project = basename(file_path))
-  
-  seurat_obj[["percent.mt"]] <- PercentageFeatureSet(seurat_obj, pattern = "^mt-")
-  seurat_obj <- subset(seurat_obj, subset = nFeature_RNA > 200 & nFeature_RNA < 6500 & 
-                                percent.mt < 10 & nCount_RNA > 500)
-  
-  return(seurat_obj)
-}
-
-# Get list of all CSV files in directory
-csv_files <- list.files(path = "/Users/guyshani/Documents/PHD/Aim_2/data/Tabula_Muris_zuckerberg/Single-cell RNA-seq data_from_Smart_seq2_sequencing_of_FACS_sorted_cells_v2/FACS/", 
-                       pattern = "\\.csv$", 
-                       full.names = TRUE)
-
-# Create list to store Seurat objects
-seurat_objects <- list()
-
-# Process each CSV file
-for (file in csv_files) {
-  sample_name <- tools::file_path_sans_ext(basename(file))
-  seurat_objects[[sample_name]] <- create_seurat_from_csv(file)
-  print(paste("Processed:", sample_name))
-}
-
-```
-
-# failed attempt to load seurat objects
-```{r}
-
-file.loc <- "/Users/guyshani/Documents/PHD/Aim_2/data/Tabula_Muris_zuckerberg/Robj_files/"
-
-# Get list of all .Robj files in the directory
-robj_files <- list.files(path = file.loc, pattern = "\\.Robj$", full.names = TRUE)
-
-# Function to extract base filename without extension
-get_base_name <- function(filepath) {
-  tools::file_path_sans_ext(basename(filepath))
-}
-
-# Loop through each file and load it with its filename as variable name
-for (file in robj_files) {
-  # Get the base name to use as variable name
-  var_name <- get_base_name(file)
-  
-  # Load the object into an environment with the specified name
-  temp_env <- new.env()
-  load(file, envir = temp_env)
-  file <- UpdateSeuratObject(file)
-  # Get the name of the loaded object (there should be only one)
-  obj_name <- ls(temp_env)[1]
-  
-  # Assign the object to the global environment with the filename as its name
-  assign(var_name, get(obj_name, envir = temp_env), envir = .GlobalEnv)
-}
-
-# List all loaded objects
-ls(pattern = ".*")
-
-DimPlot(droplet_Bladder_seurat_tiss)
-droplet_Bladder_seurat_tiss@assays
-
 ```
 
 
@@ -110,6 +37,7 @@ droplet_Bladder_seurat_tiss@assays
 ## mouse PBMC datasets
 #setwd("/Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse")
 data.dir <- "/Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse"
+options(future.globals.maxSize = 10000 * 1024^2)
 # data 1
 counts <- Read10X(paste(data.dir,"SC3_v3_NextGem_DI_CellPlex_Mouse_PBMC_10K_PBMCs_mouse_1_count_sample_feature_bc_matrix/",sep = "/"))
 seurat_obj <- CreateSeuratObject(counts = counts$`Gene Expression`,
@@ -167,9 +95,7 @@ seurat_obj6 <- CreateSeuratObject(counts = counts,
                                 min.cells = 3,
                                 min.features = 200)
 # add mitochondrial RNA precentage
-seurat_obj6[["percent.mt"]] <- PercentageFeatureSet(seurat_obj6, pattern = "^mt-")
-seurat_obj6 <- subset(seurat_obj6, subset = nFeature_RNA > 200 & nFeature_RNA < 6500 & 
-                                percent.mt < 10 & nCount_RNA > 500)
+ç
 # data 7
 counts <- Read10X(paste(data.dir,"vdj_v1_mm_pbmc4_raw_feature_bc_matrix/",sep = "/"))
 seurat_obj7 <- CreateSeuratObject(counts = counts,
@@ -183,46 +109,56 @@ seurat_obj7 <- subset(seurat_obj7, subset = nFeature_RNA > 200 & nFeature_RNA < 
 ```
 
 
-# Process and visualize data
-## This block is just to view the processed data (does not have to run this part)
-
 ```{r}
 
 
-# Normalize the data
-seurat_obj <- NormalizeData(seurat_obj)
-# Find variable features
-seurat_obj <- FindVariableFeatures(seurat_obj, selection.method = "vst", nfeatures = 1000)
-# Scale the data
-seurat_obj <- ScaleData(seurat_obj)
-# Perform Linear dimensionality reduction --------------
-seurat_obj <- RunPCA(seurat_obj, features = VariableFeatures(object = seurat_obj))
-# determine dimensionality of the data
-ElbowPlot(seurat_obj)
-# Clustering ---------
-seurat_obj <- FindNeighbors(seurat_obj, dims = 1:15)
-# understanding resolution
-seurat_obj <- FindClusters(seurat_obj, resolution = c(0.1, 0.5, 1))
-# non-linear dimensionality reduction --------------
-seurat_obj <- RunUMAP(seurat_obj, dims = 1:15)
-DimPlot(seurat_obj, reduction = 'umap', group.by = 'RNA_snn_res.0.5', label = TRUE)
+# Merge all objects
+merged_seurat <- merge(seurat_obj, 
+                      y = list(seurat_obj2, seurat_obj3, seurat_obj4,
+                              seurat_obj5, seurat_obj6, seurat_obj7),
+                      add.cell.ids = c("dataset1", "dataset2", "dataset3", "dataset4",
+                                     "dataset55", "dataset6", "dataset7"))
 
-##VlnPlot(seurat_obj, features = c("Ptprc"))
+# Run standard preprocessing if not already done
+if(!"SCT" %in% names(merged_seurat@assays)) {
+    merged_seurat <- NormalizeData(merged_seurat)
+    merged_seurat <- FindVariableFeatures(merged_seurat)
+    merged_seurat <- ScaleData(merged_seurat)
+}
 
-# Get variable features
-variable_genes <- VariableFeatures(seurat_obj)
-# Get scaled data for variable features
-scaled_data <- GetAssayData(seurat_obj, layer = "scale.data")[variable_genes, ]
+# Run PCA
+merged_seurat <- RunPCA(merged_seurat)
 
-# save scaled expression matrix
-write.csv2(t(scaled_data), file = paste(data.dir,"train_data_1dataset.csv",sep = "/"), row.names = TRUE, quote = FALSE)
-# save cluster vector
-write.csv2(seurat_obj$RNA_snn_res.0.1, file = paste(data.dir,"train_data_1dataset_cluster.csv",sep = "/"), row.names = FALSE, quote = FALSE)
+# Run Harmony
+merged_seurat <- RunHarmony(merged_seurat, 
+                           group.by.vars = "orig.ident",
+                           dims.use = 1:30)
 
+# Run UMAP and clustering on Harmony embeddings
+merged_seurat <- RunUMAP(merged_seurat, reduction = "harmony", dims = 1:30)
+merged_seurat <- FindNeighbors(merged_seurat, reduction = "harmony", dims = 1:30)
+merged_seurat <- FindClusters(merged_seurat, resolution = 0.5)
 
-scaled_data.t <- t(scaled_data)
-h5createFile("train_data_1dataset.h5")
-h5write(scaled_data.t,  paste(data.dir,"train_data_1dataset.h5",sep = "/"), "matrix")
+# Visualizations
+# Before and after integration comparison
+# before harmony
+p1 <- DimPlot(merged_seurat, 
+              reduction = "pca", 
+              group.by = "orig.ident",
+              label = FALSE)
+# after harmony
+p2 <- DimPlot(merged_seurat, 
+              reduction = "umap", 
+              group.by = "orig.ident",
+              label = FALSE)
+
+p1 + p2
+
+# Plot clusters
+DimPlot(merged_seurat, 
+        reduction = "umap", 
+        group.by = "seurat_clusters",
+        label = TRUE)
 ```
 
 
@@ -309,10 +245,391 @@ pbmc_marker_list <- list(
     negative = c("Cd3e", "Cd19", "Ly6g", "Ms4a1", "Ncr1")
   )
 )
+
+
 ```
 
 
-### Proccess, type and combine all datasets
+### Proccess, type and harmonize all datasets
+
+```{r}
+# ===========================================
+# Configuration
+# ===========================================
+config <- list(
+  data_dir = "/Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/6_2_2025__harmonized",
+  use_scaled_data = FALSE,
+  n_variable_features = 15000,
+  n_final_features = 6000,
+  pca_dims = 1:15,
+  cluster_resolutions = c(0.1, 0.5, 1)
+)
+
+# Helper function to safely get assay data in Seurat v5
+safe_get_assay_data <- function(seurat_obj, assay = "RNA", layer = "data") {
+    # Join layers if necessary
+    if (inherits(seurat_obj[[assay]], "Assay5")) {
+        seurat_obj[[assay]] <- JoinLayers(seurat_obj[[assay]])
+    }
+    return(GetAssayData(seurat_obj, assay = assay, layer = layer))
+}
+
+mouseToHuman <- function(mouse_genes) {
+  homolog_df <- as.data.frame(homologeneData)
+  human_mouse_data <- homolog_df[homolog_df$Taxonomy %in% c(9606, 10090), ]
+  
+  mouse_data <- human_mouse_data[human_mouse_data$Taxonomy == 10090, ]
+  human_data <- human_mouse_data[human_mouse_data$Taxonomy == 9606, ]
+  
+  mouse_to_human <- merge(
+    mouse_data[, c("Gene.Symbol", "HID")],
+    human_data[, c("Gene.Symbol", "HID")],
+    by = "HID"
+  )
+  
+  colnames(mouse_to_human) <- c("HID", "mouse_symbol", "human_symbol")
+  
+  converted_genes <- mouse_genes
+  idx <- match(mouse_genes, mouse_to_human$mouse_symbol)
+  converted_genes[!is.na(idx)] <- mouse_to_human$human_symbol[idx[!is.na(idx)]]
+  
+  return(converted_genes)
+}
+
+process_harmonized_seurat <- function(merged_seurat, marker_list) {
+    cat("Processing harmonized Seurat object...\n")
+    
+    # Run clustering on Harmony embeddings
+    merged_seurat <- FindNeighbors(merged_seurat, reduction = "harmony", dims = config$pca_dims)
+    for(res in config$cluster_resolutions) {
+        merged_seurat <- FindClusters(merged_seurat, resolution = res)
+    }
+    
+    # Cell type annotation
+    cat("Starting cell type annotation...\n")
+    
+    # Get expression data using safe function
+    expr_matrix <- safe_get_assay_data(merged_seurat, assay = "RNA", layer = "data")
+    
+    # Convert gene names for SingleR
+    converted_matrix <- expr_matrix
+    rownames(converted_matrix) <- mouseToHuman(rownames(expr_matrix))
+    converted_matrix <- converted_matrix[!is.na(rownames(converted_matrix)), ]
+    
+    # Run SingleR annotation
+    ref_data <- celldex::MouseRNAseqData()
+    predictions <- SingleR(
+        test = converted_matrix,
+        ref = ref_data,
+        labels = ref_data$label.main
+    )
+    
+    merged_seurat$singler_label <- predictions$labels
+    merged_seurat$singler_score <- predictions$scores
+    
+    # Run marker-based annotation
+    marker_results <- score_marker_expression(expr_matrix, marker_list)
+    
+    merged_seurat$marker_label <- marker_results$cell_types
+    merged_seurat$marker_score <- marker_results$scores
+    
+    return(merged_seurat)
+}
+
+# Score marker expression with safe data access
+score_marker_expression <- function(expr_matrix, marker_list) {
+    scores_matrix <- matrix(0, nrow = ncol(expr_matrix), ncol = length(marker_list))
+    colnames(scores_matrix) <- names(marker_list)
+    
+    for (cell_type in names(marker_list)) {
+        markers <- marker_list[[cell_type]]
+        
+        # Calculate positive markers score
+        pos_genes <- intersect(rownames(expr_matrix), markers$positive)
+        if (length(pos_genes) > 0) {
+            pos_score <- colMeans(expr_matrix[pos_genes, , drop = FALSE])
+        } else {
+            pos_score <- rep(0, ncol(expr_matrix))
+        }
+        
+        # Calculate negative markers penalty if they exist
+        neg_score <- 0
+        if (!is.null(markers$negative)) {
+            neg_genes <- intersect(rownames(expr_matrix), markers$negative)
+            if (length(neg_genes) > 0) {
+                neg_score <- colMeans(expr_matrix[neg_genes, , drop = FALSE])
+            }
+        }
+        
+        # Calculate final score with penalty
+        scores_matrix[, cell_type] <- pos_score - 0.5 * neg_score
+    }
+    
+    # Normalize scores
+    scores_matrix <- scale(scores_matrix)
+    
+    # Assign cell types based on maximum score
+    cell_types <- colnames(scores_matrix)[max.col(scores_matrix)]
+    cell_scores <- apply(scores_matrix, 1, max)
+    
+    return(list(
+        cell_types = cell_types,
+        scores = cell_scores,
+        score_matrix = scores_matrix
+    ))
+}
+
+# Create visualizations for harmonized data
+create_harmony_visualizations <- function(merged_seurat, output_dir) {
+    plot_dir <- file.path(output_dir, "harmony_plots")
+    dir.create(plot_dir, recursive = TRUE, showWarnings = FALSE)
+    
+    # Generate color palettes
+    n_clusters <- length(unique(merged_seurat$seurat_clusters))
+    n_singler <- length(unique(merged_seurat$singler_label))
+    n_marker <- length(unique(merged_seurat$marker_label))
+    n_batches <- length(unique(merged_seurat$orig.ident))
+    
+    cluster_colors <- generate_color_palette(n_clusters)
+    singler_colors <- generate_color_palette(n_singler)
+    marker_colors <- generate_color_palette(n_marker)
+    batch_colors <- generate_color_palette(n_batches)
+    
+    # Batch effect plots (before and after Harmony)
+    p1 <- DimPlot(merged_seurat, 
+                  reduction = "pca",
+                  group.by = "orig.ident",
+                  cols = batch_colors) +
+        ggtitle("Before Harmony Integration") +
+        theme_cowplot()
+    
+    p2 <- DimPlot(merged_seurat, 
+                  reduction = "umap",
+                  group.by = "orig.ident",
+                  cols = batch_colors) +
+        ggtitle("After Harmony Integration") +
+        theme_cowplot()
+    
+    batch_plot <- p1 + p2
+    
+    # Clusters and annotations
+    p3 <- DimPlot(merged_seurat, 
+                  reduction = "umap",
+                  group.by = "seurat_clusters",
+                  cols = cluster_colors,
+                  label = TRUE) +
+        ggtitle("Clusters") +
+        theme_cowplot()
+    
+    p4 <- DimPlot(merged_seurat, 
+                  reduction = "umap",
+                  group.by = "singler_label",
+                  cols = singler_colors,
+                  label = TRUE) +
+        ggtitle("SingleR Labels") +
+        theme_cowplot()
+    
+    p5 <- DimPlot(merged_seurat, 
+                  reduction = "umap",
+                  group.by = "marker_label",
+                  cols = marker_colors,
+                  label = TRUE) +
+        ggtitle("Marker-based Labels") +
+        theme_cowplot()
+    
+    annotation_plot <- (p3 + p4) / p5
+    
+    # Save plots
+    ggsave(
+        filename = file.path(plot_dir, "batch_effect_comparison.pdf"),
+        plot = batch_plot,
+        width = 16,
+        height = 8
+    )
+    
+    ggsave(
+        filename = file.path(plot_dir, "clustering_and_annotation.pdf"),
+        plot = annotation_plot,
+        width = 16,
+        height = 12
+    )
+    
+    # Save annotation comparison
+    comparison_matrix <- table(
+        SingleR = merged_seurat$singler_label,
+        Markers = merged_seurat$marker_label,
+        Clusters = merged_seurat$seurat_clusters
+    )
+    
+    write.csv(
+        comparison_matrix,
+        file = file.path(plot_dir, "annotation_comparison.csv")
+    )
+    
+    return(list(
+        batch_plot = file.path(plot_dir, "batch_effect_comparison.pdf"),
+        annotation_plot = file.path(plot_dir, "clustering_and_annotation.pdf"),
+        comparison = file.path(plot_dir, "annotation_comparison.csv")
+    ))
+}
+
+# Generate color palette function
+generate_color_palette <- function(n) {
+    colors <- c(
+        brewer.pal(8, "Set1"),
+        brewer.pal(8, "Set2"),
+        brewer.pal(8, "Set3"),
+        brewer.pal(8, "Dark2"),
+        brewer.pal(8, "Paired")
+    )
+    unique_colors <- unique(colors)
+    if(n <= length(unique_colors)) {
+        return(unique_colors[1:n])
+    } else {
+        return(colorRampPalette(unique_colors)(n))
+    }
+}
+
+# Main workflow
+main_harmony_workflow <- function(merged_seurat, marker_list) {
+    # Process the harmonized object
+    processed_seurat <- process_harmonized_seurat(merged_seurat, marker_list)
+    
+    # Create visualizations
+    vis_results <- create_harmony_visualizations(processed_seurat, config$data_dir)
+    
+    return(processed_seurat)
+}
+
+#####################
+# Run code
+####################
+
+# Join layers for the RNA assay
+merged_seurat[["RNA"]] <- JoinLayers(merged_seurat[["RNA"]])
+
+# Run the workflow
+harmonized_seurat <- main_harmony_workflow(merged_seurat, pbmc_marker_list)
+saveRDS(harmonized_seurat, "~/Documents/PHD/Aim_2/10x_data_mouse/6_2_2025__harmonized/PBMC_harmony.rds")
+
+
+#### Find variable features
+harmonized_seurat <- FindVariableFeatures(harmonized_seurat, 
+                                 selection.method = "vst",  # variance stabilizing transformation
+                                 nfeatures = 5000)         # select top 5000 variable genes
+# Get the names of the top 5000 variable genes
+variable_genes <- VariableFeatures(harmonized_seurat)
+
+
+### Save file ####
+sparse_matrix <- GetAssayData(harmonized_seurat, layer = "data")[variable_genes, ]
+# Extract the matrix and convert to dense format
+full_matrix <- as.matrix(GetAssayData(harmonized_seurat, layer = "data")[variable_genes, ])
+# Save as CSV (note: this will create a dense matrix which can be very large)
+# Using write.sparse to handle the sparse matrix more efficiently
+write.sparse <- function(mat, file) {
+  # Convert to coordinate/triplet format
+  coords <- summary(mat)
+  # Create data frame with row indices, column indices, and values
+  df <- data.frame(
+    row = coords$i,
+    col = coords$j,
+    value = coords$x
+  )
+  # Write to CSV
+  write.csv(df, file, row.names = FALSE)
+}
+
+# Save in sparse format CSV
+write.sparse(sparse_matrix, "~/Documents/PHD/Aim_2/10x_data_mouse/6_2_2025__harmonized/sparse_matrix.csv")
+# Save as CSV (with gene names as row names)
+write.csv(full_matrix, "~/Documents/PHD/Aim_2/10x_data_mouse/6_2_2025__harmonized/full_matrix_top5000.csv")
+### Save metadata
+colnames(harmonized_seurat@meta.data)
+# Get the selected metadata columns and row names
+metadata_subset <- harmonized_seurat@meta.data[, c("orig.ident", "singler_label", 
+                                          "singler_score", "marker_label", "marker_score")]
+# Split row names and take second element
+metadata_subset['barcode'] <- sapply(strsplit(rownames(metadata_subset), "_"), `[`, 2)
+metadata_subset['dataset'] <- sapply(strsplit(rownames(metadata_subset), "_"), `[`, 1)
+write.csv(metadata_subset, "~/Documents/PHD/Aim_2/10x_data_mouse/6_2_2025__harmonized/metadata_top5000.csv")
+
+# Save as h5 file
+h5createFile("~/Documents/PHD/Aim_2/10x_data_mouse/6_2_2025__harmonized/full_matrix_top5000.h5")
+h5save(list(data = full_matrix,
+            gene_names = rownames(full_matrix),
+            cell_names = colnames(full_matrix)),
+       file = "~/Documents/PHD/Aim_2/10x_data_mouse/6_2_2025__harmonized/full_matrix_top5000.h5",
+       name = "matrix")
+
+  
+
+#####################
+### test ###
+harmonized_seurat$interflow <- harmonized_seurat$singler_label
+harmonized_seurat$interflow[which(harmonized_seurat$singler_label == "B cells")] <- "B_cells"
+harmonized_seurat$interflow[which(harmonized_seurat$singler_label == "Dendritic cells")] <- "Dendritic_cells"
+harmonized_seurat$interflow[which(harmonized_seurat$singler_label == "T cells")] <- "T_cells"
+harmonized_seurat$interflow[which(harmonized_seurat$singler_label == "NK cells")] <- "NK_cells"
+Idents(harmonized_seurat) <-"interflow"
+harmonized_seurat
+
+DimPlot(harmonized_seurat, group.by = "interflow")
+DimPlot(harmonized_seurat, group.by = "marker_label")
+
+saveRDS(harmonized_seurat, "~/Documents/PHD/PBMC_harmony.rds")
+
+which(harmonized_seurat$interflow == "Fibroblasts")
+```
+
+
+
+
+# Process and visualize data
+## This block is just to view the processed data (does not have to run this part)
+
+```{r}
+
+
+# Normalize the data
+seurat_obj <- NormalizeData(seurat_obj)
+# Find variable features
+seurat_obj <- FindVariableFeatures(seurat_obj, selection.method = "vst", nfeatures = 1000)
+# Scale the data
+seurat_obj <- ScaleData(seurat_obj)
+# Perform Linear dimensionality reduction --------------
+seurat_obj <- RunPCA(seurat_obj, features = VariableFeatures(object = seurat_obj))
+# determine dimensionality of the data
+ElbowPlot(seurat_obj)
+# Clustering ---------
+seurat_obj <- FindNeighbors(seurat_obj, dims = 1:15)
+# understanding resolution
+seurat_obj <- FindClusters(seurat_obj, resolution = c(0.1, 0.5, 1))
+# non-linear dimensionality reduction --------------
+seurat_obj <- RunUMAP(seurat_obj, dims = 1:15)
+DimPlot(seurat_obj, reduction = 'umap', group.by = 'RNA_snn_res.0.5', label = TRUE)
+
+##VlnPlot(seurat_obj, features = c("Ptprc"))
+
+# Get variable features
+variable_genes <- VariableFeatures(seurat_obj)
+# Get scaled data for variable features
+scaled_data <- GetAssayData(seurat_obj, layer = "scale.data")[variable_genes, ]
+
+# save scaled expression matrix
+write.csv2(t(scaled_data), file = paste(data.dir,"train_data_1dataset.csv",sep = "/"), row.names = TRUE, quote = FALSE)
+# save cluster vector
+write.csv2(seurat_obj$RNA_snn_res.0.1, file = paste(data.dir,"train_data_1dataset_cluster.csv",sep = "/"), row.names = FALSE, quote = FALSE)
+
+
+scaled_data.t <- t(scaled_data)
+h5createFile("train_data_1dataset.h5")
+h5write(scaled_data.t,  paste(data.dir,"train_data_1dataset.h5",sep = "/"), "matrix")
+```
+
+
+
+### Proccess, type and combine all datasets (old)
 
 ```{r}
 # ===========================================
@@ -360,7 +677,7 @@ safe_write <- function(data, filepath, type = "csv") {
                  file = filepath,
                  sep = ";",
                  dec = ",",
-                 row.names = TRUE,
+                 row.names = FALSE,
                  col.names = TRUE,
                  quote = FALSE)
     } else if (type == "h5") {
@@ -437,7 +754,7 @@ print_marker_conversion <- function(original_list, converted_list, n_types = 2) 
 # Function to validate markers against your dataset
 validate_markers <- function(seurat_obj, marker_list, min_expr_threshold = 0.1) {
   # Get expression matrix
-  expr_matrix <- GetAssayData(seurat_obj, slot = "data")
+  expr_matrix <- GetAssayData(seurat_obj, layer = "data")
   
   validation_results <- list()
   
@@ -565,7 +882,7 @@ annotate_cell_types <- function(seurat_obj, marker_list) {
   cat("Starting cell type annotation...\n")
   
   # Get expression data
-  expr_matrix <- GetAssayData(seurat_obj, assay = "RNA", slot = "data")
+  expr_matrix <- GetAssayData(seurat_obj, assay = "RNA", layer = "data")
   
   # Convert gene names for SingleR
   converted_matrix <- expr_matrix
@@ -703,7 +1020,7 @@ plot_marker_distributions <- function(seurat_obj, validation_results, cell_type)
   require(ggplot2)
   
   # Get expression data for the cell type's markers
-  expr_matrix <- GetAssayData(seurat_obj, slot = "data")
+  expr_matrix <- GetAssayData(seurat_obj, layer = "data")
   markers_present <- c(
     validation_results[[cell_type]]$positive_markers$present,
     validation_results[[cell_type]]$negative_markers$present
@@ -778,7 +1095,7 @@ combine_and_save_data <- function(processed_objects, dataset_names) {
   for(i in seq_along(processed_objects)) {
     cat(sprintf("Processing dataset %d/%d...\n", i, length(processed_objects)))
     obj <- processed_objects[[i]]
-    expr_matrix <- GetAssayData(obj, slot = "data")
+    expr_matrix <- GetAssayData(obj, layer = "data")
     vars <- apply(expr_matrix, 1, var)
     top_genes <- names(sort(vars, decreasing = TRUE)[1:config$n_variable_features])
     variable_genes_lists[[i]] <- top_genes
@@ -796,10 +1113,10 @@ combine_and_save_data <- function(processed_objects, dataset_names) {
   for(i in seq_along(processed_objects)) {
     obj <- processed_objects[[i]]
     if(is.null(combined_matrix_temp)) {
-      combined_matrix_temp <- GetAssayData(obj, slot = "data")[common_variable_genes, , drop = FALSE]
+      combined_matrix_temp <- GetAssayData(obj, layer = "data")[common_variable_genes, , drop = FALSE]
     } else {
       combined_matrix_temp <- cbind(combined_matrix_temp, 
-                                  GetAssayData(obj, slot = "data")[common_variable_genes, , drop = FALSE])
+                                  GetAssayData(obj, layer = "data")[common_variable_genes, , drop = FALSE])
     }
   }
   vars_combined <- apply(combined_matrix_temp, 1, var)
@@ -907,81 +1224,3 @@ main(seurat_objects, dataset_names, pbmc_marker_list)
 ```
 
 
-
-
-
-# Parse data
-
-```{r}
-# Connect to the mouse database
-#mart <- useMart("ensembl", dataset="mmusculus_gene_ensembl")
-# Get IKEN IDs column names
-#riken_ids <- colnames(mouse1.melanoma)
-# Get the mapping
-#genes <- getBM(attributes = c("mgi_symbol", "external_gene_name"), filters = "mgi_symbol", values = riken_ids, mart = mart)
-
-table(mouse1.melanoma$assigned_cluster)
-table(mouse2.melanoma$assigned_cluster)
-
-# Organize original data in the right format
-mouse1.melanoma.t <- t(mouse1.melanoma[,-c(1,2,3)])
-colnames(mouse1.melanoma.t) <- mouse1.melanoma[,1]$...1
-row.names(mouse1.melanoma.t)
-# Create Seurat object
-sobj.mouse1.melanoma <- CreateSeuratObject(counts = mouse1.melanoma.t,  # your expression matrix
-                                project = "Mouse1melanoma", # project name
-                                min.cells = 3,    # include genes detected in at least 3 cells
-                                min.features = 200, # include cells with at least 200 features
-                                )
-
-# add mitochondrial RNA precentage
-sobj.mouse1.melanoma[["percent.mt"]] <- PercentageFeatureSet(sobj.mouse1.melanoma, pattern = "^mt-")
-sobj.mouse1.melanoma <- subset(sobj.mouse1.melanoma, subset = nFeature_RNA > 200 & nFeature_RNA < 6500 & 
-                                percent.mt < 10 & nCount_RNA > 500)
-# Normalize the data
-sobj.mouse1.melanoma <- NormalizeData(sobj.mouse1.melanoma)
-# Find variable features
-sobj.mouse1.melanoma <- FindVariableFeatures(sobj.mouse1.melanoma, selection.method = "vst", nfeatures = 2000)
-# Scale the data
-sobj.mouse1.melanoma <- ScaleData(sobj.mouse1.melanoma)
-
-
-
-
-```
-
-
-# analyze seurat objects
-
-```{r}
-# 6. Perform Linear dimensionality reduction --------------
-sobj.mouse1.melanoma <- RunPCA(sobj.mouse1.melanoma, features = VariableFeatures(object = sobj.mouse1.melanoma))
-# visualize PCA results
-DimHeatmap(sobj.mouse1.melanoma, dims = 1, cells = 500, balanced = TRUE)
-# determine dimensionality of the data
-ElbowPlot(sobj.mouse1.melanoma)
-# 7. Clustering ---------
-sobj.mouse1.melanoma <- FindNeighbors(sobj.mouse1.melanoma, dims = 1:10)
-
-
-
-
-
-# understanding resolution
-sobj.mouse1.melanoma <- FindClusters(sobj.mouse1.melanoma, resolution = c(0.1, 0.5, 1))
-
-DimPlot(sobj.mouse1.melanoma, group.by = "RNA_snn_res.1", label = TRUE)
-
-# non-linear dimensionality reduction --------------
-sobj.mouse1.melanoma <- RunUMAP(sobj.mouse1.melanoma, dims = 1:10)
-DimPlot(sobj.mouse1.melanoma, reduction = 'umap', group.by = 'RNA_snn_res.1', label = TRUE)
-
-VlnPlot(sobj.mouse1.melanoma,group.by =  "RNA_snn_res.0.5", features = c("Ptprc"))
-```
-
-
-```{r}
-
-mat <- readMM("/Users/guyshani/Documents/PHD/Aim_2/data/DRA-master/data/10x_68k/sub_set-720.mtx")
-
-```

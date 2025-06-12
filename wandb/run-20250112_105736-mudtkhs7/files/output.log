@@ -1,0 +1,27 @@
+Starting training for 100 epochs...
+Total batches per epoch: 31
+Using device: mps
+
+Epoch [1/100]
+  Batch [0/31] D_loss: -156.2684, G_loss: 81.8656
+  Batch [10/31] D_loss: -30.0008, G_loss: 61.8372
+  Batch [20/31] D_loss: -25.2070, G_loss: 5.4704
+  Batch [30/31] D_loss: -22.5435, G_loss: -104.4438
+
+Epoch 1 Summary:
+  Average D_loss: -22.0736
+  Average G_loss: 20.6094
+Using device: mps
+Categorical data shape: (41588, 3)
+Available categorical variables: ['dataset', 'cluster']
+
+Using categorical variables: ['dataset']
+
+Processing categorical variable: dataset
+Categories in dataset: ['dataset1' 'dataset2' 'dataset3' 'dataset4' 'dataset5' 'dataset6'
+ 'dataset7']
+Number of categories: 7
+
+Combined categorical covariates shape: (41588, 1)
+
+Vocabulary sizes for categorical variables: [7]

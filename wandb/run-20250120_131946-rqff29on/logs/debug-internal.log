@@ -1,0 +1,35 @@
+{"time":"2025-01-20T13:19:46.693866+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250120_131946-rqff29on/logs/debug-core.log"}
+{"time":"2025-01-20T13:19:46.904466+02:00","level":"INFO","msg":"created new stream","id":"rqff29on"}
+{"time":"2025-01-20T13:19:46.904528+02:00","level":"INFO","msg":"stream: started","id":"rqff29on"}
+{"time":"2025-01-20T13:19:46.904578+02:00","level":"INFO","msg":"handler: started","stream_id":"rqff29on"}
+{"time":"2025-01-20T13:19:46.904636+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"rqff29on"}
+{"time":"2025-01-20T13:19:46.90459+02:00","level":"INFO","msg":"sender: started","stream_id":"rqff29on"}
+{"time":"2025-01-20T13:19:47.281468+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-20T13:19:52.764031+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T13:23:14.233809+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T13:23:14.23537+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T13:31:26.011008+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T13:31:26.014061+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T13:31:26.046243+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T13:31:26.048687+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T13:31:27.804813+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T13:31:27.807186+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T13:31:28.248242+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T13:31:28.250601+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T13:31:28.590167+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T13:31:28.592235+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T13:32:33.401651+02:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/rqff29on/file_stream"}
+{"time":"2025-01-20T13:32:33.403019+02:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/guyshani-tel-aviv-university/adversarial_gene_expr/rqff29on/file_stream: {\"error\":\"run adversarial_gene_expr/rqff29on not found while streaming file\"}"}
+{"time":"2025-01-20T13:33:31.924557+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T13:33:31.927027+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T13:33:36.070745+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T13:33:37.565595+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-20T13:33:37.566051+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-20T13:33:37.763039+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run rqff29on was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-01-20T13:33:38.568851+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":1.003799083,"error_status":"retrying HTTP 409 Conflict"}],"total_operations":1}}
+{"time":"2025-01-20T13:33:40.427493+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run rqff29on was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-01-20T13:33:45.255056+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run rqff29on was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-01-20T13:33:55.419503+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run rqff29on was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-01-20T13:34:11.681992+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run rqff29on was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-01-20T13:34:39.001806+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":61.438982917,"error_status":"retrying HTTP 409 Conflict"}],"total_operations":1}}
+{"time":"2025-01-20T13:34:45.296955+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run rqff29on was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}

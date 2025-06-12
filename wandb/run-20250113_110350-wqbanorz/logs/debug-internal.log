@@ -1,0 +1,30 @@
+{"time":"2025-01-13T11:03:51.127583+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250113_110350-wqbanorz/logs/debug-core.log"}
+{"time":"2025-01-13T11:03:51.236558+02:00","level":"INFO","msg":"created new stream","id":"wqbanorz"}
+{"time":"2025-01-13T11:03:51.236627+02:00","level":"INFO","msg":"stream: started","id":"wqbanorz"}
+{"time":"2025-01-13T11:03:51.236645+02:00","level":"INFO","msg":"handler: started","stream_id":"wqbanorz"}
+{"time":"2025-01-13T11:03:51.236927+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"wqbanorz"}
+{"time":"2025-01-13T11:03:51.237099+02:00","level":"INFO","msg":"sender: started","stream_id":"wqbanorz"}
+{"time":"2025-01-13T11:03:51.6807+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-13T11:45:25.211616+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-13T11:46:11.716763+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-13T11:46:11.718397+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-13T11:48:18.556476+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-13T11:48:18.603553+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-13T11:49:23.304286+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-13T11:49:23.34364+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-13T11:49:58.101286+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-13T11:49:58.10354+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-13T11:49:59.272164+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-13T11:49:59.35146+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-13T11:50:16.422577+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-13T11:50:16.443432+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-13T12:18:27.675082+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-13T12:18:29.026259+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-13T12:18:29.026985+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-13T12:18:30.032801+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.574110333,"progress":"366.9KB/366.9KB"},{"desc":"uploading config.yaml","runtime_seconds":0.36889,"progress":"737B/737B"},{"desc":"uploading run_20250113_114232_dataset/discriminator_20250113_114232_dataset.pt","runtime_seconds":0.223729666,"progress":"400.0KB/1.2MB"},{"desc":"uploading run_20250113_110435_dataset/generator_20250113_110435_dataset.pt","runtime_seconds":0.223600875,"progress":"128.0KB/1.3MB"},{"desc":"uploading run_20250113_110435_dataset/discriminator_20250113_110435_dataset.pt","runtime_seconds":0.223593959,"progress":"304.0KB/1.2MB"},{"desc":"uploading run_20250113_114232_dataset/generator_20250113_114232_dataset.pt","runtime_seconds":0.223585375,"progress":"176.0KB/1.3MB"}],"total_operations":6}}
+{"time":"2025-01-13T12:18:31.582934+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-13T12:18:32.940114+02:00","level":"INFO","msg":"stream: closing","id":"wqbanorz"}
+{"time":"2025-01-13T12:18:32.940157+02:00","level":"INFO","msg":"handler: closed","stream_id":"wqbanorz"}
+{"time":"2025-01-13T12:18:32.940182+02:00","level":"INFO","msg":"sender: closed","stream_id":"wqbanorz"}
+{"time":"2025-01-13T12:18:32.940175+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wqbanorz"}
+{"time":"2025-01-13T12:18:32.940338+02:00","level":"INFO","msg":"stream: closed","id":"wqbanorz"}

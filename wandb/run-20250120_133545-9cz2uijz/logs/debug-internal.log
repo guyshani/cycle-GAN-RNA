@@ -1,0 +1,28 @@
+{"time":"2025-01-20T13:35:46.21115+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250120_133545-9cz2uijz/logs/debug-core.log"}
+{"time":"2025-01-20T13:35:46.318635+02:00","level":"INFO","msg":"created new stream","id":"9cz2uijz"}
+{"time":"2025-01-20T13:35:46.318688+02:00","level":"INFO","msg":"stream: started","id":"9cz2uijz"}
+{"time":"2025-01-20T13:35:46.318697+02:00","level":"INFO","msg":"handler: started","stream_id":"9cz2uijz"}
+{"time":"2025-01-20T13:35:46.318731+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"9cz2uijz"}
+{"time":"2025-01-20T13:35:46.318734+02:00","level":"INFO","msg":"sender: started","stream_id":"9cz2uijz"}
+{"time":"2025-01-20T13:35:46.731448+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-20T13:40:59.001771+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T14:02:11.652723+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T14:02:11.654553+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T14:02:11.654628+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T14:02:11.65466+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T14:02:11.654723+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T14:02:11.654745+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T14:02:11.654794+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T14:02:11.654812+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T14:02:11.654863+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T14:02:11.654882+02:00","level":"ERROR","msg":"watcher: error in file watcher: error: watched file or folder deleted"}
+{"time":"2025-01-20T14:19:26.853657+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T14:19:27.161423+02:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/9cz2uijz/file_stream"}
+{"time":"2025-01-20T14:19:27.161494+02:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/guyshani-tel-aviv-university/adversarial_gene_expr/9cz2uijz/file_stream: {\"error\":\"run adversarial_gene_expr/9cz2uijz not found while streaming file\"}"}
+{"time":"2025-01-20T14:19:28.081364+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-20T14:19:28.082437+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-20T14:19:28.26706+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run 9cz2uijz was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-01-20T14:19:29.090857+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":1.010304625,"error_status":"retrying HTTP 409 Conflict"}],"total_operations":1}}
+{"time":"2025-01-20T14:19:30.81251+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run 9cz2uijz was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-01-20T14:19:35.848701+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run 9cz2uijz was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-01-20T14:19:45.640853+02:00","level":"INFO","msg":"api: retrying HTTP error","status":409,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"run 9cz2uijz was previously created and deleted; try a new run name\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}

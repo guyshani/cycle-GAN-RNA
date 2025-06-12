@@ -1,0 +1,6 @@
+{"time":"2025-01-12T15:32:48.257398+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250112_153248-l9d94oyj/logs/debug-core.log"}
+{"time":"2025-01-12T15:32:48.367056+02:00","level":"INFO","msg":"created new stream","id":"l9d94oyj"}
+{"time":"2025-01-12T15:32:48.367109+02:00","level":"INFO","msg":"stream: started","id":"l9d94oyj"}
+{"time":"2025-01-12T15:32:48.367128+02:00","level":"INFO","msg":"handler: started","stream_id":"l9d94oyj"}
+{"time":"2025-01-12T15:32:48.36712+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"l9d94oyj"}
+{"time":"2025-01-12T15:32:48.367128+02:00","level":"INFO","msg":"sender: started","stream_id":"l9d94oyj"}

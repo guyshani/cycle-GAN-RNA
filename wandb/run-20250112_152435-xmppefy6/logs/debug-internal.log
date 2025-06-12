@@ -1,0 +1,6 @@
+{"time":"2025-01-12T15:24:35.458004+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250112_152435-xmppefy6/logs/debug-core.log"}
+{"time":"2025-01-12T15:24:35.565364+02:00","level":"INFO","msg":"created new stream","id":"xmppefy6"}
+{"time":"2025-01-12T15:24:35.565417+02:00","level":"INFO","msg":"stream: started","id":"xmppefy6"}
+{"time":"2025-01-12T15:24:35.565417+02:00","level":"INFO","msg":"handler: started","stream_id":"xmppefy6"}
+{"time":"2025-01-12T15:24:35.56542+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"xmppefy6"}
+{"time":"2025-01-12T15:24:35.565464+02:00","level":"INFO","msg":"sender: started","stream_id":"xmppefy6"}

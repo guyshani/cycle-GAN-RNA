@@ -1,0 +1,52 @@
+2025-01-20 14:19:28,079 INFO    MainThread:50885 [wandb_init.py:_log_setup():523] Logging user logs to /Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250120_141928-ii3h9yqj/logs/debug.log
+2025-01-20 14:19:28,080 INFO    MainThread:50885 [wandb_init.py:_log_setup():524] Logging internal logs to /Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250120_141928-ii3h9yqj/logs/debug-internal.log
+2025-01-20 14:19:28,080 INFO    MainThread:50885 [wandb_init.py:init():641] calling init triggers
+2025-01-20 14:19:28,080 INFO    MainThread:50885 [wandb_init.py:init():647] wandb.init called with sweep_config: {}
+config: {'epochs': 100, 'latent_dim': 64, 'batch_size': 32, 'nb_layers': 3, 'hdim': 256, 'lr': 0.0005, 'nb_critic': 5}
+2025-01-20 14:19:28,080 INFO    MainThread:50885 [wandb_init.py:init():666] found existing run on stack: 9cz2uijz
+2025-01-20 14:19:28,080 INFO    MainThread:50885 [wandb_run.py:_finish():2140] finishing run guyshani-tel-aviv-university/adversarial_gene_expr/9cz2uijz
+2025-01-20 14:19:28,080 ERROR   MainThread:50885 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-01-20 14:19:28,080 INFO    MainThread:50885 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-20 14:19:28,080 INFO    MainThread:50885 [wandb_init.py:_jupyter_teardown():451] cleaning up jupyter logic
+2025-01-20 14:19:28,080 INFO    MainThread:50885 [wandb_run.py:_atexit_cleanup():2380] got exitcode: 0
+2025-01-20 14:19:28,080 INFO    MainThread:50885 [wandb_run.py:_restore():2362] restore
+2025-01-20 14:19:28,081 INFO    MainThread:50885 [wandb_run.py:_restore():2368] restore done
+2025-01-20 14:19:43,616 WARNING MainThread:50885 [wandb_init.py:init():1293] interrupted
+Traceback (most recent call last):
+  File "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1289, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 667, in init
+    latest_run.finish()
+  File "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 442, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 384, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2134, in finish
+    return self._finish(exit_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2164, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2392, in _atexit_cleanup
+    self._on_finish()
+  File "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2644, in _on_finish
+    _ = exit_handle.wait(
+        ^^^^^^^^^^^^^^^^^
+  File "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 279, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 122, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guyshani/.pyenv/versions/3.11.7/lib/python3.11/threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guyshani/.pyenv/versions/3.11.7/lib/python3.11/threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

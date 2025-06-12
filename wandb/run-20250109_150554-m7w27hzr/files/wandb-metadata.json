@@ -1,0 +1,43 @@
+{
+  "os":  "macOS-15.2-arm64-arm-64bit",
+  "python":  "CPython 3.11.7",
+  "startedAt":  "2025-01-09T13:05:59.203577Z",
+  "program":  "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/cWGAN_my.ipynb",
+  "codePath":  "cWGAN_my.ipynb",
+  "git":  {
+    "remote":  "https://github.com/guyshani/cycle_GAN.git",
+    "commit":  "bec33bcbedbcc44baebbe79d5b978483ac01ded1"
+  },
+  "email":  "guyshani3@gmail.com",
+  "root":  "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN",
+  "host":  "Guys-MacBook-Pro.local",
+  "executable":  "/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/.venv/bin/python",
+  "codePathLocal":  "cWGAN_my.ipynb",
+  "cpu_count":  10,
+  "cpu_count_logical":  10,
+  "disk":  {
+    "/":  {
+      "total":  "7998551654400",
+      "used":  "227172110336"
+    },
+    "/System/Volumes/Data":  {
+      "total":  "7998551654400",
+      "used":  "227172110336"
+    }
+  },
+  "memory":  {
+    "total":  "34359738368"
+  },
+  "cpu":  {
+    "count":  10,
+    "countLogical":  10
+  },
+  "apple":  {
+    "name":  "Apple M1 Pro",
+    "ecpuCores":  2,
+    "pcpuCores":  8,
+    "gpuCores":  16,
+    "memoryGb":  32,
+    "ramTotalBytes":  "34359738368"
+  }
+}

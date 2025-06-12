@@ -1,0 +1,3157 @@
+Starting training for 300 epochs...
+Total batches per epoch: 31
+Using device: mps
+
+Epoch [1/300]
+  Batch [0/31] D_loss: -121.8684, G_loss: 78.9255
+  Batch [10/31] D_loss: -18.8512, G_loss: -5.0366
+  Batch [20/31] D_loss: -22.1137, G_loss: -1.9011
+  Batch [30/31] D_loss: -54.8256, G_loss: -9.3177
+
+Epoch 1 Summary:
+  Average D_loss: -22.3205
+  Average G_loss: 22.9983
+
+Models saved at epoch 1:
+Generator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_140056_dataset/generator_20250112_140056_dataset.pt
+Discriminator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_140056_dataset/discriminator_20250112_140056_dataset.pt
+
+Epoch [2/300]
+  Batch [0/31] D_loss: -52.2649, G_loss: -6.2102
+  Batch [10/31] D_loss: -67.2740, G_loss: 46.2031
+  Batch [20/31] D_loss: -48.3352, G_loss: -6.1124
+  Batch [30/31] D_loss: -33.5963, G_loss: 1.0893
+
+Epoch 2 Summary:
+  Average D_loss: -27.8877
+  Average G_loss: 4.6984
+
+Epoch [3/300]
+  Batch [0/31] D_loss: -28.8720, G_loss: 2.0237
+  Batch [10/31] D_loss: -41.5942, G_loss: 35.1251
+  Batch [20/31] D_loss: -32.3989, G_loss: 2.8766
+  Batch [30/31] D_loss: -41.6912, G_loss: 12.0094
+
+Epoch 3 Summary:
+  Average D_loss: -19.3683
+  Average G_loss: 12.1663
+
+Epoch [4/300]
+  Batch [0/31] D_loss: -37.6519, G_loss: -0.3962
+  Batch [10/31] D_loss: -57.0887, G_loss: 1.5904
+  Batch [20/31] D_loss: -46.9990, G_loss: 8.3134
+  Batch [30/31] D_loss: -40.3389, G_loss: 9.4175
+
+Epoch 4 Summary:
+  Average D_loss: -27.0610
+  Average G_loss: 3.5423
+
+Epoch [5/300]
+  Batch [0/31] D_loss: -45.7440, G_loss: 17.7010
+  Batch [10/31] D_loss: -47.5429, G_loss: 10.3032
+  Batch [20/31] D_loss: -39.2572, G_loss: 21.4563
+  Batch [30/31] D_loss: -42.3570, G_loss: 8.4576
+
+Epoch 5 Summary:
+  Average D_loss: -23.7294
+  Average G_loss: 10.6039
+
+Epoch [6/300]
+  Batch [0/31] D_loss: -38.7438, G_loss: 10.8691
+  Batch [10/31] D_loss: -41.0540, G_loss: 10.6675
+  Batch [20/31] D_loss: -40.6957, G_loss: -10.0714
+  Batch [30/31] D_loss: -39.9852, G_loss: 9.8086
+
+Epoch 6 Summary:
+  Average D_loss: -25.0129
+  Average G_loss: 11.1253
+
+Epoch [7/300]
+  Batch [0/31] D_loss: -35.5442, G_loss: 3.0625
+  Batch [10/31] D_loss: -55.1070, G_loss: 8.6647
+  Batch [20/31] D_loss: -43.9944, G_loss: -20.0770
+  Batch [30/31] D_loss: -51.7318, G_loss: -2.8094
+
+Epoch 7 Summary:
+  Average D_loss: -27.3165
+  Average G_loss: 4.0635
+
+Epoch [8/300]
+  Batch [0/31] D_loss: -45.2561, G_loss: -0.3410
+  Batch [10/31] D_loss: -46.4844, G_loss: 28.9816
+  Batch [20/31] D_loss: -36.4153, G_loss: -1.4813
+  Batch [30/31] D_loss: -43.5632, G_loss: 11.9501
+
+Epoch 8 Summary:
+  Average D_loss: -27.2232
+  Average G_loss: 10.7259
+
+Epoch [9/300]
+  Batch [0/31] D_loss: -47.1653, G_loss: 14.6312
+  Batch [10/31] D_loss: -52.7961, G_loss: 19.7920
+  Batch [20/31] D_loss: -44.2267, G_loss: 0.6603
+  Batch [30/31] D_loss: -43.4569, G_loss: 25.1999
+
+Epoch 9 Summary:
+  Average D_loss: -23.1826
+  Average G_loss: 5.8753
+
+Epoch [10/300]
+  Batch [0/31] D_loss: -48.8187, G_loss: 21.9939
+  Batch [10/31] D_loss: -51.7057, G_loss: -16.5641
+  Batch [20/31] D_loss: -55.5261, G_loss: 8.2605
+  Batch [30/31] D_loss: -38.2136, G_loss: 16.6616
+
+Epoch 10 Summary:
+  Average D_loss: -23.2067
+  Average G_loss: 5.2634
+
+Epoch [11/300]
+  Batch [0/31] D_loss: -42.7211, G_loss: 19.2084
+  Batch [10/31] D_loss: -39.7024, G_loss: 4.0463
+  Batch [20/31] D_loss: -40.2484, G_loss: 9.0017
+  Batch [30/31] D_loss: -40.6561, G_loss: -9.2268
+
+Epoch 11 Summary:
+  Average D_loss: -20.4935
+  Average G_loss: 7.5289
+
+Epoch [12/300]
+  Batch [0/31] D_loss: -38.8355, G_loss: -9.7788
+  Batch [10/31] D_loss: -32.8488, G_loss: 9.3355
+  Batch [20/31] D_loss: -40.7135, G_loss: 16.0749
+  Batch [30/31] D_loss: -38.2764, G_loss: 17.3566
+
+Epoch 12 Summary:
+  Average D_loss: -17.6654
+  Average G_loss: 5.8835
+
+Epoch [13/300]
+  Batch [0/31] D_loss: -31.5288, G_loss: 9.5205
+  Batch [10/31] D_loss: -33.7438, G_loss: 4.6036
+  Batch [20/31] D_loss: -44.9036, G_loss: 38.1936
+  Batch [30/31] D_loss: -34.7653, G_loss: -3.5989
+
+Epoch 13 Summary:
+  Average D_loss: -16.9556
+  Average G_loss: 8.2090
+
+Epoch [14/300]
+  Batch [0/31] D_loss: -30.4441, G_loss: -2.5980
+  Batch [10/31] D_loss: -23.2137, G_loss: 21.2259
+  Batch [20/31] D_loss: -32.7926, G_loss: -38.4743
+  Batch [30/31] D_loss: -22.4596, G_loss: 30.8817
+
+Epoch 14 Summary:
+  Average D_loss: -16.3200
+  Average G_loss: 6.2691
+
+Epoch [15/300]
+  Batch [0/31] D_loss: -31.1526, G_loss: 28.8021
+  Batch [10/31] D_loss: -22.9331, G_loss: -10.6320
+  Batch [20/31] D_loss: -40.4554, G_loss: 2.7483
+  Batch [30/31] D_loss: -43.2411, G_loss: 19.5603
+
+Epoch 15 Summary:
+  Average D_loss: -16.7964
+  Average G_loss: 5.4711
+
+Epoch [16/300]
+  Batch [0/31] D_loss: -43.5523, G_loss: 8.6047
+  Batch [10/31] D_loss: -29.9204, G_loss: -0.4668
+  Batch [20/31] D_loss: -42.9601, G_loss: 11.2510
+  Batch [30/31] D_loss: -38.3563, G_loss: 0.3279
+
+Epoch 16 Summary:
+  Average D_loss: -18.2659
+  Average G_loss: 7.8352
+
+Epoch [17/300]
+  Batch [0/31] D_loss: -27.6193, G_loss: -5.5865
+  Batch [10/31] D_loss: -33.6956, G_loss: 11.4157
+  Batch [20/31] D_loss: -37.3601, G_loss: 8.3343
+  Batch [30/31] D_loss: -32.7008, G_loss: 17.5843
+
+Epoch 17 Summary:
+  Average D_loss: -17.2580
+  Average G_loss: 6.6285
+
+Epoch [18/300]
+  Batch [0/31] D_loss: -33.9898, G_loss: 18.5359
+  Batch [10/31] D_loss: -37.3709, G_loss: 18.9848
+  Batch [20/31] D_loss: -40.1551, G_loss: 18.9418
+  Batch [30/31] D_loss: -34.5797, G_loss: 13.1092
+
+Epoch 18 Summary:
+  Average D_loss: -18.2873
+  Average G_loss: 7.5678
+
+Epoch [19/300]
+  Batch [0/31] D_loss: -36.6575, G_loss: 2.9777
+  Batch [10/31] D_loss: -32.8151, G_loss: 2.1206
+  Batch [20/31] D_loss: -34.6184, G_loss: -21.4439
+  Batch [30/31] D_loss: -51.7851, G_loss: -4.3463
+
+Epoch 19 Summary:
+  Average D_loss: -18.3756
+  Average G_loss: 7.3402
+
+Epoch [20/300]
+  Batch [0/31] D_loss: -37.6476, G_loss: 4.5992
+  Batch [10/31] D_loss: -44.3340, G_loss: 9.5833
+  Batch [20/31] D_loss: -44.0884, G_loss: -8.6262
+  Batch [30/31] D_loss: -30.4782, G_loss: 41.5187
+
+Epoch 20 Summary:
+  Average D_loss: -19.4884
+  Average G_loss: 2.7456
+
+Epoch [21/300]
+  Batch [0/31] D_loss: -33.4710, G_loss: 36.2959
+  Batch [10/31] D_loss: -36.0645, G_loss: -0.1607
+  Batch [20/31] D_loss: -43.3693, G_loss: 20.6788
+  Batch [30/31] D_loss: -39.3347, G_loss: 14.9305
+
+Epoch 21 Summary:
+  Average D_loss: -18.5616
+  Average G_loss: 10.1762
+
+Epoch [22/300]
+  Batch [0/31] D_loss: -37.1673, G_loss: 12.0199
+  Batch [10/31] D_loss: -38.1141, G_loss: -3.9626
+  Batch [20/31] D_loss: -32.8384, G_loss: 12.6204
+  Batch [30/31] D_loss: -41.1498, G_loss: 0.0716
+
+Epoch 22 Summary:
+  Average D_loss: -19.4227
+  Average G_loss: 5.2698
+
+Epoch [23/300]
+  Batch [0/31] D_loss: -39.7540, G_loss: -1.5308
+  Batch [10/31] D_loss: -46.6167, G_loss: 42.5201
+  Batch [20/31] D_loss: -35.1358, G_loss: 5.7650
+  Batch [30/31] D_loss: -41.6412, G_loss: -7.5788
+
+Epoch 23 Summary:
+  Average D_loss: -20.1024
+  Average G_loss: 6.4137
+
+Epoch [24/300]
+  Batch [0/31] D_loss: -31.7487, G_loss: -25.3351
+  Batch [10/31] D_loss: -30.6938, G_loss: -9.6012
+  Batch [20/31] D_loss: -35.6960, G_loss: -1.7423
+  Batch [30/31] D_loss: -54.2399, G_loss: 29.5978
+
+Epoch 24 Summary:
+  Average D_loss: -20.4315
+  Average G_loss: 2.1608
+
+Epoch [25/300]
+  Batch [0/31] D_loss: -50.5743, G_loss: 34.2508
+  Batch [10/31] D_loss: -40.4941, G_loss: 1.0855
+  Batch [20/31] D_loss: -34.4995, G_loss: -7.9768
+  Batch [30/31] D_loss: -18.6311, G_loss: 8.3153
+
+Epoch 25 Summary:
+  Average D_loss: -18.9296
+  Average G_loss: 8.0335
+
+Epoch [26/300]
+  Batch [0/31] D_loss: -29.3194, G_loss: 13.2155
+  Batch [10/31] D_loss: -39.7545, G_loss: -25.3344
+  Batch [20/31] D_loss: -38.9844, G_loss: 31.5314
+  Batch [30/31] D_loss: -30.1450, G_loss: -18.5499
+
+Epoch 26 Summary:
+  Average D_loss: -18.8221
+  Average G_loss: 5.0886
+
+Epoch [27/300]
+  Batch [0/31] D_loss: -41.0914, G_loss: -26.5361
+  Batch [10/31] D_loss: -37.4308, G_loss: 28.1872
+  Batch [20/31] D_loss: -38.4630, G_loss: -1.6679
+  Batch [30/31] D_loss: -48.4847, G_loss: -21.9260
+
+Epoch 27 Summary:
+  Average D_loss: -19.8731
+  Average G_loss: 5.2907
+
+Epoch [28/300]
+  Batch [0/31] D_loss: -31.4599, G_loss: 5.0085
+  Batch [10/31] D_loss: -41.0265, G_loss: 13.9567
+  Batch [20/31] D_loss: -36.1653, G_loss: -24.4312
+  Batch [30/31] D_loss: -35.5267, G_loss: -6.2149
+
+Epoch 28 Summary:
+  Average D_loss: -18.9648
+  Average G_loss: 6.3072
+
+Epoch [29/300]
+  Batch [0/31] D_loss: -37.1750, G_loss: -1.8053
+  Batch [10/31] D_loss: -42.3278, G_loss: -1.4306
+  Batch [20/31] D_loss: -47.6900, G_loss: 13.5926
+  Batch [30/31] D_loss: -45.7295, G_loss: 35.4777
+
+Epoch 29 Summary:
+  Average D_loss: -20.2531
+  Average G_loss: 8.3434
+
+Epoch [30/300]
+  Batch [0/31] D_loss: -33.2588, G_loss: 5.1809
+  Batch [10/31] D_loss: -33.5644, G_loss: 4.5761
+  Batch [20/31] D_loss: -35.0196, G_loss: 13.2033
+  Batch [30/31] D_loss: -34.4651, G_loss: -5.8803
+
+Epoch 30 Summary:
+  Average D_loss: -18.6657
+  Average G_loss: 2.7452
+
+Epoch [31/300]
+  Batch [0/31] D_loss: -36.7297, G_loss: 4.0075
+  Batch [10/31] D_loss: -35.9814, G_loss: -13.3781
+  Batch [20/31] D_loss: -48.0817, G_loss: 12.6720
+  Batch [30/31] D_loss: -36.7445, G_loss: 3.1791
+
+Epoch 31 Summary:
+  Average D_loss: -18.4545
+  Average G_loss: 9.3990
+
+Epoch [32/300]
+  Batch [0/31] D_loss: -32.3500, G_loss: -2.7782
+  Batch [10/31] D_loss: -38.6795, G_loss: 30.9076
+  Batch [20/31] D_loss: -36.0132, G_loss: 1.1360
+  Batch [30/31] D_loss: -47.8876, G_loss: 31.8349
+
+Epoch 32 Summary:
+  Average D_loss: -17.9930
+  Average G_loss: 3.3429
+
+Epoch [33/300]
+  Batch [0/31] D_loss: -37.6399, G_loss: 7.9479
+  Batch [10/31] D_loss: -43.3017, G_loss: 11.1601
+  Batch [20/31] D_loss: -38.9813, G_loss: 33.8064
+  Batch [30/31] D_loss: -35.1587, G_loss: -24.2127
+
+Epoch 33 Summary:
+  Average D_loss: -18.8120
+  Average G_loss: 5.6373
+
+Epoch [34/300]
+  Batch [0/31] D_loss: -26.4445, G_loss: -25.4343
+  Batch [10/31] D_loss: -35.1660, G_loss: 30.8610
+  Batch [20/31] D_loss: -35.3496, G_loss: -11.4500
+  Batch [30/31] D_loss: -28.8709, G_loss: -0.9471
+
+Epoch 34 Summary:
+  Average D_loss: -18.0780
+  Average G_loss: 5.3584
+
+Epoch [35/300]
+  Batch [0/31] D_loss: -31.3055, G_loss: -2.6997
+  Batch [10/31] D_loss: -45.1596, G_loss: -25.2194
+  Batch [20/31] D_loss: -40.1644, G_loss: 12.0811
+  Batch [30/31] D_loss: -41.7170, G_loss: 6.0450
+
+Epoch 35 Summary:
+  Average D_loss: -19.5346
+  Average G_loss: 7.8371
+
+Epoch [36/300]
+  Batch [0/31] D_loss: -46.3961, G_loss: -6.0040
+  Batch [10/31] D_loss: -41.5515, G_loss: 2.4574
+  Batch [20/31] D_loss: -53.8913, G_loss: 33.1821
+  Batch [30/31] D_loss: -38.6067, G_loss: -10.9091
+
+Epoch 36 Summary:
+  Average D_loss: -19.1837
+  Average G_loss: 1.2332
+
+Epoch [37/300]
+  Batch [0/31] D_loss: -38.5563, G_loss: -6.3843
+  Batch [10/31] D_loss: -31.5635, G_loss: 8.9973
+  Batch [20/31] D_loss: -29.2409, G_loss: -4.0722
+  Batch [30/31] D_loss: -44.8093, G_loss: 27.9983
+
+Epoch 37 Summary:
+  Average D_loss: -17.8991
+  Average G_loss: 4.8976
+
+Epoch [38/300]
+  Batch [0/31] D_loss: -39.7647, G_loss: 35.4331
+  Batch [10/31] D_loss: -32.6144, G_loss: -7.1987
+  Batch [20/31] D_loss: -33.3240, G_loss: -0.2935
+  Batch [30/31] D_loss: -31.6092, G_loss: 4.3696
+
+Epoch 38 Summary:
+  Average D_loss: -18.0244
+  Average G_loss: 5.8799
+
+Epoch [39/300]
+  Batch [0/31] D_loss: -33.6318, G_loss: 9.5474
+  Batch [10/31] D_loss: -36.0099, G_loss: 28.2421
+  Batch [20/31] D_loss: -36.7096, G_loss: -0.6371
+  Batch [30/31] D_loss: -37.3780, G_loss: 30.7046
+
+Epoch 39 Summary:
+  Average D_loss: -19.0232
+  Average G_loss: 2.5976
+
+Epoch [40/300]
+  Batch [0/31] D_loss: -39.3384, G_loss: 32.0391
+  Batch [10/31] D_loss: -29.2547, G_loss: -12.3722
+  Batch [20/31] D_loss: -38.8660, G_loss: 13.3009
+  Batch [30/31] D_loss: -39.1734, G_loss: -12.8476
+
+Epoch 40 Summary:
+  Average D_loss: -17.6709
+  Average G_loss: 6.1154
+
+Epoch [41/300]
+  Batch [0/31] D_loss: -37.5385, G_loss: -26.0939
+  Batch [10/31] D_loss: -30.5683, G_loss: -18.0681
+  Batch [20/31] D_loss: -29.1746, G_loss: 20.5417
+  Batch [30/31] D_loss: -32.5616, G_loss: 13.3557
+
+Epoch 41 Summary:
+  Average D_loss: -17.4513
+  Average G_loss: 6.1991
+
+Epoch [42/300]
+  Batch [0/31] D_loss: -37.4552, G_loss: -9.1626
+  Batch [10/31] D_loss: -40.0132, G_loss: 7.1170
+  Batch [20/31] D_loss: -34.4782, G_loss: -6.5135
+  Batch [30/31] D_loss: -47.8893, G_loss: 32.4148
+
+Epoch 42 Summary:
+  Average D_loss: -18.0057
+  Average G_loss: 4.8107
+
+Epoch [43/300]
+  Batch [0/31] D_loss: -36.5100, G_loss: 25.5428
+  Batch [10/31] D_loss: -28.5323, G_loss: -6.8310
+  Batch [20/31] D_loss: -32.3964, G_loss: -15.8711
+  Batch [30/31] D_loss: -30.3889, G_loss: -6.4190
+
+Epoch 43 Summary:
+  Average D_loss: -17.5100
+  Average G_loss: 3.6317
+
+Epoch [44/300]
+  Batch [0/31] D_loss: -38.5028, G_loss: 22.6073
+  Batch [10/31] D_loss: -28.2549, G_loss: -28.6927
+  Batch [20/31] D_loss: -29.5005, G_loss: 6.7252
+  Batch [30/31] D_loss: -36.0456, G_loss: 7.5520
+
+Epoch 44 Summary:
+  Average D_loss: -17.8771
+  Average G_loss: 4.8215
+
+Epoch [45/300]
+  Batch [0/31] D_loss: -28.7793, G_loss: -2.6603
+  Batch [10/31] D_loss: -29.4976, G_loss: -24.6063
+  Batch [20/31] D_loss: -31.0582, G_loss: -15.3616
+  Batch [30/31] D_loss: -39.0353, G_loss: 31.2173
+
+Epoch 45 Summary:
+  Average D_loss: -17.8913
+  Average G_loss: 4.6797
+
+Epoch [46/300]
+  Batch [0/31] D_loss: -28.0428, G_loss: 14.5092
+  Batch [10/31] D_loss: -29.0913, G_loss: 5.1520
+  Batch [20/31] D_loss: -30.0449, G_loss: -16.2895
+  Batch [30/31] D_loss: -26.5860, G_loss: 16.0832
+
+Epoch 46 Summary:
+  Average D_loss: -17.1530
+  Average G_loss: 3.5155
+
+Epoch [47/300]
+  Batch [0/31] D_loss: -37.3342, G_loss: 26.4735
+  Batch [10/31] D_loss: -32.1195, G_loss: -8.1152
+  Batch [20/31] D_loss: -32.7458, G_loss: 6.0640
+  Batch [30/31] D_loss: -35.8265, G_loss: -15.3982
+
+Epoch 47 Summary:
+  Average D_loss: -17.5520
+  Average G_loss: 3.2691
+
+Epoch [48/300]
+  Batch [0/31] D_loss: -30.0765, G_loss: -17.2313
+  Batch [10/31] D_loss: -22.5293, G_loss: 31.7782
+  Batch [20/31] D_loss: -36.5074, G_loss: -12.7233
+  Batch [30/31] D_loss: -35.0514, G_loss: 28.7578
+
+Epoch 48 Summary:
+  Average D_loss: -15.9896
+  Average G_loss: 3.7528
+
+Epoch [49/300]
+  Batch [0/31] D_loss: -41.0225, G_loss: 22.0261
+  Batch [10/31] D_loss: -24.1652, G_loss: -3.1112
+  Batch [20/31] D_loss: -35.6232, G_loss: -8.4251
+  Batch [30/31] D_loss: -29.9492, G_loss: -2.2914
+
+Epoch 49 Summary:
+  Average D_loss: -16.3130
+  Average G_loss: 6.8153
+
+Epoch [50/300]
+  Batch [0/31] D_loss: -28.4031, G_loss: -18.6266
+  Batch [10/31] D_loss: -45.8744, G_loss: 30.4627
+  Batch [20/31] D_loss: -47.2049, G_loss: -40.6368
+  Batch [30/31] D_loss: -36.6377, G_loss: 23.5950
+
+Epoch 50 Summary:
+  Average D_loss: -16.6932
+  Average G_loss: 0.0551
+
+Epoch [51/300]
+  Batch [0/31] D_loss: -23.4062, G_loss: 23.7468
+  Batch [10/31] D_loss: -37.8243, G_loss: 11.8892
+  Batch [20/31] D_loss: -37.4270, G_loss: 15.7804
+  Batch [30/31] D_loss: -32.6914, G_loss: -16.9975
+
+Epoch 51 Summary:
+  Average D_loss: -16.0067
+  Average G_loss: 7.3231
+
+Models saved at epoch 51:
+Generator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_140321_dataset/generator_20250112_140321_dataset.pt
+Discriminator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_140321_dataset/discriminator_20250112_140321_dataset.pt
+
+Epoch [52/300]
+  Batch [0/31] D_loss: -36.2228, G_loss: -13.0993
+  Batch [10/31] D_loss: -35.8305, G_loss: -16.0951
+  Batch [20/31] D_loss: -28.0680, G_loss: 6.8054
+  Batch [30/31] D_loss: -39.7720, G_loss: 11.0515
+
+Epoch 52 Summary:
+  Average D_loss: -15.4278
+  Average G_loss: 5.7917
+
+Epoch [53/300]
+  Batch [0/31] D_loss: -29.7686, G_loss: -4.3112
+  Batch [10/31] D_loss: -29.3682, G_loss: -5.9390
+  Batch [20/31] D_loss: -24.3759, G_loss: 5.0999
+  Batch [30/31] D_loss: -48.4557, G_loss: -39.1052
+
+Epoch 53 Summary:
+  Average D_loss: -16.1897
+  Average G_loss: 0.8820
+
+Epoch [54/300]
+  Batch [0/31] D_loss: -22.1323, G_loss: -13.7391
+  Batch [10/31] D_loss: -30.4515, G_loss: 13.1803
+  Batch [20/31] D_loss: -32.4541, G_loss: 22.5776
+  Batch [30/31] D_loss: -29.7907, G_loss: -4.0673
+
+Epoch 54 Summary:
+  Average D_loss: -13.5047
+  Average G_loss: 9.0748
+
+Epoch [55/300]
+  Batch [0/31] D_loss: -27.4605, G_loss: -2.7002
+  Batch [10/31] D_loss: -38.4974, G_loss: -2.9464
+  Batch [20/31] D_loss: -27.2143, G_loss: 0.1621
+  Batch [30/31] D_loss: -33.3020, G_loss: -21.7389
+
+Epoch 55 Summary:
+  Average D_loss: -14.3470
+  Average G_loss: 3.3399
+
+Epoch [56/300]
+  Batch [0/31] D_loss: -37.4692, G_loss: -14.6911
+  Batch [10/31] D_loss: -19.7994, G_loss: 5.4609
+  Batch [20/31] D_loss: -37.9624, G_loss: -20.5549
+  Batch [30/31] D_loss: -33.8273, G_loss: 36.8986
+
+Epoch 56 Summary:
+  Average D_loss: -14.3404
+  Average G_loss: 5.2717
+
+Epoch [57/300]
+  Batch [0/31] D_loss: -33.3261, G_loss: 43.3938
+  Batch [10/31] D_loss: -46.2681, G_loss: -38.8148
+  Batch [20/31] D_loss: -32.9336, G_loss: 4.6769
+  Batch [30/31] D_loss: -33.0943, G_loss: -5.7090
+
+Epoch 57 Summary:
+  Average D_loss: -13.5475
+  Average G_loss: 8.0402
+
+Epoch [58/300]
+  Batch [0/31] D_loss: -30.1540, G_loss: 1.6223
+  Batch [10/31] D_loss: -33.0975, G_loss: 0.9481
+  Batch [20/31] D_loss: -33.6632, G_loss: 7.4296
+  Batch [30/31] D_loss: -29.4795, G_loss: -8.8090
+
+Epoch 58 Summary:
+  Average D_loss: -14.2760
+  Average G_loss: 0.1634
+
+Epoch [59/300]
+  Batch [0/31] D_loss: -29.5950, G_loss: -8.0757
+  Batch [10/31] D_loss: -32.9116, G_loss: 17.0948
+  Batch [20/31] D_loss: -34.1665, G_loss: 28.3671
+  Batch [30/31] D_loss: -40.5383, G_loss: 2.1869
+
+Epoch 59 Summary:
+  Average D_loss: -14.8544
+  Average G_loss: 5.2661
+
+Epoch [60/300]
+  Batch [0/31] D_loss: -33.9328, G_loss: -2.7823
+  Batch [10/31] D_loss: -28.5630, G_loss: -9.5956
+  Batch [20/31] D_loss: -62.9103, G_loss: -41.7736
+  Batch [30/31] D_loss: -30.3100, G_loss: -32.9283
+
+Epoch 60 Summary:
+  Average D_loss: -15.7076
+  Average G_loss: 0.1307
+
+Epoch [61/300]
+  Batch [0/31] D_loss: -25.9758, G_loss: 1.0360
+  Batch [10/31] D_loss: -38.2956, G_loss: -15.9700
+  Batch [20/31] D_loss: -40.0075, G_loss: 55.8178
+  Batch [30/31] D_loss: -30.6642, G_loss: 3.6472
+
+Epoch 61 Summary:
+  Average D_loss: -15.1845
+  Average G_loss: 10.8958
+
+Epoch [62/300]
+  Batch [0/31] D_loss: -42.7682, G_loss: -32.5506
+  Batch [10/31] D_loss: -27.7271, G_loss: -1.0193
+  Batch [20/31] D_loss: -34.5554, G_loss: -6.8421
+  Batch [30/31] D_loss: -45.0510, G_loss: 18.0070
+
+Epoch 62 Summary:
+  Average D_loss: -13.9217
+  Average G_loss: 1.5356
+
+Epoch [63/300]
+  Batch [0/31] D_loss: -33.7484, G_loss: 23.4617
+  Batch [10/31] D_loss: -38.5402, G_loss: 8.0215
+  Batch [20/31] D_loss: -15.1627, G_loss: 10.7538
+  Batch [30/31] D_loss: -40.2906, G_loss: -53.0295
+
+Epoch 63 Summary:
+  Average D_loss: -13.3981
+  Average G_loss: 1.9507
+
+Epoch [64/300]
+  Batch [0/31] D_loss: -23.9499, G_loss: -52.4842
+  Batch [10/31] D_loss: -26.3048, G_loss: 45.9102
+  Batch [20/31] D_loss: -18.8484, G_loss: 14.2884
+  Batch [30/31] D_loss: -16.2075, G_loss: -16.8376
+
+Epoch 64 Summary:
+  Average D_loss: -11.7692
+  Average G_loss: 4.3063
+
+Epoch [65/300]
+  Batch [0/31] D_loss: -23.3311, G_loss: -33.6821
+  Batch [10/31] D_loss: -24.4920, G_loss: -7.6618
+  Batch [20/31] D_loss: -38.9702, G_loss: 17.7062
+  Batch [30/31] D_loss: -34.2775, G_loss: -1.3904
+
+Epoch 65 Summary:
+  Average D_loss: -16.0104
+  Average G_loss: 1.8513
+
+Epoch [66/300]
+  Batch [0/31] D_loss: -26.6687, G_loss: 6.7648
+  Batch [10/31] D_loss: -31.9766, G_loss: -16.2952
+  Batch [20/31] D_loss: -34.0365, G_loss: 11.9090
+  Batch [30/31] D_loss: -37.5506, G_loss: 22.4433
+
+Epoch 66 Summary:
+  Average D_loss: -14.3456
+  Average G_loss: 7.3894
+
+Epoch [67/300]
+  Batch [0/31] D_loss: -35.3432, G_loss: 21.5602
+  Batch [10/31] D_loss: -32.0512, G_loss: -2.3855
+  Batch [20/31] D_loss: -35.9616, G_loss: 4.4549
+  Batch [30/31] D_loss: -33.3751, G_loss: 31.8356
+
+Epoch 67 Summary:
+  Average D_loss: -15.3447
+  Average G_loss: 0.9058
+
+Epoch [68/300]
+  Batch [0/31] D_loss: -43.1935, G_loss: 44.3984
+  Batch [10/31] D_loss: -42.2191, G_loss: 18.6225
+  Batch [20/31] D_loss: -34.7495, G_loss: -10.0875
+  Batch [30/31] D_loss: -28.4782, G_loss: 3.9696
+
+Epoch 68 Summary:
+  Average D_loss: -13.6982
+  Average G_loss: 5.1640
+
+Epoch [69/300]
+  Batch [0/31] D_loss: -32.1621, G_loss: 20.3641
+  Batch [10/31] D_loss: -30.6855, G_loss: 17.6701
+  Batch [20/31] D_loss: -23.6642, G_loss: 16.1650
+  Batch [30/31] D_loss: -26.6277, G_loss: 6.8361
+
+Epoch 69 Summary:
+  Average D_loss: -13.2052
+  Average G_loss: 6.2757
+
+Epoch [70/300]
+  Batch [0/31] D_loss: -23.8898, G_loss: 9.2826
+  Batch [10/31] D_loss: -31.2489, G_loss: -13.8123
+  Batch [20/31] D_loss: -32.2344, G_loss: -12.8991
+  Batch [30/31] D_loss: -33.8910, G_loss: 14.5832
+
+Epoch 70 Summary:
+  Average D_loss: -14.5213
+  Average G_loss: -1.5148
+
+Epoch [71/300]
+  Batch [0/31] D_loss: -30.7231, G_loss: 16.6778
+  Batch [10/31] D_loss: -30.9704, G_loss: -4.2633
+  Batch [20/31] D_loss: -30.7705, G_loss: 10.9861
+  Batch [30/31] D_loss: -22.8564, G_loss: 5.8973
+
+Epoch 71 Summary:
+  Average D_loss: -14.2391
+  Average G_loss: 8.5813
+
+Epoch [72/300]
+  Batch [0/31] D_loss: -35.3918, G_loss: -18.6361
+  Batch [10/31] D_loss: -34.6331, G_loss: 29.5050
+  Batch [20/31] D_loss: -36.9770, G_loss: 27.1804
+  Batch [30/31] D_loss: -38.3986, G_loss: -26.7363
+
+Epoch 72 Summary:
+  Average D_loss: -14.6031
+  Average G_loss: 1.1937
+
+Epoch [73/300]
+  Batch [0/31] D_loss: -36.5011, G_loss: -31.5149
+  Batch [10/31] D_loss: -33.7235, G_loss: 34.1755
+  Batch [20/31] D_loss: -37.3253, G_loss: -24.4275
+  Batch [30/31] D_loss: -42.7887, G_loss: 27.3594
+
+Epoch 73 Summary:
+  Average D_loss: -15.3199
+  Average G_loss: 2.5349
+
+Epoch [74/300]
+  Batch [0/31] D_loss: -39.3135, G_loss: 40.2350
+  Batch [10/31] D_loss: -41.6591, G_loss: 10.2943
+  Batch [20/31] D_loss: -31.9455, G_loss: -17.2754
+  Batch [30/31] D_loss: -33.2096, G_loss: 2.3650
+
+Epoch 74 Summary:
+  Average D_loss: -13.6619
+  Average G_loss: 7.3360
+
+Epoch [75/300]
+  Batch [0/31] D_loss: -30.3433, G_loss: -13.4389
+  Batch [10/31] D_loss: -41.0572, G_loss: -36.9351
+  Batch [20/31] D_loss: -28.4931, G_loss: 24.5017
+  Batch [30/31] D_loss: -31.7832, G_loss: -22.7046
+
+Epoch 75 Summary:
+  Average D_loss: -15.4937
+  Average G_loss: 1.2714
+
+Epoch [76/300]
+  Batch [0/31] D_loss: -37.7088, G_loss: -30.8553
+  Batch [10/31] D_loss: -33.8702, G_loss: 18.7318
+  Batch [20/31] D_loss: -27.5568, G_loss: 6.2573
+  Batch [30/31] D_loss: -29.3512, G_loss: 11.9674
+
+Epoch 76 Summary:
+  Average D_loss: -15.1295
+  Average G_loss: 1.1808
+
+Epoch [77/300]
+  Batch [0/31] D_loss: -30.1889, G_loss: -4.0652
+  Batch [10/31] D_loss: -37.8894, G_loss: 5.4109
+  Batch [20/31] D_loss: -48.0255, G_loss: -17.6191
+  Batch [30/31] D_loss: -24.6140, G_loss: 38.2805
+
+Epoch 77 Summary:
+  Average D_loss: -15.1673
+  Average G_loss: 5.3572
+
+Epoch [78/300]
+  Batch [0/31] D_loss: -41.6371, G_loss: 1.2808
+  Batch [10/31] D_loss: -42.5358, G_loss: 2.3703
+  Batch [20/31] D_loss: -34.9922, G_loss: 20.7552
+  Batch [30/31] D_loss: -34.1684, G_loss: -14.5418
+
+Epoch 78 Summary:
+  Average D_loss: -15.0955
+  Average G_loss: 3.5164
+
+Epoch [79/300]
+  Batch [0/31] D_loss: -36.4604, G_loss: -21.8149
+  Batch [10/31] D_loss: -40.9890, G_loss: 4.6254
+  Batch [20/31] D_loss: -34.7132, G_loss: 35.5839
+  Batch [30/31] D_loss: -40.1851, G_loss: -47.4115
+
+Epoch 79 Summary:
+  Average D_loss: -17.1760
+  Average G_loss: -1.6256
+
+Epoch [80/300]
+  Batch [0/31] D_loss: -31.5331, G_loss: -32.0881
+  Batch [10/31] D_loss: -32.4585, G_loss: 26.4842
+  Batch [20/31] D_loss: -31.7769, G_loss: -27.4593
+  Batch [30/31] D_loss: -30.4795, G_loss: -11.6102
+
+Epoch 80 Summary:
+  Average D_loss: -14.5021
+  Average G_loss: 4.7454
+
+Epoch [81/300]
+  Batch [0/31] D_loss: -34.3592, G_loss: 21.0130
+  Batch [10/31] D_loss: -41.7108, G_loss: -1.8801
+  Batch [20/31] D_loss: -37.1039, G_loss: 39.4452
+  Batch [30/31] D_loss: -28.6098, G_loss: -15.9681
+
+Epoch 81 Summary:
+  Average D_loss: -15.7221
+  Average G_loss: 5.4434
+
+Epoch [82/300]
+  Batch [0/31] D_loss: -27.1206, G_loss: 0.5125
+  Batch [10/31] D_loss: -47.4004, G_loss: 34.8178
+  Batch [20/31] D_loss: -38.0144, G_loss: -1.2462
+  Batch [30/31] D_loss: -36.8007, G_loss: -39.7367
+
+Epoch 82 Summary:
+  Average D_loss: -16.0710
+  Average G_loss: 0.5955
+
+Epoch [83/300]
+  Batch [0/31] D_loss: -37.1664, G_loss: -14.2800
+  Batch [10/31] D_loss: -44.6830, G_loss: 36.3973
+  Batch [20/31] D_loss: -25.0780, G_loss: 1.4227
+  Batch [30/31] D_loss: -37.4976, G_loss: -77.5153
+
+Epoch 83 Summary:
+  Average D_loss: -16.4551
+  Average G_loss: 1.0262
+
+Epoch [84/300]
+  Batch [0/31] D_loss: -15.7444, G_loss: -58.0173
+  Batch [10/31] D_loss: -29.3542, G_loss: 41.5905
+  Batch [20/31] D_loss: -32.3032, G_loss: -15.6780
+  Batch [30/31] D_loss: -38.2961, G_loss: 7.5954
+
+Epoch 84 Summary:
+  Average D_loss: -13.2658
+  Average G_loss: 10.6307
+
+Epoch [85/300]
+  Batch [0/31] D_loss: -37.1056, G_loss: 3.0606
+  Batch [10/31] D_loss: -32.6365, G_loss: 6.2689
+  Batch [20/31] D_loss: -39.3782, G_loss: 18.0953
+  Batch [30/31] D_loss: -41.8100, G_loss: -7.3924
+
+Epoch 85 Summary:
+  Average D_loss: -15.8864
+  Average G_loss: 1.8933
+
+Epoch [86/300]
+  Batch [0/31] D_loss: -29.9324, G_loss: 0.0915
+  Batch [10/31] D_loss: -40.7062, G_loss: -13.6524
+  Batch [20/31] D_loss: -29.9615, G_loss: -6.3074
+  Batch [30/31] D_loss: -30.9592, G_loss: 1.6274
+
+Epoch 86 Summary:
+  Average D_loss: -14.6198
+  Average G_loss: 1.8685
+
+Epoch [87/300]
+  Batch [0/31] D_loss: -34.0364, G_loss: 11.2129
+  Batch [10/31] D_loss: -29.4572, G_loss: -7.9359
+  Batch [20/31] D_loss: -37.7696, G_loss: 24.4141
+  Batch [30/31] D_loss: -25.6890, G_loss: -37.0789
+
+Epoch 87 Summary:
+  Average D_loss: -15.3586
+  Average G_loss: -1.8581
+
+Epoch [88/300]
+  Batch [0/31] D_loss: -31.1065, G_loss: -43.3022
+  Batch [10/31] D_loss: -29.3801, G_loss: 18.4329
+  Batch [20/31] D_loss: -35.3538, G_loss: -0.2326
+  Batch [30/31] D_loss: -38.8555, G_loss: -27.5889
+
+Epoch 88 Summary:
+  Average D_loss: -13.2683
+  Average G_loss: 7.4489
+
+Epoch [89/300]
+  Batch [0/31] D_loss: -35.6208, G_loss: -25.2892
+  Batch [10/31] D_loss: -36.7481, G_loss: 4.3864
+  Batch [20/31] D_loss: -29.1043, G_loss: 12.9365
+  Batch [30/31] D_loss: -33.6948, G_loss: -1.1589
+
+Epoch 89 Summary:
+  Average D_loss: -15.8269
+  Average G_loss: 5.0237
+
+Epoch [90/300]
+  Batch [0/31] D_loss: -33.0359, G_loss: -13.8893
+  Batch [10/31] D_loss: -36.8445, G_loss: 14.0083
+  Batch [20/31] D_loss: -36.3705, G_loss: -1.2587
+  Batch [30/31] D_loss: -41.9814, G_loss: 26.9538
+
+Epoch 90 Summary:
+  Average D_loss: -16.1726
+  Average G_loss: 0.2394
+
+Epoch [91/300]
+  Batch [0/31] D_loss: -35.0754, G_loss: 9.7704
+  Batch [10/31] D_loss: -39.7607, G_loss: 15.5440
+  Batch [20/31] D_loss: -33.3248, G_loss: -11.4591
+  Batch [30/31] D_loss: -35.8725, G_loss: 10.7439
+
+Epoch 91 Summary:
+  Average D_loss: -15.2474
+  Average G_loss: 6.3254
+
+Epoch [92/300]
+  Batch [0/31] D_loss: -45.9500, G_loss: -28.8043
+  Batch [10/31] D_loss: -36.5331, G_loss: -29.6798
+  Batch [20/31] D_loss: -31.9974, G_loss: 13.2632
+  Batch [30/31] D_loss: -25.4337, G_loss: 13.8711
+
+Epoch 92 Summary:
+  Average D_loss: -15.1354
+  Average G_loss: 2.5934
+
+Epoch [93/300]
+  Batch [0/31] D_loss: -30.2610, G_loss: 25.4015
+  Batch [10/31] D_loss: -26.5399, G_loss: -12.0281
+  Batch [20/31] D_loss: -30.9041, G_loss: 6.5617
+  Batch [30/31] D_loss: -31.7204, G_loss: 6.9943
+
+Epoch 93 Summary:
+  Average D_loss: -15.4263
+  Average G_loss: 0.7397
+
+Epoch [94/300]
+  Batch [0/31] D_loss: -34.3330, G_loss: 20.8464
+  Batch [10/31] D_loss: -26.9771, G_loss: 17.4445
+  Batch [20/31] D_loss: -38.2785, G_loss: 19.7575
+  Batch [30/31] D_loss: -30.7249, G_loss: -6.9424
+
+Epoch 94 Summary:
+  Average D_loss: -13.9088
+  Average G_loss: 3.4082
+
+Epoch [95/300]
+  Batch [0/31] D_loss: -26.9338, G_loss: -23.2581
+  Batch [10/31] D_loss: -39.0042, G_loss: 28.6853
+  Batch [20/31] D_loss: -33.8740, G_loss: -14.7629
+  Batch [30/31] D_loss: -24.3997, G_loss: -24.1120
+
+Epoch 95 Summary:
+  Average D_loss: -15.4386
+  Average G_loss: -0.5197
+
+Epoch [96/300]
+  Batch [0/31] D_loss: -32.4390, G_loss: -52.8104
+  Batch [10/31] D_loss: -23.8807, G_loss: 14.2538
+  Batch [20/31] D_loss: -33.6442, G_loss: 14.8097
+  Batch [30/31] D_loss: -34.0843, G_loss: -5.8113
+
+Epoch 96 Summary:
+  Average D_loss: -15.0312
+  Average G_loss: 6.3314
+
+Epoch [97/300]
+  Batch [0/31] D_loss: -33.5125, G_loss: -6.6850
+  Batch [10/31] D_loss: -34.4583, G_loss: -2.7237
+  Batch [20/31] D_loss: -26.6693, G_loss: 3.7137
+  Batch [30/31] D_loss: -36.1757, G_loss: 12.7336
+
+Epoch 97 Summary:
+  Average D_loss: -15.6449
+  Average G_loss: 4.1776
+
+Epoch [98/300]
+  Batch [0/31] D_loss: -35.7013, G_loss: -28.8427
+  Batch [10/31] D_loss: -43.7822, G_loss: 11.6718
+  Batch [20/31] D_loss: -34.8890, G_loss: 18.8091
+  Batch [30/31] D_loss: -29.7484, G_loss: -40.0312
+
+Epoch 98 Summary:
+  Average D_loss: -16.4326
+  Average G_loss: -3.6451
+
+Epoch [99/300]
+  Batch [0/31] D_loss: -24.2305, G_loss: 9.6229
+  Batch [10/31] D_loss: -14.4959, G_loss: 4.3568
+  Batch [20/31] D_loss: -34.3306, G_loss: 0.0681
+  Batch [30/31] D_loss: -33.8906, G_loss: 14.4334
+
+Epoch 99 Summary:
+  Average D_loss: -13.7752
+  Average G_loss: 6.8913
+
+Epoch [100/300]
+  Batch [0/31] D_loss: -38.6930, G_loss: 12.4098
+  Batch [10/31] D_loss: -39.8833, G_loss: 26.6801
+  Batch [20/31] D_loss: -48.6913, G_loss: -57.3209
+  Batch [30/31] D_loss: -10.6915, G_loss: 38.0989
+
+Epoch 100 Summary:
+  Average D_loss: -17.6841
+  Average G_loss: 1.5253
+
+Epoch [101/300]
+  Batch [0/31] D_loss: -27.9458, G_loss: 44.0845
+  Batch [10/31] D_loss: -38.6241, G_loss: -20.6516
+  Batch [20/31] D_loss: -30.2038, G_loss: 17.2798
+  Batch [30/31] D_loss: -34.0471, G_loss: 31.0624
+
+Epoch 101 Summary:
+  Average D_loss: -14.3472
+  Average G_loss: 5.1223
+
+Models saved at epoch 101:
+Generator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_140548_dataset/generator_20250112_140548_dataset.pt
+Discriminator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_140548_dataset/discriminator_20250112_140548_dataset.pt
+
+Epoch [102/300]
+  Batch [0/31] D_loss: -28.0031, G_loss: 9.5117
+  Batch [10/31] D_loss: -35.1859, G_loss: 5.1841
+  Batch [20/31] D_loss: -41.4864, G_loss: 34.5797
+  Batch [30/31] D_loss: -36.7768, G_loss: -0.4278
+
+Epoch 102 Summary:
+  Average D_loss: -16.2648
+  Average G_loss: -0.8478
+
+Epoch [103/300]
+  Batch [0/31] D_loss: -35.7880, G_loss: 30.7460
+  Batch [10/31] D_loss: -37.3160, G_loss: 26.0074
+  Batch [20/31] D_loss: -32.1475, G_loss: 3.1840
+  Batch [30/31] D_loss: -39.4599, G_loss: 20.5024
+
+Epoch 103 Summary:
+  Average D_loss: -15.9774
+  Average G_loss: 5.8776
+
+Epoch [104/300]
+  Batch [0/31] D_loss: -31.4222, G_loss: 19.8974
+  Batch [10/31] D_loss: -36.5343, G_loss: -13.6800
+  Batch [20/31] D_loss: -20.2954, G_loss: -0.6033
+  Batch [30/31] D_loss: -38.0644, G_loss: -49.7854
+
+Epoch 104 Summary:
+  Average D_loss: -14.5609
+  Average G_loss: -0.6450
+
+Epoch [105/300]
+  Batch [0/31] D_loss: -22.6006, G_loss: -38.5146
+  Batch [10/31] D_loss: -28.4192, G_loss: 46.4304
+  Batch [20/31] D_loss: -36.3921, G_loss: -38.5549
+  Batch [30/31] D_loss: -21.1029, G_loss: 18.4249
+
+Epoch 105 Summary:
+  Average D_loss: -14.0405
+  Average G_loss: -5.0411
+
+Epoch [106/300]
+  Batch [0/31] D_loss: -23.4185, G_loss: 12.5230
+  Batch [10/31] D_loss: -16.4588, G_loss: 44.4735
+  Batch [20/31] D_loss: -23.3909, G_loss: -36.3000
+  Batch [30/31] D_loss: -16.6159, G_loss: -5.4742
+
+Epoch 106 Summary:
+  Average D_loss: -12.2260
+  Average G_loss: 1.7439
+
+Epoch [107/300]
+  Batch [0/31] D_loss: -17.9759, G_loss: 4.1268
+  Batch [10/31] D_loss: -29.1492, G_loss: -2.7643
+  Batch [20/31] D_loss: -41.6686, G_loss: -27.4022
+  Batch [30/31] D_loss: -35.3252, G_loss: 18.0471
+
+Epoch 107 Summary:
+  Average D_loss: -14.0297
+  Average G_loss: 2.2275
+
+Epoch [108/300]
+  Batch [0/31] D_loss: -32.6381, G_loss: 17.2120
+  Batch [10/31] D_loss: -27.6414, G_loss: 16.8361
+  Batch [20/31] D_loss: -34.5329, G_loss: 2.6500
+  Batch [30/31] D_loss: -39.3519, G_loss: 4.9545
+
+Epoch 108 Summary:
+  Average D_loss: -15.4394
+  Average G_loss: 15.5657
+
+Epoch [109/300]
+  Batch [0/31] D_loss: -36.7139, G_loss: -16.6170
+  Batch [10/31] D_loss: -39.7021, G_loss: 5.4801
+  Batch [20/31] D_loss: -22.3885, G_loss: -0.8978
+  Batch [30/31] D_loss: -21.1915, G_loss: -8.7030
+
+Epoch 109 Summary:
+  Average D_loss: -14.1049
+  Average G_loss: -3.4517
+
+Epoch [110/300]
+  Batch [0/31] D_loss: -31.0565, G_loss: -29.8652
+  Batch [10/31] D_loss: -29.4634, G_loss: 0.0441
+  Batch [20/31] D_loss: -24.1902, G_loss: 1.8910
+  Batch [30/31] D_loss: -39.3210, G_loss: 15.5977
+
+Epoch 110 Summary:
+  Average D_loss: -15.3415
+  Average G_loss: 6.9453
+
+Epoch [111/300]
+  Batch [0/31] D_loss: -37.7057, G_loss: 31.8706
+  Batch [10/31] D_loss: -32.1627, G_loss: 12.0652
+  Batch [20/31] D_loss: -30.8248, G_loss: -5.9670
+  Batch [30/31] D_loss: -20.8922, G_loss: 11.3035
+
+Epoch 111 Summary:
+  Average D_loss: -14.9252
+  Average G_loss: -0.9145
+
+Epoch [112/300]
+  Batch [0/31] D_loss: -25.6892, G_loss: -21.1003
+  Batch [10/31] D_loss: -28.5135, G_loss: 20.7649
+  Batch [20/31] D_loss: -30.1902, G_loss: 2.1674
+  Batch [30/31] D_loss: -38.0637, G_loss: -2.5149
+
+Epoch 112 Summary:
+  Average D_loss: -14.2549
+  Average G_loss: 10.0708
+
+Epoch [113/300]
+  Batch [0/31] D_loss: -40.5067, G_loss: 5.4121
+  Batch [10/31] D_loss: -30.2592, G_loss: -20.2742
+  Batch [20/31] D_loss: -32.4736, G_loss: 27.9008
+  Batch [30/31] D_loss: -26.7604, G_loss: -5.2329
+
+Epoch 113 Summary:
+  Average D_loss: -14.4649
+  Average G_loss: -1.9017
+
+Epoch [114/300]
+  Batch [0/31] D_loss: -33.6860, G_loss: -4.7404
+  Batch [10/31] D_loss: -34.9109, G_loss: -14.6277
+  Batch [20/31] D_loss: -32.7745, G_loss: 6.9841
+  Batch [30/31] D_loss: -22.0001, G_loss: 4.2616
+
+Epoch 114 Summary:
+  Average D_loss: -16.2194
+  Average G_loss: 4.3018
+
+Epoch [115/300]
+  Batch [0/31] D_loss: -32.7851, G_loss: -7.5572
+  Batch [10/31] D_loss: -32.1176, G_loss: 25.1099
+  Batch [20/31] D_loss: -29.6237, G_loss: -23.0665
+  Batch [30/31] D_loss: -29.0986, G_loss: 9.1718
+
+Epoch 115 Summary:
+  Average D_loss: -15.2543
+  Average G_loss: 4.9631
+
+Epoch [116/300]
+  Batch [0/31] D_loss: -30.3070, G_loss: 18.0600
+  Batch [10/31] D_loss: -38.7625, G_loss: 21.8226
+  Batch [20/31] D_loss: -21.5721, G_loss: -33.3193
+  Batch [30/31] D_loss: -38.4376, G_loss: 39.9916
+
+Epoch 116 Summary:
+  Average D_loss: -14.3111
+  Average G_loss: -3.9420
+
+Epoch [117/300]
+  Batch [0/31] D_loss: -30.1255, G_loss: 36.4218
+  Batch [10/31] D_loss: -47.9114, G_loss: -10.7724
+  Batch [20/31] D_loss: -24.8054, G_loss: -32.7818
+  Batch [30/31] D_loss: -34.2483, G_loss: 25.6637
+
+Epoch 117 Summary:
+  Average D_loss: -14.7443
+  Average G_loss: 6.6703
+
+Epoch [118/300]
+  Batch [0/31] D_loss: -33.6586, G_loss: 33.7400
+  Batch [10/31] D_loss: -21.6395, G_loss: -28.3143
+  Batch [20/31] D_loss: -28.2396, G_loss: -27.0483
+  Batch [30/31] D_loss: -40.5718, G_loss: 28.0028
+
+Epoch 118 Summary:
+  Average D_loss: -14.9817
+  Average G_loss: 0.5154
+
+Epoch [119/300]
+  Batch [0/31] D_loss: -44.7822, G_loss: 41.2158
+  Batch [10/31] D_loss: -30.6400, G_loss: -35.4200
+  Batch [20/31] D_loss: -15.0121, G_loss: 28.8773
+  Batch [30/31] D_loss: -36.4710, G_loss: 12.7416
+
+Epoch 119 Summary:
+  Average D_loss: -14.2745
+  Average G_loss: 5.3075
+
+Epoch [120/300]
+  Batch [0/31] D_loss: -37.5038, G_loss: 8.4802
+  Batch [10/31] D_loss: -21.7615, G_loss: -48.9502
+  Batch [20/31] D_loss: -34.4058, G_loss: -3.5177
+  Batch [30/31] D_loss: -38.0369, G_loss: 35.5696
+
+Epoch 120 Summary:
+  Average D_loss: -15.2393
+  Average G_loss: -1.8230
+
+Epoch [121/300]
+  Batch [0/31] D_loss: -32.7275, G_loss: 27.4902
+  Batch [10/31] D_loss: -46.5484, G_loss: -32.1471
+  Batch [20/31] D_loss: -34.0828, G_loss: 28.3017
+  Batch [30/31] D_loss: -28.9210, G_loss: 28.0236
+
+Epoch 121 Summary:
+  Average D_loss: -15.9995
+  Average G_loss: 2.3227
+
+Epoch [122/300]
+  Batch [0/31] D_loss: -33.3878, G_loss: 28.7229
+  Batch [10/31] D_loss: -33.5348, G_loss: -20.9955
+  Batch [20/31] D_loss: -32.5514, G_loss: 12.1518
+  Batch [30/31] D_loss: -42.4353, G_loss: -43.7876
+
+Epoch 122 Summary:
+  Average D_loss: -14.9535
+  Average G_loss: 1.4980
+
+Epoch [123/300]
+  Batch [0/31] D_loss: -27.5646, G_loss: -25.6188
+  Batch [10/31] D_loss: -32.4259, G_loss: 27.8853
+  Batch [20/31] D_loss: -31.6607, G_loss: 6.0401
+  Batch [30/31] D_loss: -38.3960, G_loss: 31.0649
+
+Epoch 123 Summary:
+  Average D_loss: -14.8543
+  Average G_loss: 6.4718
+
+Epoch [124/300]
+  Batch [0/31] D_loss: -32.6737, G_loss: 38.8699
+  Batch [10/31] D_loss: -45.0179, G_loss: -37.4865
+  Batch [20/31] D_loss: -30.4142, G_loss: -6.5320
+  Batch [30/31] D_loss: -28.3670, G_loss: -19.2319
+
+Epoch 124 Summary:
+  Average D_loss: -16.0141
+  Average G_loss: 0.1418
+
+Epoch [125/300]
+  Batch [0/31] D_loss: -32.5010, G_loss: -35.5744
+  Batch [10/31] D_loss: -37.9853, G_loss: -42.3461
+  Batch [20/31] D_loss: -37.0411, G_loss: -9.9466
+  Batch [30/31] D_loss: -48.6083, G_loss: -31.7915
+
+Epoch 125 Summary:
+  Average D_loss: -16.1720
+  Average G_loss: 6.9270
+
+Epoch [126/300]
+  Batch [0/31] D_loss: -26.3334, G_loss: 11.7555
+  Batch [10/31] D_loss: -32.3906, G_loss: 25.7014
+  Batch [20/31] D_loss: -36.1992, G_loss: 32.5404
+  Batch [30/31] D_loss: -38.6243, G_loss: 24.4746
+
+Epoch 126 Summary:
+  Average D_loss: -15.3397
+  Average G_loss: -1.0807
+
+Epoch [127/300]
+  Batch [0/31] D_loss: -29.9486, G_loss: 26.5759
+  Batch [10/31] D_loss: -41.0267, G_loss: 7.8872
+  Batch [20/31] D_loss: -27.8696, G_loss: 3.7783
+  Batch [30/31] D_loss: -39.7952, G_loss: 23.5364
+
+Epoch 127 Summary:
+  Average D_loss: -15.9898
+  Average G_loss: 5.0110
+
+Epoch [128/300]
+  Batch [0/31] D_loss: -31.8750, G_loss: 31.0372
+  Batch [10/31] D_loss: -48.6470, G_loss: -25.1855
+  Batch [20/31] D_loss: -34.4323, G_loss: -23.1881
+  Batch [30/31] D_loss: -33.7623, G_loss: 29.8591
+
+Epoch 128 Summary:
+  Average D_loss: -15.7058
+  Average G_loss: -4.0898
+
+Epoch [129/300]
+  Batch [0/31] D_loss: -36.0000, G_loss: 42.9929
+  Batch [10/31] D_loss: -39.8118, G_loss: -7.4962
+  Batch [20/31] D_loss: -46.5687, G_loss: -44.2036
+  Batch [30/31] D_loss: -30.5051, G_loss: -21.5359
+
+Epoch 129 Summary:
+  Average D_loss: -14.9243
+  Average G_loss: 5.5796
+
+Epoch [130/300]
+  Batch [0/31] D_loss: -38.6145, G_loss: -1.6973
+  Batch [10/31] D_loss: -27.2704, G_loss: 26.1559
+  Batch [20/31] D_loss: -27.4774, G_loss: -16.6851
+  Batch [30/31] D_loss: -46.4863, G_loss: 50.6801
+
+Epoch 130 Summary:
+  Average D_loss: -16.6289
+  Average G_loss: 0.5415
+
+Epoch [131/300]
+  Batch [0/31] D_loss: -32.0110, G_loss: 42.0067
+  Batch [10/31] D_loss: -21.1122, G_loss: -45.4730
+  Batch [20/31] D_loss: -28.4350, G_loss: 18.6544
+  Batch [30/31] D_loss: -28.0531, G_loss: 21.1139
+
+Epoch 131 Summary:
+  Average D_loss: -12.1786
+  Average G_loss: 3.4874
+
+Epoch [132/300]
+  Batch [0/31] D_loss: -16.8279, G_loss: 5.8537
+  Batch [10/31] D_loss: -39.5902, G_loss: -37.2015
+  Batch [20/31] D_loss: -29.3114, G_loss: 10.1097
+  Batch [30/31] D_loss: -27.7619, G_loss: 14.0551
+
+Epoch 132 Summary:
+  Average D_loss: -13.9733
+  Average G_loss: -0.8834
+
+Epoch [133/300]
+  Batch [0/31] D_loss: -28.4396, G_loss: 19.3839
+  Batch [10/31] D_loss: -52.4708, G_loss: -43.1175
+  Batch [20/31] D_loss: -22.4064, G_loss: -14.9117
+  Batch [30/31] D_loss: -16.8554, G_loss: 18.6791
+
+Epoch 133 Summary:
+  Average D_loss: -13.7195
+  Average G_loss: 6.1870
+
+Epoch [134/300]
+  Batch [0/31] D_loss: -24.9947, G_loss: -7.5286
+  Batch [10/31] D_loss: -30.6814, G_loss: -16.9938
+  Batch [20/31] D_loss: -29.0367, G_loss: 43.6386
+  Batch [30/31] D_loss: -22.0088, G_loss: 0.4928
+
+Epoch 134 Summary:
+  Average D_loss: -12.3442
+  Average G_loss: 2.4631
+
+Epoch [135/300]
+  Batch [0/31] D_loss: -31.2445, G_loss: -13.4986
+  Batch [10/31] D_loss: -20.0941, G_loss: -2.6413
+  Batch [20/31] D_loss: -27.2307, G_loss: 3.0191
+  Batch [30/31] D_loss: -26.9426, G_loss: 18.9623
+
+Epoch 135 Summary:
+  Average D_loss: -11.1898
+  Average G_loss: 0.4627
+
+Epoch [136/300]
+  Batch [0/31] D_loss: -29.8881, G_loss: 6.9479
+  Batch [10/31] D_loss: -24.3980, G_loss: -30.7821
+  Batch [20/31] D_loss: -28.7359, G_loss: 34.9041
+  Batch [30/31] D_loss: -33.4052, G_loss: 21.7759
+
+Epoch 136 Summary:
+  Average D_loss: -11.9341
+  Average G_loss: 3.2654
+
+Epoch [137/300]
+  Batch [0/31] D_loss: -29.7637, G_loss: 23.3830
+  Batch [10/31] D_loss: -29.6423, G_loss: 27.9245
+  Batch [20/31] D_loss: -32.4210, G_loss: -6.5907
+  Batch [30/31] D_loss: -39.7214, G_loss: 25.0671
+
+Epoch 137 Summary:
+  Average D_loss: -14.8405
+  Average G_loss: -2.0812
+
+Epoch [138/300]
+  Batch [0/31] D_loss: -29.7181, G_loss: 25.4044
+  Batch [10/31] D_loss: -34.6481, G_loss: 8.3993
+  Batch [20/31] D_loss: -31.1072, G_loss: -10.7092
+  Batch [30/31] D_loss: -24.6969, G_loss: -33.1180
+
+Epoch 138 Summary:
+  Average D_loss: -16.6781
+  Average G_loss: 2.1343
+
+Epoch [139/300]
+  Batch [0/31] D_loss: -27.2984, G_loss: -7.6560
+  Batch [10/31] D_loss: -39.9967, G_loss: 34.5450
+  Batch [20/31] D_loss: -25.6040, G_loss: -29.5084
+  Batch [30/31] D_loss: -27.4208, G_loss: -7.8830
+
+Epoch 139 Summary:
+  Average D_loss: -14.5742
+  Average G_loss: -0.1348
+
+Epoch [140/300]
+  Batch [0/31] D_loss: -31.7685, G_loss: 3.6049
+  Batch [10/31] D_loss: -43.2374, G_loss: 15.9537
+  Batch [20/31] D_loss: -31.8622, G_loss: -35.7909
+  Batch [30/31] D_loss: -46.2256, G_loss: 46.4200
+
+Epoch 140 Summary:
+  Average D_loss: -18.5434
+  Average G_loss: 5.7475
+
+Epoch [141/300]
+  Batch [0/31] D_loss: -32.0087, G_loss: 34.5749
+  Batch [10/31] D_loss: -44.2458, G_loss: -12.8919
+  Batch [20/31] D_loss: -38.3826, G_loss: -48.1708
+  Batch [30/31] D_loss: -38.4820, G_loss: 32.1549
+
+Epoch 141 Summary:
+  Average D_loss: -14.9937
+  Average G_loss: -0.5228
+
+Epoch [142/300]
+  Batch [0/31] D_loss: -34.3767, G_loss: 23.3239
+  Batch [10/31] D_loss: -38.9879, G_loss: -11.2079
+  Batch [20/31] D_loss: -27.9676, G_loss: -36.6898
+  Batch [30/31] D_loss: -37.0894, G_loss: 3.3462
+
+Epoch 142 Summary:
+  Average D_loss: -16.2239
+  Average G_loss: 2.5473
+
+Epoch [143/300]
+  Batch [0/31] D_loss: -29.2808, G_loss: 7.8045
+  Batch [10/31] D_loss: -42.4199, G_loss: 37.7066
+  Batch [20/31] D_loss: -37.4778, G_loss: 2.6877
+  Batch [30/31] D_loss: -43.2131, G_loss: -10.1603
+
+Epoch 143 Summary:
+  Average D_loss: -14.9556
+  Average G_loss: 4.1753
+
+Epoch [144/300]
+  Batch [0/31] D_loss: -51.1377, G_loss: -30.2564
+  Batch [10/31] D_loss: -44.8260, G_loss: 41.6416
+  Batch [20/31] D_loss: -31.7751, G_loss: -31.1037
+  Batch [30/31] D_loss: -33.4382, G_loss: 23.4745
+
+Epoch 144 Summary:
+  Average D_loss: -18.2041
+  Average G_loss: -2.1539
+
+Epoch [145/300]
+  Batch [0/31] D_loss: -28.9250, G_loss: 37.2511
+  Batch [10/31] D_loss: -34.1513, G_loss: -17.8939
+  Batch [20/31] D_loss: -25.7014, G_loss: -19.7576
+  Batch [30/31] D_loss: -31.1486, G_loss: -2.5231
+
+Epoch 145 Summary:
+  Average D_loss: -13.2957
+  Average G_loss: 3.1091
+
+Epoch [146/300]
+  Batch [0/31] D_loss: -37.8295, G_loss: 13.8956
+  Batch [10/31] D_loss: -34.0069, G_loss: -3.1113
+  Batch [20/31] D_loss: -34.6965, G_loss: 42.5349
+  Batch [30/31] D_loss: -37.6869, G_loss: 7.3342
+
+Epoch 146 Summary:
+  Average D_loss: -16.5178
+  Average G_loss: 5.5717
+
+Epoch [147/300]
+  Batch [0/31] D_loss: -29.8770, G_loss: 7.7507
+  Batch [10/31] D_loss: -49.9057, G_loss: -5.3762
+  Batch [20/31] D_loss: -29.2973, G_loss: 18.3587
+  Batch [30/31] D_loss: -34.0128, G_loss: 4.3321
+
+Epoch 147 Summary:
+  Average D_loss: -15.8722
+  Average G_loss: 0.3302
+
+Epoch [148/300]
+  Batch [0/31] D_loss: -37.5723, G_loss: 6.2990
+  Batch [10/31] D_loss: -36.2850, G_loss: -11.6249
+  Batch [20/31] D_loss: -36.9296, G_loss: -34.0197
+  Batch [30/31] D_loss: -51.5678, G_loss: 45.0221
+
+Epoch 148 Summary:
+  Average D_loss: -17.5254
+  Average G_loss: 0.4144
+
+Epoch [149/300]
+  Batch [0/31] D_loss: -18.9655, G_loss: 5.7239
+  Batch [10/31] D_loss: -34.0325, G_loss: 22.9640
+  Batch [20/31] D_loss: -26.7868, G_loss: -15.1934
+  Batch [30/31] D_loss: -38.3650, G_loss: -21.2964
+
+Epoch 149 Summary:
+  Average D_loss: -15.1859
+  Average G_loss: -2.9319
+
+Epoch [150/300]
+  Batch [0/31] D_loss: -26.5030, G_loss: -6.2165
+  Batch [10/31] D_loss: -30.8573, G_loss: 29.3729
+  Batch [20/31] D_loss: -34.2363, G_loss: 10.6274
+  Batch [30/31] D_loss: -44.6419, G_loss: -19.7780
+
+Epoch 150 Summary:
+  Average D_loss: -15.4177
+  Average G_loss: 9.7470
+
+Epoch [151/300]
+  Batch [0/31] D_loss: -38.3854, G_loss: -25.4829
+  Batch [10/31] D_loss: -30.9981, G_loss: 2.8475
+  Batch [20/31] D_loss: -24.1803, G_loss: 43.9046
+  Batch [30/31] D_loss: -39.6322, G_loss: -29.1867
+
+Epoch 151 Summary:
+  Average D_loss: -17.1816
+  Average G_loss: 2.9655
+
+Models saved at epoch 151:
+Generator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_140816_dataset/generator_20250112_140816_dataset.pt
+Discriminator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_140816_dataset/discriminator_20250112_140816_dataset.pt
+
+Epoch [152/300]
+  Batch [0/31] D_loss: -40.4252, G_loss: -34.0845
+  Batch [10/31] D_loss: -40.3378, G_loss: 46.9775
+  Batch [20/31] D_loss: -25.6030, G_loss: 14.8493
+  Batch [30/31] D_loss: -23.2965, G_loss: 4.5958
+
+Epoch 152 Summary:
+  Average D_loss: -15.5505
+  Average G_loss: -1.7459
+
+Epoch [153/300]
+  Batch [0/31] D_loss: -31.7288, G_loss: -27.5107
+  Batch [10/31] D_loss: -37.0097, G_loss: -17.6332
+  Batch [20/31] D_loss: -20.2976, G_loss: -6.2040
+  Batch [30/31] D_loss: -22.6963, G_loss: 11.1968
+
+Epoch 153 Summary:
+  Average D_loss: -15.0442
+  Average G_loss: -0.6009
+
+Epoch [154/300]
+  Batch [0/31] D_loss: -33.6775, G_loss: -17.2224
+  Batch [10/31] D_loss: -34.7950, G_loss: -4.6246
+  Batch [20/31] D_loss: -29.3280, G_loss: 13.6153
+  Batch [30/31] D_loss: -35.0321, G_loss: -49.6691
+
+Epoch 154 Summary:
+  Average D_loss: -17.7523
+  Average G_loss: 2.1858
+
+Epoch [155/300]
+  Batch [0/31] D_loss: -39.0682, G_loss: -50.0867
+  Batch [10/31] D_loss: -29.9212, G_loss: 21.2127
+  Batch [20/31] D_loss: -30.2757, G_loss: 4.2171
+  Batch [30/31] D_loss: -32.0932, G_loss: 4.3524
+
+Epoch 155 Summary:
+  Average D_loss: -15.4556
+  Average G_loss: 4.7591
+
+Epoch [156/300]
+  Batch [0/31] D_loss: -37.5988, G_loss: -7.9363
+  Batch [10/31] D_loss: -32.7626, G_loss: 3.9707
+  Batch [20/31] D_loss: -28.3492, G_loss: -13.5284
+  Batch [30/31] D_loss: -32.9235, G_loss: -15.9785
+
+Epoch 156 Summary:
+  Average D_loss: -16.1810
+  Average G_loss: 0.0865
+
+Epoch [157/300]
+  Batch [0/31] D_loss: -27.9393, G_loss: -25.8842
+  Batch [10/31] D_loss: -29.7150, G_loss: 23.0511
+  Batch [20/31] D_loss: -45.9132, G_loss: -58.3069
+  Batch [30/31] D_loss: -33.0872, G_loss: 28.8674
+
+Epoch 157 Summary:
+  Average D_loss: -15.2318
+  Average G_loss: -0.5149
+
+Epoch [158/300]
+  Batch [0/31] D_loss: -34.4240, G_loss: 37.8755
+  Batch [10/31] D_loss: -36.1152, G_loss: -15.7054
+  Batch [20/31] D_loss: -32.1152, G_loss: 10.7103
+  Batch [30/31] D_loss: -39.5828, G_loss: 22.9024
+
+Epoch 158 Summary:
+  Average D_loss: -15.1459
+  Average G_loss: 5.5674
+
+Epoch [159/300]
+  Batch [0/31] D_loss: -46.6428, G_loss: 14.2208
+  Batch [10/31] D_loss: -43.6611, G_loss: -19.7391
+  Batch [20/31] D_loss: -21.9109, G_loss: 7.9893
+  Batch [30/31] D_loss: -44.9499, G_loss: -7.7862
+
+Epoch 159 Summary:
+  Average D_loss: -16.9292
+  Average G_loss: 0.7866
+
+Epoch [160/300]
+  Batch [0/31] D_loss: -29.2818, G_loss: -9.5213
+  Batch [10/31] D_loss: -49.8074, G_loss: -18.7093
+  Batch [20/31] D_loss: -32.7706, G_loss: -15.3190
+  Batch [30/31] D_loss: -30.4717, G_loss: 17.4638
+
+Epoch 160 Summary:
+  Average D_loss: -16.3886
+  Average G_loss: 1.0580
+
+Epoch [161/300]
+  Batch [0/31] D_loss: -39.8476, G_loss: -12.9431
+  Batch [10/31] D_loss: -32.5762, G_loss: 29.3506
+  Batch [20/31] D_loss: -21.8109, G_loss: 3.1954
+  Batch [30/31] D_loss: -36.1993, G_loss: 10.1938
+
+Epoch 161 Summary:
+  Average D_loss: -16.4852
+  Average G_loss: 1.1008
+
+Epoch [162/300]
+  Batch [0/31] D_loss: -40.1888, G_loss: -1.9252
+  Batch [10/31] D_loss: -27.6906, G_loss: 12.7006
+  Batch [20/31] D_loss: -35.2641, G_loss: -15.0430
+  Batch [30/31] D_loss: -43.8994, G_loss: -19.0336
+
+Epoch 162 Summary:
+  Average D_loss: -16.0805
+  Average G_loss: -0.0835
+
+Epoch [163/300]
+  Batch [0/31] D_loss: -34.1033, G_loss: -24.0779
+  Batch [10/31] D_loss: -39.8112, G_loss: 41.8290
+  Batch [20/31] D_loss: -26.9560, G_loss: -28.8887
+  Batch [30/31] D_loss: -49.1084, G_loss: -15.3280
+
+Epoch 163 Summary:
+  Average D_loss: -15.9047
+  Average G_loss: 1.1365
+
+Epoch [164/300]
+  Batch [0/31] D_loss: -43.4904, G_loss: -29.9135
+  Batch [10/31] D_loss: -33.7693, G_loss: 39.8159
+  Batch [20/31] D_loss: -24.4914, G_loss: 19.6941
+  Batch [30/31] D_loss: -33.5995, G_loss: -9.4996
+
+Epoch 164 Summary:
+  Average D_loss: -15.3231
+  Average G_loss: -0.7319
+
+Epoch [165/300]
+  Batch [0/31] D_loss: -44.1322, G_loss: -17.6591
+  Batch [10/31] D_loss: -48.6792, G_loss: 55.9268
+  Batch [20/31] D_loss: -26.0197, G_loss: -3.5867
+  Batch [30/31] D_loss: -36.3609, G_loss: 3.2286
+
+Epoch 165 Summary:
+  Average D_loss: -15.6567
+  Average G_loss: 10.2702
+
+Epoch [166/300]
+  Batch [0/31] D_loss: -38.6860, G_loss: -1.9856
+  Batch [10/31] D_loss: -33.7913, G_loss: 11.1351
+  Batch [20/31] D_loss: -28.4526, G_loss: -19.2959
+  Batch [30/31] D_loss: -32.2595, G_loss: -6.9609
+
+Epoch 166 Summary:
+  Average D_loss: -17.0121
+  Average G_loss: -6.7493
+
+Epoch [167/300]
+  Batch [0/31] D_loss: -28.6057, G_loss: 10.8565
+  Batch [10/31] D_loss: -36.6593, G_loss: 29.8451
+  Batch [20/31] D_loss: -35.0558, G_loss: -18.5772
+  Batch [30/31] D_loss: -36.2941, G_loss: -20.4989
+
+Epoch 167 Summary:
+  Average D_loss: -16.0146
+  Average G_loss: 1.4280
+
+Epoch [168/300]
+  Batch [0/31] D_loss: -37.8086, G_loss: -19.9768
+  Batch [10/31] D_loss: -32.1777, G_loss: 11.3752
+  Batch [20/31] D_loss: -32.1012, G_loss: 5.7164
+  Batch [30/31] D_loss: -25.6392, G_loss: -21.1195
+
+Epoch 168 Summary:
+  Average D_loss: -15.7988
+  Average G_loss: 10.5043
+
+Epoch [169/300]
+  Batch [0/31] D_loss: -22.6040, G_loss: -13.9770
+  Batch [10/31] D_loss: -41.5473, G_loss: -27.7678
+  Batch [20/31] D_loss: -34.9241, G_loss: -15.7259
+  Batch [30/31] D_loss: -33.6317, G_loss: 17.4348
+
+Epoch 169 Summary:
+  Average D_loss: -14.0740
+  Average G_loss: 4.1723
+
+Epoch [170/300]
+  Batch [0/31] D_loss: -27.5139, G_loss: 22.7251
+  Batch [10/31] D_loss: -30.7063, G_loss: -3.9703
+  Batch [20/31] D_loss: -28.0460, G_loss: -11.1572
+  Batch [30/31] D_loss: -28.7978, G_loss: 12.9746
+
+Epoch 170 Summary:
+  Average D_loss: -15.6486
+  Average G_loss: 1.5659
+
+Epoch [171/300]
+  Batch [0/31] D_loss: -30.9790, G_loss: 0.5358
+  Batch [10/31] D_loss: -37.3450, G_loss: 34.2679
+  Batch [20/31] D_loss: -32.1176, G_loss: 5.5539
+  Batch [30/31] D_loss: -34.0251, G_loss: -21.9059
+
+Epoch 171 Summary:
+  Average D_loss: -16.3172
+  Average G_loss: 1.8072
+
+Epoch [172/300]
+  Batch [0/31] D_loss: -23.5168, G_loss: -18.4547
+  Batch [10/31] D_loss: -33.3131, G_loss: 21.3338
+  Batch [20/31] D_loss: -40.6799, G_loss: 35.8101
+  Batch [30/31] D_loss: -43.6614, G_loss: -38.0369
+
+Epoch 172 Summary:
+  Average D_loss: -16.9210
+  Average G_loss: 1.0457
+
+Epoch [173/300]
+  Batch [0/31] D_loss: -41.0288, G_loss: -30.8308
+  Batch [10/31] D_loss: -21.8743, G_loss: 27.1696
+  Batch [20/31] D_loss: -34.6185, G_loss: 13.6274
+  Batch [30/31] D_loss: -34.1785, G_loss: 23.3765
+
+Epoch 173 Summary:
+  Average D_loss: -15.4816
+  Average G_loss: 1.6018
+
+Epoch [174/300]
+  Batch [0/31] D_loss: -34.2790, G_loss: 9.6433
+  Batch [10/31] D_loss: -41.5748, G_loss: -29.8295
+  Batch [20/31] D_loss: -29.0800, G_loss: 45.2740
+  Batch [30/31] D_loss: -27.5284, G_loss: 1.0859
+
+Epoch 174 Summary:
+  Average D_loss: -16.6915
+  Average G_loss: -3.3450
+
+Epoch [175/300]
+  Batch [0/31] D_loss: -30.1734, G_loss: 5.2137
+  Batch [10/31] D_loss: -42.4767, G_loss: -40.0168
+  Batch [20/31] D_loss: -36.9637, G_loss: 30.4810
+  Batch [30/31] D_loss: -43.7139, G_loss: -27.1787
+
+Epoch 175 Summary:
+  Average D_loss: -15.6737
+  Average G_loss: 7.3428
+
+Epoch [176/300]
+  Batch [0/31] D_loss: -37.5653, G_loss: -33.0410
+  Batch [10/31] D_loss: -32.4409, G_loss: -14.8624
+  Batch [20/31] D_loss: -37.4746, G_loss: 26.5396
+  Batch [30/31] D_loss: -38.3462, G_loss: 18.6520
+
+Epoch 176 Summary:
+  Average D_loss: -15.2132
+  Average G_loss: 0.1753
+
+Epoch [177/300]
+  Batch [0/31] D_loss: -28.1852, G_loss: 2.4482
+  Batch [10/31] D_loss: -35.8362, G_loss: -18.1279
+  Batch [20/31] D_loss: -32.8662, G_loss: -21.5803
+  Batch [30/31] D_loss: -35.1823, G_loss: 31.8168
+
+Epoch 177 Summary:
+  Average D_loss: -15.8334
+  Average G_loss: 0.5427
+
+Epoch [178/300]
+  Batch [0/31] D_loss: -26.8200, G_loss: 16.3283
+  Batch [10/31] D_loss: -41.2993, G_loss: 55.0467
+  Batch [20/31] D_loss: -38.1964, G_loss: 5.4648
+  Batch [30/31] D_loss: -17.8680, G_loss: -39.1219
+
+Epoch 178 Summary:
+  Average D_loss: -14.4186
+  Average G_loss: 2.4923
+
+Epoch [179/300]
+  Batch [0/31] D_loss: -28.3108, G_loss: -17.9594
+  Batch [10/31] D_loss: -27.5122, G_loss: -15.8196
+  Batch [20/31] D_loss: -35.6452, G_loss: -2.4800
+  Batch [30/31] D_loss: -36.0995, G_loss: -7.5333
+
+Epoch 179 Summary:
+  Average D_loss: -15.2506
+  Average G_loss: 0.2317
+
+Epoch [180/300]
+  Batch [0/31] D_loss: -42.8111, G_loss: 22.3601
+  Batch [10/31] D_loss: -40.9848, G_loss: 15.0315
+  Batch [20/31] D_loss: -30.5325, G_loss: -50.8629
+  Batch [30/31] D_loss: -44.4321, G_loss: 13.7379
+
+Epoch 180 Summary:
+  Average D_loss: -18.0932
+  Average G_loss: -6.3090
+
+Epoch [181/300]
+  Batch [0/31] D_loss: -36.3502, G_loss: 9.5356
+  Batch [10/31] D_loss: -30.5414, G_loss: 17.1587
+  Batch [20/31] D_loss: -27.1341, G_loss: -3.0017
+  Batch [30/31] D_loss: -40.0612, G_loss: 18.8644
+
+Epoch 181 Summary:
+  Average D_loss: -13.3668
+  Average G_loss: 9.0117
+
+Epoch [182/300]
+  Batch [0/31] D_loss: -40.4912, G_loss: 10.3346
+  Batch [10/31] D_loss: -32.4140, G_loss: 4.7426
+  Batch [20/31] D_loss: -39.2917, G_loss: 38.7581
+  Batch [30/31] D_loss: -37.3607, G_loss: -6.9615
+
+Epoch 182 Summary:
+  Average D_loss: -15.8465
+  Average G_loss: -0.3928
+
+Epoch [183/300]
+  Batch [0/31] D_loss: -35.4426, G_loss: -13.9183
+  Batch [10/31] D_loss: -38.4505, G_loss: 22.4194
+  Batch [20/31] D_loss: -29.4111, G_loss: -26.5625
+  Batch [30/31] D_loss: -36.0770, G_loss: 13.6008
+
+Epoch 183 Summary:
+  Average D_loss: -14.8451
+  Average G_loss: 2.5133
+
+Epoch [184/300]
+  Batch [0/31] D_loss: -27.2022, G_loss: 12.0393
+  Batch [10/31] D_loss: -32.4950, G_loss: 7.9525
+  Batch [20/31] D_loss: -27.6369, G_loss: -22.6362
+  Batch [30/31] D_loss: -37.2778, G_loss: -27.1697
+
+Epoch 184 Summary:
+  Average D_loss: -16.2150
+  Average G_loss: -4.1563
+
+Epoch [185/300]
+  Batch [0/31] D_loss: -26.5594, G_loss: 10.3681
+  Batch [10/31] D_loss: -47.2749, G_loss: 23.3923
+  Batch [20/31] D_loss: -42.1928, G_loss: -1.0118
+  Batch [30/31] D_loss: -33.0253, G_loss: 7.8772
+
+Epoch 185 Summary:
+  Average D_loss: -16.5008
+  Average G_loss: 4.0631
+
+Epoch [186/300]
+  Batch [0/31] D_loss: -49.7374, G_loss: 27.7554
+  Batch [10/31] D_loss: -38.6550, G_loss: 12.2785
+  Batch [20/31] D_loss: -27.0147, G_loss: -38.3940
+  Batch [30/31] D_loss: -46.5621, G_loss: 43.2613
+
+Epoch 186 Summary:
+  Average D_loss: -16.9053
+  Average G_loss: 6.3360
+
+Epoch [187/300]
+  Batch [0/31] D_loss: -33.8487, G_loss: -3.8116
+  Batch [10/31] D_loss: -39.3861, G_loss: -15.7260
+  Batch [20/31] D_loss: -21.0841, G_loss: -10.0087
+  Batch [30/31] D_loss: -32.8496, G_loss: 13.4285
+
+Epoch 187 Summary:
+  Average D_loss: -14.8656
+  Average G_loss: -1.8497
+
+Epoch [188/300]
+  Batch [0/31] D_loss: -34.1711, G_loss: 16.8326
+  Batch [10/31] D_loss: -31.1936, G_loss: -8.3923
+  Batch [20/31] D_loss: -30.3449, G_loss: 8.9562
+  Batch [30/31] D_loss: -39.0688, G_loss: -14.4630
+
+Epoch 188 Summary:
+  Average D_loss: -14.9958
+  Average G_loss: 6.4151
+
+Epoch [189/300]
+  Batch [0/31] D_loss: -32.6659, G_loss: -12.7604
+  Batch [10/31] D_loss: -29.3272, G_loss: -4.6248
+  Batch [20/31] D_loss: -39.7176, G_loss: 12.2124
+  Batch [30/31] D_loss: -29.0093, G_loss: -33.1697
+
+Epoch 189 Summary:
+  Average D_loss: -16.7620
+  Average G_loss: -4.0586
+
+Epoch [190/300]
+  Batch [0/31] D_loss: -31.7140, G_loss: -32.2496
+  Batch [10/31] D_loss: -25.2382, G_loss: 26.7395
+  Batch [20/31] D_loss: -30.1497, G_loss: -6.5561
+  Batch [30/31] D_loss: -30.0486, G_loss: 18.3214
+
+Epoch 190 Summary:
+  Average D_loss: -15.7121
+  Average G_loss: 4.3279
+
+Epoch [191/300]
+  Batch [0/31] D_loss: -33.3139, G_loss: 21.6231
+  Batch [10/31] D_loss: -36.3225, G_loss: -18.3616
+  Batch [20/31] D_loss: -31.0570, G_loss: -37.5201
+  Batch [30/31] D_loss: -33.1970, G_loss: 10.1882
+
+Epoch 191 Summary:
+  Average D_loss: -16.8472
+  Average G_loss: -0.1820
+
+Epoch [192/300]
+  Batch [0/31] D_loss: -38.6520, G_loss: -17.6527
+  Batch [10/31] D_loss: -26.9266, G_loss: 11.4359
+  Batch [20/31] D_loss: -18.3065, G_loss: -11.9521
+  Batch [30/31] D_loss: -36.0230, G_loss: 17.2567
+
+Epoch 192 Summary:
+  Average D_loss: -14.8053
+  Average G_loss: 3.7708
+
+Epoch [193/300]
+  Batch [0/31] D_loss: -36.7416, G_loss: 29.5481
+  Batch [10/31] D_loss: -31.6477, G_loss: -5.7465
+  Batch [20/31] D_loss: -32.5446, G_loss: 6.6767
+  Batch [30/31] D_loss: -33.3358, G_loss: -18.2158
+
+Epoch 193 Summary:
+  Average D_loss: -14.8088
+  Average G_loss: 0.2369
+
+Epoch [194/300]
+  Batch [0/31] D_loss: -39.6985, G_loss: -23.1343
+  Batch [10/31] D_loss: -33.8803, G_loss: 8.8949
+  Batch [20/31] D_loss: -35.2518, G_loss: 26.0191
+  Batch [30/31] D_loss: -41.3338, G_loss: -14.2966
+
+Epoch 194 Summary:
+  Average D_loss: -15.4781
+  Average G_loss: 6.8723
+
+Epoch [195/300]
+  Batch [0/31] D_loss: -28.2204, G_loss: -14.0731
+  Batch [10/31] D_loss: -42.3790, G_loss: 36.8071
+  Batch [20/31] D_loss: -48.4943, G_loss: 29.4472
+  Batch [30/31] D_loss: -35.4935, G_loss: -3.0286
+
+Epoch 195 Summary:
+  Average D_loss: -17.6038
+  Average G_loss: -3.7498
+
+Epoch [196/300]
+  Batch [0/31] D_loss: -39.1628, G_loss: -0.9625
+  Batch [10/31] D_loss: -31.6466, G_loss: 15.0215
+  Batch [20/31] D_loss: -52.2893, G_loss: 28.9270
+  Batch [30/31] D_loss: -32.0437, G_loss: -29.5630
+
+Epoch 196 Summary:
+  Average D_loss: -15.1358
+  Average G_loss: -1.9052
+
+Epoch [197/300]
+  Batch [0/31] D_loss: -31.3231, G_loss: 9.7510
+  Batch [10/31] D_loss: -33.7005, G_loss: -3.2230
+  Batch [20/31] D_loss: -26.7669, G_loss: 14.0464
+  Batch [30/31] D_loss: -36.4845, G_loss: -33.1091
+
+Epoch 197 Summary:
+  Average D_loss: -16.6033
+  Average G_loss: 1.6669
+
+Epoch [198/300]
+  Batch [0/31] D_loss: -24.9023, G_loss: -20.8834
+  Batch [10/31] D_loss: -44.7518, G_loss: 42.8780
+  Batch [20/31] D_loss: -46.2098, G_loss: -36.9516
+  Batch [30/31] D_loss: -29.8912, G_loss: 1.4718
+
+Epoch 198 Summary:
+  Average D_loss: -16.6134
+  Average G_loss: 5.9706
+
+Epoch [199/300]
+  Batch [0/31] D_loss: -28.0383, G_loss: 3.9784
+  Batch [10/31] D_loss: -39.1829, G_loss: 0.1821
+  Batch [20/31] D_loss: -32.7767, G_loss: 28.5482
+  Batch [30/31] D_loss: -40.9143, G_loss: 11.3607
+
+Epoch 199 Summary:
+  Average D_loss: -15.0777
+  Average G_loss: 4.3546
+
+Epoch [200/300]
+  Batch [0/31] D_loss: -43.0758, G_loss: -10.0027
+  Batch [10/31] D_loss: -32.3599, G_loss: 20.5827
+  Batch [20/31] D_loss: -21.6681, G_loss: -20.2744
+  Batch [30/31] D_loss: -36.9183, G_loss: -28.9598
+
+Epoch 200 Summary:
+  Average D_loss: -16.2744
+  Average G_loss: -5.1128
+
+Epoch [201/300]
+  Batch [0/31] D_loss: -39.8051, G_loss: -27.4875
+  Batch [10/31] D_loss: -35.2262, G_loss: 7.0885
+  Batch [20/31] D_loss: -35.4336, G_loss: -2.7494
+  Batch [30/31] D_loss: -29.7537, G_loss: 13.3022
+
+Epoch 201 Summary:
+  Average D_loss: -16.7502
+  Average G_loss: -1.2838
+
+Models saved at epoch 201:
+Generator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_141048_dataset/generator_20250112_141048_dataset.pt
+Discriminator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_141048_dataset/discriminator_20250112_141048_dataset.pt
+
+Epoch [202/300]
+  Batch [0/31] D_loss: -34.1917, G_loss: 27.0772
+  Batch [10/31] D_loss: -27.2943, G_loss: -8.1309
+  Batch [20/31] D_loss: -38.3245, G_loss: -28.0102
+  Batch [30/31] D_loss: -42.9631, G_loss: 1.8232
+
+Epoch 202 Summary:
+  Average D_loss: -14.9637
+  Average G_loss: 6.5090
+
+Epoch [203/300]
+  Batch [0/31] D_loss: -40.3255, G_loss: 29.4165
+  Batch [10/31] D_loss: -32.4429, G_loss: -20.1875
+  Batch [20/31] D_loss: -56.6161, G_loss: 52.6630
+  Batch [30/31] D_loss: -30.8224, G_loss: -40.4808
+
+Epoch 203 Summary:
+  Average D_loss: -17.8118
+  Average G_loss: 2.1847
+
+Epoch [204/300]
+  Batch [0/31] D_loss: -24.9116, G_loss: -55.1485
+  Batch [10/31] D_loss: -51.0042, G_loss: 44.4666
+  Batch [20/31] D_loss: -23.3741, G_loss: 45.2903
+  Batch [30/31] D_loss: -37.2718, G_loss: -3.6937
+
+Epoch 204 Summary:
+  Average D_loss: -13.4445
+  Average G_loss: 1.2486
+
+Epoch [205/300]
+  Batch [0/31] D_loss: -34.3539, G_loss: -22.3481
+  Batch [10/31] D_loss: -24.8791, G_loss: 2.5418
+  Batch [20/31] D_loss: -36.4324, G_loss: 6.6784
+  Batch [30/31] D_loss: -30.3926, G_loss: 2.8535
+
+Epoch 205 Summary:
+  Average D_loss: -15.7100
+  Average G_loss: 0.0897
+
+Epoch [206/300]
+  Batch [0/31] D_loss: -30.6218, G_loss: 8.6918
+  Batch [10/31] D_loss: -38.2206, G_loss: -15.6314
+  Batch [20/31] D_loss: -37.6874, G_loss: -16.8394
+  Batch [30/31] D_loss: -27.0845, G_loss: -0.9054
+
+Epoch 206 Summary:
+  Average D_loss: -17.0651
+  Average G_loss: -1.1152
+
+Epoch [207/300]
+  Batch [0/31] D_loss: -37.3313, G_loss: -28.7511
+  Batch [10/31] D_loss: -37.0307, G_loss: 44.7643
+  Batch [20/31] D_loss: -38.7411, G_loss: 37.8575
+  Batch [30/31] D_loss: -46.4856, G_loss: -56.5641
+
+Epoch 207 Summary:
+  Average D_loss: -18.6189
+  Average G_loss: -1.3424
+
+Epoch [208/300]
+  Batch [0/31] D_loss: -27.9378, G_loss: -33.3839
+  Batch [10/31] D_loss: -33.1084, G_loss: 25.3878
+  Batch [20/31] D_loss: -47.2329, G_loss: -84.2727
+  Batch [30/31] D_loss: -48.5765, G_loss: 41.7851
+
+Epoch 208 Summary:
+  Average D_loss: -16.8610
+  Average G_loss: -2.3029
+
+Epoch [209/300]
+  Batch [0/31] D_loss: -18.4646, G_loss: 36.0586
+  Batch [10/31] D_loss: -27.8496, G_loss: 25.4023
+  Batch [20/31] D_loss: -39.0467, G_loss: 6.3323
+  Batch [30/31] D_loss: -33.6007, G_loss: -58.9088
+
+Epoch 209 Summary:
+  Average D_loss: -15.8056
+  Average G_loss: -6.4266
+
+Epoch [210/300]
+  Batch [0/31] D_loss: -23.2556, G_loss: -7.1630
+  Batch [10/31] D_loss: -28.0936, G_loss: 37.9604
+  Batch [20/31] D_loss: -36.4025, G_loss: -32.9464
+  Batch [30/31] D_loss: -24.3850, G_loss: -14.1030
+
+Epoch 210 Summary:
+  Average D_loss: -13.3785
+  Average G_loss: 15.6320
+
+Epoch [211/300]
+  Batch [0/31] D_loss: -19.3618, G_loss: -9.0696
+  Batch [10/31] D_loss: -54.4587, G_loss: 30.1912
+  Batch [20/31] D_loss: -26.7084, G_loss: -22.0415
+  Batch [30/31] D_loss: -37.6800, G_loss: -36.6627
+
+Epoch 211 Summary:
+  Average D_loss: -16.0322
+  Average G_loss: -4.6773
+
+Epoch [212/300]
+  Batch [0/31] D_loss: -38.9691, G_loss: -7.2432
+  Batch [10/31] D_loss: -41.5322, G_loss: -3.8661
+  Batch [20/31] D_loss: -26.2005, G_loss: -28.4735
+  Batch [30/31] D_loss: -38.6167, G_loss: 35.4410
+
+Epoch 212 Summary:
+  Average D_loss: -16.4798
+  Average G_loss: 5.8893
+
+Epoch [213/300]
+  Batch [0/31] D_loss: -30.0444, G_loss: 20.9534
+  Batch [10/31] D_loss: -25.0426, G_loss: 22.7140
+  Batch [20/31] D_loss: -25.6326, G_loss: -15.9175
+  Batch [30/31] D_loss: -37.2773, G_loss: -7.6163
+
+Epoch 213 Summary:
+  Average D_loss: -14.8785
+  Average G_loss: -0.3041
+
+Epoch [214/300]
+  Batch [0/31] D_loss: -33.8688, G_loss: 36.7327
+  Batch [10/31] D_loss: -28.1705, G_loss: 17.8406
+  Batch [20/31] D_loss: -27.7830, G_loss: 6.0501
+  Batch [30/31] D_loss: -15.4860, G_loss: 35.6159
+
+Epoch 214 Summary:
+  Average D_loss: -14.8549
+  Average G_loss: 8.8154
+
+Epoch [215/300]
+  Batch [0/31] D_loss: -14.5632, G_loss: 11.8513
+  Batch [10/31] D_loss: -42.4677, G_loss: 15.5733
+  Batch [20/31] D_loss: -37.3520, G_loss: -66.5411
+  Batch [30/31] D_loss: -32.2994, G_loss: 40.2410
+
+Epoch 215 Summary:
+  Average D_loss: -16.6309
+  Average G_loss: -2.0848
+
+Epoch [216/300]
+  Batch [0/31] D_loss: -20.6648, G_loss: 14.8372
+  Batch [10/31] D_loss: -13.4249, G_loss: 3.7650
+  Batch [20/31] D_loss: -39.7168, G_loss: -36.8623
+  Batch [30/31] D_loss: -25.3644, G_loss: 23.8277
+
+Epoch 216 Summary:
+  Average D_loss: -14.4771
+  Average G_loss: -1.6345
+
+Epoch [217/300]
+  Batch [0/31] D_loss: -26.2256, G_loss: 4.0614
+  Batch [10/31] D_loss: -27.3142, G_loss: -9.0068
+  Batch [20/31] D_loss: -34.2094, G_loss: -10.3465
+  Batch [30/31] D_loss: -15.3101, G_loss: 21.4882
+
+Epoch 217 Summary:
+  Average D_loss: -15.3704
+  Average G_loss: 11.3647
+
+Epoch [218/300]
+  Batch [0/31] D_loss: -18.2138, G_loss: 15.3875
+  Batch [10/31] D_loss: -41.7311, G_loss: 23.0246
+  Batch [20/31] D_loss: -16.2298, G_loss: -86.0460
+  Batch [30/31] D_loss: -21.7949, G_loss: 1.7898
+
+Epoch 218 Summary:
+  Average D_loss: -10.3936
+  Average G_loss: -17.4039
+
+Epoch [219/300]
+  Batch [0/31] D_loss: -28.1085, G_loss: 16.4661
+  Batch [10/31] D_loss: -23.5040, G_loss: 7.0801
+  Batch [20/31] D_loss: -27.1581, G_loss: -27.1115
+  Batch [30/31] D_loss: -36.6243, G_loss: 35.4820
+
+Epoch 219 Summary:
+  Average D_loss: -14.8037
+  Average G_loss: 8.2966
+
+Epoch [220/300]
+  Batch [0/31] D_loss: -16.1877, G_loss: 33.2833
+  Batch [10/31] D_loss: -37.4012, G_loss: 13.1421
+  Batch [20/31] D_loss: -32.9386, G_loss: 1.3042
+  Batch [30/31] D_loss: -35.6328, G_loss: 14.4622
+
+Epoch 220 Summary:
+  Average D_loss: -13.7539
+  Average G_loss: 8.4735
+
+Epoch [221/300]
+  Batch [0/31] D_loss: -38.5655, G_loss: -5.5235
+  Batch [10/31] D_loss: -31.8614, G_loss: -6.0667
+  Batch [20/31] D_loss: -32.0843, G_loss: -19.8747
+  Batch [30/31] D_loss: -35.5735, G_loss: 17.9300
+
+Epoch 221 Summary:
+  Average D_loss: -16.4603
+  Average G_loss: 0.7892
+
+Epoch [222/300]
+  Batch [0/31] D_loss: -22.1357, G_loss: 15.0817
+  Batch [10/31] D_loss: -37.9593, G_loss: -11.3338
+  Batch [20/31] D_loss: -46.4287, G_loss: 40.8501
+  Batch [30/31] D_loss: -30.7786, G_loss: -18.8390
+
+Epoch 222 Summary:
+  Average D_loss: -17.8946
+  Average G_loss: 7.3902
+
+Epoch [223/300]
+  Batch [0/31] D_loss: -38.7100, G_loss: -34.2849
+  Batch [10/31] D_loss: -43.9816, G_loss: -30.7471
+  Batch [20/31] D_loss: -37.4817, G_loss: 1.9893
+  Batch [30/31] D_loss: -37.2354, G_loss: 3.9224
+
+Epoch 223 Summary:
+  Average D_loss: -15.6189
+  Average G_loss: -8.8759
+
+Epoch [224/300]
+  Batch [0/31] D_loss: -39.8763, G_loss: -2.2382
+  Batch [10/31] D_loss: -19.0468, G_loss: 53.6095
+  Batch [20/31] D_loss: -33.6766, G_loss: -3.5129
+  Batch [30/31] D_loss: -30.1512, G_loss: 0.0809
+
+Epoch 224 Summary:
+  Average D_loss: -16.6293
+  Average G_loss: 2.8048
+
+Epoch [225/300]
+  Batch [0/31] D_loss: -27.4545, G_loss: 0.5896
+  Batch [10/31] D_loss: -18.2413, G_loss: 10.5705
+  Batch [20/31] D_loss: -34.5759, G_loss: -7.2598
+  Batch [30/31] D_loss: -35.8174, G_loss: 47.4227
+
+Epoch 225 Summary:
+  Average D_loss: -14.8930
+  Average G_loss: 6.0336
+
+Epoch [226/300]
+  Batch [0/31] D_loss: -30.2323, G_loss: 24.6085
+  Batch [10/31] D_loss: -30.7694, G_loss: -3.3981
+  Batch [20/31] D_loss: -25.6429, G_loss: 10.2049
+  Batch [30/31] D_loss: -46.7160, G_loss: 24.8249
+
+Epoch 226 Summary:
+  Average D_loss: -15.3165
+  Average G_loss: 1.8329
+
+Epoch [227/300]
+  Batch [0/31] D_loss: -34.1816, G_loss: -0.6833
+  Batch [10/31] D_loss: -23.7945, G_loss: -14.6209
+  Batch [20/31] D_loss: -32.0083, G_loss: -20.2485
+  Batch [30/31] D_loss: -27.1387, G_loss: 10.4174
+
+Epoch 227 Summary:
+  Average D_loss: -15.8473
+  Average G_loss: 1.5178
+
+Epoch [228/300]
+  Batch [0/31] D_loss: -32.7476, G_loss: 11.5296
+  Batch [10/31] D_loss: -38.7843, G_loss: -23.3929
+  Batch [20/31] D_loss: -27.7269, G_loss: 2.8386
+  Batch [30/31] D_loss: -28.6636, G_loss: -17.4717
+
+Epoch 228 Summary:
+  Average D_loss: -14.9688
+  Average G_loss: 1.9524
+
+Epoch [229/300]
+  Batch [0/31] D_loss: -29.7406, G_loss: -21.3003
+  Batch [10/31] D_loss: -28.8632, G_loss: -13.1754
+  Batch [20/31] D_loss: -62.9192, G_loss: 65.1394
+  Batch [30/31] D_loss: -29.6041, G_loss: -21.9994
+
+Epoch 229 Summary:
+  Average D_loss: -16.5894
+  Average G_loss: -7.0913
+
+Epoch [230/300]
+  Batch [0/31] D_loss: -30.7455, G_loss: -19.3122
+  Batch [10/31] D_loss: -39.4425, G_loss: 30.9570
+  Batch [20/31] D_loss: -35.4363, G_loss: -56.0982
+  Batch [30/31] D_loss: -35.9591, G_loss: 32.8621
+
+Epoch 230 Summary:
+  Average D_loss: -14.7563
+  Average G_loss: -4.7348
+
+Epoch [231/300]
+  Batch [0/31] D_loss: -26.1483, G_loss: 42.3688
+  Batch [10/31] D_loss: -38.2216, G_loss: 51.7784
+  Batch [20/31] D_loss: -27.0231, G_loss: -52.8136
+  Batch [30/31] D_loss: -33.4020, G_loss: 16.6399
+
+Epoch 231 Summary:
+  Average D_loss: -13.9240
+  Average G_loss: 5.3148
+
+Epoch [232/300]
+  Batch [0/31] D_loss: -34.6547, G_loss: 34.3774
+  Batch [10/31] D_loss: -26.8664, G_loss: -10.1557
+  Batch [20/31] D_loss: -32.3391, G_loss: -0.0298
+  Batch [30/31] D_loss: -32.2258, G_loss: 8.9104
+
+Epoch 232 Summary:
+  Average D_loss: -12.9047
+  Average G_loss: 9.2374
+
+Epoch [233/300]
+  Batch [0/31] D_loss: -28.3204, G_loss: -9.7569
+  Batch [10/31] D_loss: -19.5168, G_loss: 8.4418
+  Batch [20/31] D_loss: -40.9178, G_loss: 16.9743
+  Batch [30/31] D_loss: -58.3607, G_loss: -44.8947
+
+Epoch 233 Summary:
+  Average D_loss: -16.6285
+  Average G_loss: -2.1198
+
+Epoch [234/300]
+  Batch [0/31] D_loss: -15.2148, G_loss: -10.7618
+  Batch [10/31] D_loss: -45.0941, G_loss: 8.3818
+  Batch [20/31] D_loss: -32.5803, G_loss: -20.0028
+  Batch [30/31] D_loss: -37.8853, G_loss: 33.5003
+
+Epoch 234 Summary:
+  Average D_loss: -15.0015
+  Average G_loss: 3.7427
+
+Epoch [235/300]
+  Batch [0/31] D_loss: -33.9408, G_loss: 8.4955
+  Batch [10/31] D_loss: -33.8175, G_loss: -18.0536
+  Batch [20/31] D_loss: -29.8886, G_loss: -6.2184
+  Batch [30/31] D_loss: -41.9629, G_loss: -9.7577
+
+Epoch 235 Summary:
+  Average D_loss: -15.5184
+  Average G_loss: -1.3184
+
+Epoch [236/300]
+  Batch [0/31] D_loss: -33.8039, G_loss: 6.2375
+  Batch [10/31] D_loss: -38.5543, G_loss: 16.5750
+  Batch [20/31] D_loss: -25.7897, G_loss: -13.8785
+  Batch [30/31] D_loss: -40.2010, G_loss: -4.1146
+
+Epoch 236 Summary:
+  Average D_loss: -17.2516
+  Average G_loss: 0.0445
+
+Epoch [237/300]
+  Batch [0/31] D_loss: -45.4282, G_loss: -48.9138
+  Batch [10/31] D_loss: -40.8771, G_loss: 44.4721
+  Batch [20/31] D_loss: -29.2875, G_loss: 16.0514
+  Batch [30/31] D_loss: -26.5936, G_loss: -34.6844
+
+Epoch 237 Summary:
+  Average D_loss: -16.1771
+  Average G_loss: 0.3382
+
+Epoch [238/300]
+  Batch [0/31] D_loss: -24.5552, G_loss: -19.9472
+  Batch [10/31] D_loss: -31.9683, G_loss: -17.2299
+  Batch [20/31] D_loss: -36.4150, G_loss: 10.3204
+  Batch [30/31] D_loss: -33.8183, G_loss: -16.1839
+
+Epoch 238 Summary:
+  Average D_loss: -14.6012
+  Average G_loss: 5.8232
+
+Epoch [239/300]
+  Batch [0/31] D_loss: -30.8862, G_loss: -0.7486
+  Batch [10/31] D_loss: -38.1581, G_loss: -42.4551
+  Batch [20/31] D_loss: -33.4254, G_loss: -11.1067
+  Batch [30/31] D_loss: -31.4403, G_loss: 13.7392
+
+Epoch 239 Summary:
+  Average D_loss: -16.3490
+  Average G_loss: -5.3641
+
+Epoch [240/300]
+  Batch [0/31] D_loss: -36.6619, G_loss: 30.1448
+  Batch [10/31] D_loss: -30.7430, G_loss: -16.4811
+  Batch [20/31] D_loss: -34.0072, G_loss: 3.5453
+  Batch [30/31] D_loss: -35.0985, G_loss: 6.1046
+
+Epoch 240 Summary:
+  Average D_loss: -17.0955
+  Average G_loss: 4.9080
+
+Epoch [241/300]
+  Batch [0/31] D_loss: -34.3510, G_loss: -12.1300
+  Batch [10/31] D_loss: -27.7810, G_loss: 29.2385
+  Batch [20/31] D_loss: -37.7831, G_loss: -23.5399
+  Batch [30/31] D_loss: -21.7893, G_loss: -9.9297
+
+Epoch 241 Summary:
+  Average D_loss: -15.2228
+  Average G_loss: -4.4688
+
+Epoch [242/300]
+  Batch [0/31] D_loss: -35.7162, G_loss: -28.6699
+  Batch [10/31] D_loss: -39.1049, G_loss: 32.1778
+  Batch [20/31] D_loss: -39.1285, G_loss: 30.1280
+  Batch [30/31] D_loss: -24.9164, G_loss: 10.7809
+
+Epoch 242 Summary:
+  Average D_loss: -16.9967
+  Average G_loss: 7.3251
+
+Epoch [243/300]
+  Batch [0/31] D_loss: -34.4040, G_loss: -12.3786
+  Batch [10/31] D_loss: -30.7489, G_loss: 15.5338
+  Batch [20/31] D_loss: -33.1266, G_loss: -20.9798
+  Batch [30/31] D_loss: -44.6994, G_loss: 19.8882
+
+Epoch 243 Summary:
+  Average D_loss: -14.8358
+  Average G_loss: -5.4344
+
+Epoch [244/300]
+  Batch [0/31] D_loss: -25.2500, G_loss: 41.0758
+  Batch [10/31] D_loss: -22.5787, G_loss: 12.1340
+  Batch [20/31] D_loss: -29.3193, G_loss: -11.9242
+  Batch [30/31] D_loss: -27.4778, G_loss: 12.5917
+
+Epoch 244 Summary:
+  Average D_loss: -13.5450
+  Average G_loss: 2.2466
+
+Epoch [245/300]
+  Batch [0/31] D_loss: -27.7898, G_loss: 31.1771
+  Batch [10/31] D_loss: -36.8307, G_loss: 20.5574
+  Batch [20/31] D_loss: -40.2008, G_loss: -7.8412
+  Batch [30/31] D_loss: -33.4164, G_loss: -5.9796
+
+Epoch 245 Summary:
+  Average D_loss: -17.1335
+  Average G_loss: 1.8949
+
+Epoch [246/300]
+  Batch [0/31] D_loss: -35.0516, G_loss: -40.8116
+  Batch [10/31] D_loss: -47.2692, G_loss: 47.8958
+  Batch [20/31] D_loss: -29.9156, G_loss: 10.4118
+  Batch [30/31] D_loss: -45.1876, G_loss: -30.3882
+
+Epoch 246 Summary:
+  Average D_loss: -15.2463
+  Average G_loss: 0.8151
+
+Epoch [247/300]
+  Batch [0/31] D_loss: -24.6664, G_loss: 3.5052
+  Batch [10/31] D_loss: -24.9278, G_loss: -4.4362
+  Batch [20/31] D_loss: -40.8623, G_loss: 39.9942
+  Batch [30/31] D_loss: -48.7583, G_loss: 38.8593
+
+Epoch 247 Summary:
+  Average D_loss: -17.0180
+  Average G_loss: -2.2150
+
+Epoch [248/300]
+  Batch [0/31] D_loss: -28.7245, G_loss: 14.5323
+  Batch [10/31] D_loss: -27.5779, G_loss: -4.2960
+  Batch [20/31] D_loss: -32.4030, G_loss: 35.2182
+  Batch [30/31] D_loss: -27.0166, G_loss: 2.6619
+
+Epoch 248 Summary:
+  Average D_loss: -16.1250
+  Average G_loss: -2.7212
+
+Epoch [249/300]
+  Batch [0/31] D_loss: -31.4461, G_loss: 0.0669
+  Batch [10/31] D_loss: -27.3633, G_loss: 1.9827
+  Batch [20/31] D_loss: -36.2264, G_loss: -18.3802
+  Batch [30/31] D_loss: -27.0756, G_loss: -4.7750
+
+Epoch 249 Summary:
+  Average D_loss: -16.0314
+  Average G_loss: -6.4273
+
+Epoch [250/300]
+  Batch [0/31] D_loss: -25.7009, G_loss: 5.3076
+  Batch [10/31] D_loss: -41.3630, G_loss: 48.8403
+  Batch [20/31] D_loss: -37.3949, G_loss: 36.2515
+  Batch [30/31] D_loss: -28.9818, G_loss: 30.2440
+
+Epoch 250 Summary:
+  Average D_loss: -14.3945
+  Average G_loss: 8.0017
+
+Epoch [251/300]
+  Batch [0/31] D_loss: -24.0623, G_loss: 17.9864
+  Batch [10/31] D_loss: -29.5208, G_loss: -2.1888
+  Batch [20/31] D_loss: -24.6663, G_loss: 1.4019
+  Batch [30/31] D_loss: -31.8546, G_loss: 31.4561
+
+Epoch 251 Summary:
+  Average D_loss: -13.5644
+  Average G_loss: 7.1784
+
+Models saved at epoch 251:
+Generator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_141316_dataset/generator_20250112_141316_dataset.pt
+Discriminator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/saved_models/run_20250112_141316_dataset/discriminator_20250112_141316_dataset.pt
+
+Epoch [252/300]
+  Batch [0/31] D_loss: -24.3676, G_loss: 18.8154
+  Batch [10/31] D_loss: -34.8914, G_loss: 3.8251
+  Batch [20/31] D_loss: -28.3759, G_loss: -17.1898
+  Batch [30/31] D_loss: -42.3818, G_loss: 26.6861
+
+Epoch 252 Summary:
+  Average D_loss: -14.9417
+  Average G_loss: -0.1050
+
+Epoch [253/300]
+  Batch [0/31] D_loss: -21.0375, G_loss: 0.0865
+  Batch [10/31] D_loss: -41.6879, G_loss: 29.9828
+  Batch [20/31] D_loss: -29.2332, G_loss: 32.8247
+  Batch [30/31] D_loss: -30.7833, G_loss: 15.2742
+
+Epoch 253 Summary:
+  Average D_loss: -16.6528
+  Average G_loss: 4.3617
+
+Epoch [254/300]
+  Batch [0/31] D_loss: -26.1320, G_loss: -0.8224
+  Batch [10/31] D_loss: -29.8831, G_loss: -55.3105
+  Batch [20/31] D_loss: -29.0587, G_loss: 9.7163
+  Batch [30/31] D_loss: -36.6679, G_loss: 21.1692
+
+Epoch 254 Summary:
+  Average D_loss: -14.9227
+  Average G_loss: 0.2193
+
+Epoch [255/300]
+  Batch [0/31] D_loss: -26.6688, G_loss: 26.5178
+  Batch [10/31] D_loss: -37.5433, G_loss: -29.4514
+  Batch [20/31] D_loss: -27.4783, G_loss: 1.1771
+  Batch [30/31] D_loss: -35.0296, G_loss: -5.8029
+
+Epoch 255 Summary:
+  Average D_loss: -15.6737
+  Average G_loss: -2.6442
+
+Epoch [256/300]
+  Batch [0/31] D_loss: -47.0278, G_loss: 31.2552
+  Batch [10/31] D_loss: -50.2386, G_loss: -41.2181
+  Batch [20/31] D_loss: -38.7041, G_loss: -10.7077
+  Batch [30/31] D_loss: -36.6039, G_loss: 32.4055
+
+Epoch 256 Summary:
+  Average D_loss: -17.7952
+  Average G_loss: -0.8431
+
+Epoch [257/300]
+  Batch [0/31] D_loss: -38.7093, G_loss: 40.0572
+  Batch [10/31] D_loss: -36.9540, G_loss: 19.7160
+  Batch [20/31] D_loss: -24.3481, G_loss: -15.2849
+  Batch [30/31] D_loss: -28.9242, G_loss: 53.8835
+
+Epoch 257 Summary:
+  Average D_loss: -17.8679
+  Average G_loss: 5.3302
+
+Epoch [258/300]
+  Batch [0/31] D_loss: -13.2494, G_loss: 6.6862
+  Batch [10/31] D_loss: -36.5527, G_loss: -19.7763
+  Batch [20/31] D_loss: -30.6039, G_loss: -39.1864
+  Batch [30/31] D_loss: -37.1235, G_loss: 38.4493
+
+Epoch 258 Summary:
+  Average D_loss: -16.7817
+  Average G_loss: 2.0074
+
+Epoch [259/300]
+  Batch [0/31] D_loss: -34.7690, G_loss: 44.4207
+  Batch [10/31] D_loss: -32.4352, G_loss: -29.8057
+  Batch [20/31] D_loss: -32.0739, G_loss: 2.3596
+  Batch [30/31] D_loss: -36.7072, G_loss: -41.9119
+
+Epoch 259 Summary:
+  Average D_loss: -14.3470
+  Average G_loss: 0.0858
+
+Epoch [260/300]
+  Batch [0/31] D_loss: -31.5175, G_loss: -46.1761
+  Batch [10/31] D_loss: -33.7302, G_loss: 23.2572
+  Batch [20/31] D_loss: -36.1613, G_loss: 32.8723
+  Batch [30/31] D_loss: -68.8494, G_loss: -54.0648
+
+Epoch 260 Summary:
+  Average D_loss: -16.5587
+  Average G_loss: -3.7368
+
+Epoch [261/300]
+  Batch [0/31] D_loss: -48.0388, G_loss: -72.6011
+  Batch [10/31] D_loss: -40.8460, G_loss: 83.2134
+  Batch [20/31] D_loss: -5.7470, G_loss: -50.2761
+  Batch [30/31] D_loss: -31.6708, G_loss: 22.2914
+
+Epoch 261 Summary:
+  Average D_loss: -14.4418
+  Average G_loss: -0.7028
+
+Epoch [262/300]
+  Batch [0/31] D_loss: -27.1106, G_loss: 20.3261
+  Batch [10/31] D_loss: -10.7782, G_loss: 8.8606
+  Batch [20/31] D_loss: -31.4813, G_loss: 1.8224
+  Batch [30/31] D_loss: -0.9332, G_loss: -55.9754
+
+Epoch 262 Summary:
+  Average D_loss: -13.6926
+  Average G_loss: -3.6949
+
+Epoch [263/300]
+  Batch [0/31] D_loss: -5.6853, G_loss: -39.0903
+  Batch [10/31] D_loss: -31.3677, G_loss: -0.6589
+  Batch [20/31] D_loss: -21.1409, G_loss: 22.2406
+  Batch [30/31] D_loss: -44.1854, G_loss: 3.4740
+
+Epoch 263 Summary:
+  Average D_loss: -10.4825
+  Average G_loss: 16.3919
+
+Epoch [264/300]
+  Batch [0/31] D_loss: -32.7955, G_loss: -6.1647
+  Batch [10/31] D_loss: -33.9196, G_loss: -21.8970
+  Batch [20/31] D_loss: -38.0806, G_loss: -33.0080
+  Batch [30/31] D_loss: -45.9309, G_loss: -49.7539
+
+Epoch 264 Summary:
+  Average D_loss: -16.5799
+  Average G_loss: -4.5974
+
+Epoch [265/300]
+  Batch [0/31] D_loss: -35.1641, G_loss: -27.9080
+  Batch [10/31] D_loss: -40.0932, G_loss: 43.2566
+  Batch [20/31] D_loss: -40.1357, G_loss: -24.4260
+  Batch [30/31] D_loss: -26.2909, G_loss: 24.1261
+
+Epoch 265 Summary:
+  Average D_loss: -16.8716
+  Average G_loss: -4.6925
+
+Epoch [266/300]
+  Batch [0/31] D_loss: -36.0194, G_loss: 13.6077
+  Batch [10/31] D_loss: -33.7527, G_loss: -11.7251
+  Batch [20/31] D_loss: -34.0955, G_loss: 3.5260
+  Batch [30/31] D_loss: -27.0877, G_loss: -9.3895
+
+Epoch 266 Summary:
+  Average D_loss: -14.3924
+  Average G_loss: 2.9626
+
+Epoch [267/300]
+  Batch [0/31] D_loss: -32.1659, G_loss: -18.0938
+  Batch [10/31] D_loss: -39.9361, G_loss: 26.6523
+  Batch [20/31] D_loss: -36.8382, G_loss: 25.1913
+  Batch [30/31] D_loss: -35.0145, G_loss: -16.1615
+
+Epoch 267 Summary:
+  Average D_loss: -16.5080
+  Average G_loss: -0.0055
+
+Epoch [268/300]
+  Batch [0/31] D_loss: -26.0222, G_loss: -35.7414
+  Batch [10/31] D_loss: -32.9545, G_loss: 30.5457
+  Batch [20/31] D_loss: -28.9571, G_loss: -6.6427
+  Batch [30/31] D_loss: -41.9354, G_loss: -16.7169
+
+Epoch 268 Summary:
+  Average D_loss: -15.0013
+  Average G_loss: 3.6212
+
+Epoch [269/300]
+  Batch [0/31] D_loss: -35.6137, G_loss: -13.6377
+  Batch [10/31] D_loss: -37.3716, G_loss: 35.0482
+  Batch [20/31] D_loss: -23.5727, G_loss: -76.7740
+  Batch [30/31] D_loss: -33.4543, G_loss: 16.7469
+
+Epoch 269 Summary:
+  Average D_loss: -14.0812
+  Average G_loss: -6.6431
+
+Epoch [270/300]
+  Batch [0/31] D_loss: -37.3340, G_loss: 29.7160
+  Batch [10/31] D_loss: 2.6832, G_loss: 7.3584
+  Batch [20/31] D_loss: -48.0545, G_loss: -20.1813
+  Batch [30/31] D_loss: -24.4226, G_loss: -42.3513
+
+Epoch 270 Summary:
+  Average D_loss: -12.0920
+  Average G_loss: 4.5801
+
+Epoch [271/300]
+  Batch [0/31] D_loss: -24.2338, G_loss: -7.2347
+  Batch [10/31] D_loss: -39.6181, G_loss: 24.5104
+  Batch [20/31] D_loss: -24.3636, G_loss: -1.6496
+  Batch [30/31] D_loss: -37.1790, G_loss: -17.9606
+
+Epoch 271 Summary:
+  Average D_loss: -14.0824
+  Average G_loss: 7.0909
+
+Epoch [272/300]
+  Batch [0/31] D_loss: -38.5618, G_loss: 11.8238
+  Batch [10/31] D_loss: -49.9712, G_loss: -64.9876
+  Batch [20/31] D_loss: -59.7781, G_loss: 52.7851
+  Batch [30/31] D_loss: -17.2678, G_loss: 9.7486
+
+Epoch 272 Summary:
+  Average D_loss: -14.7446
+  Average G_loss: 0.1734
+
+Epoch [273/300]
+  Batch [0/31] D_loss: -11.8139, G_loss: 10.6814
+  Batch [10/31] D_loss: -36.1385, G_loss: 9.8491
+  Batch [20/31] D_loss: -21.2283, G_loss: -26.3445
+  Batch [30/31] D_loss: -34.2343, G_loss: 12.6242
+
+Epoch 273 Summary:
+  Average D_loss: -15.6494
+  Average G_loss: -6.2741
+
+Epoch [274/300]
+  Batch [0/31] D_loss: -33.7888, G_loss: -20.6666
+  Batch [10/31] D_loss: -29.7137, G_loss: 17.7216
+  Batch [20/31] D_loss: -39.5084, G_loss: -1.6700
+  Batch [30/31] D_loss: -49.0536, G_loss: -44.6673
+
+Epoch 274 Summary:
+  Average D_loss: -17.2395
+  Average G_loss: 0.0971
+
+Epoch [275/300]
+  Batch [0/31] D_loss: -29.3216, G_loss: -2.0616
+  Batch [10/31] D_loss: -17.6444, G_loss: 19.7339
+  Batch [20/31] D_loss: -26.1278, G_loss: 7.3520
+  Batch [30/31] D_loss: -31.6973, G_loss: 7.7372
+
+Epoch 275 Summary:
+  Average D_loss: -14.8931
+  Average G_loss: 6.6239
+
+Epoch [276/300]
+  Batch [0/31] D_loss: -27.1654, G_loss: -4.3305
+  Batch [10/31] D_loss: -34.0235, G_loss: 6.8522
+  Batch [20/31] D_loss: -33.8127, G_loss: 11.6660
+  Batch [30/31] D_loss: -31.0793, G_loss: -19.4949
+
+Epoch 276 Summary:
+  Average D_loss: -15.1069
+  Average G_loss: -3.0179
+
+Epoch [277/300]
+  Batch [0/31] D_loss: -70.0944, G_loss: -61.3935
+  Batch [10/31] D_loss: -41.1438, G_loss: -1.1722
+  Batch [20/31] D_loss: -40.4049, G_loss: 47.5498
+  Batch [30/31] D_loss: -48.6985, G_loss: -26.4517
+
+Epoch 277 Summary:
+  Average D_loss: -16.3271
+  Average G_loss: 8.5203
+
+Epoch [278/300]
+  Batch [0/31] D_loss: -34.4466, G_loss: -44.4536
+  Batch [10/31] D_loss: -37.0147, G_loss: 19.9124
+  Batch [20/31] D_loss: -25.0084, G_loss: -3.8169
+  Batch [30/31] D_loss: -30.8758, G_loss: 16.2633
+
+Epoch 278 Summary:
+  Average D_loss: -13.8644
+  Average G_loss: -2.2467
+
+Epoch [279/300]
+  Batch [0/31] D_loss: -32.7820, G_loss: 14.2161
+  Batch [10/31] D_loss: -32.9445, G_loss: 29.2513
+  Batch [20/31] D_loss: -24.6253, G_loss: 14.0078
+  Batch [30/31] D_loss: -33.0737, G_loss: -39.4492
+
+Epoch 279 Summary:
+  Average D_loss: -16.3355
+  Average G_loss: 2.9034
+
+Epoch [280/300]
+  Batch [0/31] D_loss: -21.6989, G_loss: -38.8113
+  Batch [10/31] D_loss: -17.0619, G_loss: -18.4654
+  Batch [20/31] D_loss: -33.8075, G_loss: 28.2884
+  Batch [30/31] D_loss: -33.5811, G_loss: -20.5530
+
+Epoch 280 Summary:
+  Average D_loss: -12.0395
+  Average G_loss: -5.9879
+
+Epoch [281/300]
+  Batch [0/31] D_loss: -30.0284, G_loss: 1.9504
+  Batch [10/31] D_loss: -34.9502, G_loss: 20.2373
+  Batch [20/31] D_loss: -34.2511, G_loss: -20.5338
+  Batch [30/31] D_loss: -37.8251, G_loss: -31.9428
+
+Epoch 281 Summary:
+  Average D_loss: -16.8855
+  Average G_loss: 1.7765
+
+Epoch [282/300]
+  Batch [0/31] D_loss: -35.9694, G_loss: -12.7587
+  Batch [10/31] D_loss: -37.3153, G_loss: -12.8176
+  Batch [20/31] D_loss: -33.2877, G_loss: -21.8827
+  Batch [30/31] D_loss: -32.9179, G_loss: -18.0812
+
+Epoch 282 Summary:
+  Average D_loss: -15.5324
+  Average G_loss: -1.3906
+
+Epoch [283/300]
+  Batch [0/31] D_loss: -22.2729, G_loss: -9.7055
+  Batch [10/31] D_loss: -33.6839, G_loss: -13.6216
+  Batch [20/31] D_loss: -30.0793, G_loss: -6.1610
+  Batch [30/31] D_loss: -35.6847, G_loss: -18.9787
+
+Epoch 283 Summary:
+  Average D_loss: -15.0262
+  Average G_loss: 2.1011
+
+Epoch [284/300]
+  Batch [0/31] D_loss: -39.6840, G_loss: -49.0851
+  Batch [10/31] D_loss: -26.4499, G_loss: -7.6221
+  Batch [20/31] D_loss: -37.8425, G_loss: -19.1624
+  Batch [30/31] D_loss: -27.7260, G_loss: -31.5455
+
+Epoch 284 Summary:
+  Average D_loss: -13.8102
+  Average G_loss: 2.3860
+
+Epoch [285/300]
+  Batch [0/31] D_loss: -29.9301, G_loss: -43.5112
+  Batch [10/31] D_loss: -36.2204, G_loss: 33.7929
+  Batch [20/31] D_loss: -35.0815, G_loss: 27.0305
+  Batch [30/31] D_loss: -37.2334, G_loss: -22.2314
+
+Epoch 285 Summary:
+  Average D_loss: -14.8512
+  Average G_loss: 3.8503
+
+Epoch [286/300]
+  Batch [0/31] D_loss: -24.1892, G_loss: 2.0972
+  Batch [10/31] D_loss: -28.8326, G_loss: 3.8240
+  Batch [20/31] D_loss: -33.5431, G_loss: -16.8761
+  Batch [30/31] D_loss: -38.5921, G_loss: 11.6475
+
+Epoch 286 Summary:
+  Average D_loss: -15.0068
+  Average G_loss: 0.1059
+
+Epoch [287/300]
+  Batch [0/31] D_loss: -32.2593, G_loss: 16.2969
+  Batch [10/31] D_loss: -47.2782, G_loss: -29.5873
+  Batch [20/31] D_loss: -40.9982, G_loss: 55.8621
+  Batch [30/31] D_loss: -28.9149, G_loss: 2.5695
+
+Epoch 287 Summary:
+  Average D_loss: -16.6061
+  Average G_loss: 3.8129
+
+Epoch [288/300]
+  Batch [0/31] D_loss: -30.6742, G_loss: -0.6638
+  Batch [10/31] D_loss: -33.0951, G_loss: -17.7828
+  Batch [20/31] D_loss: -38.4262, G_loss: -2.2596
+  Batch [30/31] D_loss: -23.4086, G_loss: 34.6069
+
+Epoch 288 Summary:
+  Average D_loss: -14.7280
+  Average G_loss: 1.4379
+
+Epoch [289/300]
+  Batch [0/31] D_loss: -17.7499, G_loss: 28.8151
+  Batch [10/31] D_loss: -38.8381, G_loss: -33.3378
+  Batch [20/31] D_loss: -47.1217, G_loss: 42.5349
+  Batch [30/31] D_loss: -36.5964, G_loss: -24.4442
+
+Epoch 289 Summary:
+  Average D_loss: -17.0203
+  Average G_loss: -2.8524
+
+Epoch [290/300]
+  Batch [0/31] D_loss: -21.5560, G_loss: -1.1557
+  Batch [10/31] D_loss: -25.6444, G_loss: 29.1835
+  Batch [20/31] D_loss: -36.0806, G_loss: -33.4353
+  Batch [30/31] D_loss: -35.5420, G_loss: 46.4890
+
+Epoch 290 Summary:
+  Average D_loss: -14.1967
+  Average G_loss: 3.4654
+
+Epoch [291/300]
+  Batch [0/31] D_loss: -21.7179, G_loss: 51.3479
+  Batch [10/31] D_loss: -35.5772, G_loss: -75.5137
+  Batch [20/31] D_loss: -25.4789, G_loss: 43.8209
+  Batch [30/31] D_loss: -27.2344, G_loss: 10.9274
+
+Epoch 291 Summary:
+  Average D_loss: -14.0382
+  Average G_loss: 3.4980
+
+Epoch [292/300]
+  Batch [0/31] D_loss: -29.7729, G_loss: 0.1281
+  Batch [10/31] D_loss: -31.4541, G_loss: -14.8502
+  Batch [20/31] D_loss: -34.8909, G_loss: -21.8654
+  Batch [30/31] D_loss: -36.9631, G_loss: -4.8005
+
+Epoch 292 Summary:
+  Average D_loss: -13.7435
+  Average G_loss: -8.4933
+
+Epoch [293/300]
+  Batch [0/31] D_loss: -51.4896, G_loss: 3.3219
+  Batch [10/31] D_loss: -33.0992, G_loss: 47.0883
+  Batch [20/31] D_loss: -29.6148, G_loss: -11.2764
+  Batch [30/31] D_loss: -49.7718, G_loss: 47.0712
+
+Epoch 293 Summary:
+  Average D_loss: -16.3610
+  Average G_loss: 3.0440
+
+Epoch [294/300]
+  Batch [0/31] D_loss: -32.9757, G_loss: 42.0919
+  Batch [10/31] D_loss: -31.5931, G_loss: 2.7187
+  Batch [20/31] D_loss: -37.2176, G_loss: 10.7847
+  Batch [30/31] D_loss: -34.5697, G_loss: -17.3599
+
+Epoch 294 Summary:
+  Average D_loss: -14.5038
+  Average G_loss: 10.3138
+
+Epoch [295/300]
+  Batch [0/31] D_loss: -34.9075, G_loss: -3.2872
+  Batch [10/31] D_loss: -50.1021, G_loss: -46.9024
+  Batch [20/31] D_loss: -40.6572, G_loss: 27.9677
+  Batch [30/31] D_loss: -40.8574, G_loss: -18.6108
+
+Epoch 295 Summary:
+  Average D_loss: -17.9458
+  Average G_loss: -2.1846
+
+Epoch [296/300]
+  Batch [0/31] D_loss: -25.0847, G_loss: 14.8567
+  Batch [10/31] D_loss: -29.8096, G_loss: -11.4257
+  Batch [20/31] D_loss: -24.9566, G_loss: -7.6942
+  Batch [30/31] D_loss: -32.8680, G_loss: 9.4204
+
+Epoch 296 Summary:
+  Average D_loss: -16.2072
+  Average G_loss: 2.9925
+
+Epoch [297/300]
+  Batch [0/31] D_loss: -21.2104, G_loss: 13.2171
+  Batch [10/31] D_loss: -39.3826, G_loss: 18.6057
+  Batch [20/31] D_loss: -38.1567, G_loss: 15.1176
+  Batch [30/31] D_loss: -44.4730, G_loss: 37.1763
+
+Epoch 297 Summary:
+  Average D_loss: -17.4265
+  Average G_loss: -7.3920
+
+Epoch [298/300]
+  Batch [0/31] D_loss: -28.1583, G_loss: 39.7705
+  Batch [10/31] D_loss: -27.4354, G_loss: -0.8146
+  Batch [20/31] D_loss: -34.3023, G_loss: 4.3444
+  Batch [30/31] D_loss: -23.1257, G_loss: -58.9878
+
+Epoch 298 Summary:
+  Average D_loss: -14.8616
+  Average G_loss: 3.5892
+
+Epoch [299/300]
+  Batch [0/31] D_loss: -46.5195, G_loss: -59.2014
+  Batch [10/31] D_loss: -28.6231, G_loss: 31.9136
+  Batch [20/31] D_loss: -24.3308, G_loss: 4.6694
+  Batch [30/31] D_loss: -25.6204, G_loss: 6.1484
+
+Epoch 299 Summary:
+  Average D_loss: -13.1983
+  Average G_loss: 7.7620
+
+Epoch [300/300]
+  Batch [0/31] D_loss: -37.0463, G_loss: -3.4866
+  Batch [10/31] D_loss: -42.1361, G_loss: -36.2052
+  Batch [20/31] D_loss: -34.0728, G_loss: -0.1003
+  Batch [30/31] D_loss: -25.2158, G_loss: -7.6104
+
+Epoch 300 Summary:
+  Average D_loss: -15.1152
+  Average G_loss: 0.0385
+Using device: mps
+/var/folders/g_/c_f20pc566n31j9p36lcdc0w0000gn/T/ipykernel_19458/3093675180.py:39: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  generator.load_state_dict(torch.load(generator_path, map_location=device))
+Using device: mps
+/var/folders/g_/c_f20pc566n31j9p36lcdc0w0000gn/T/ipykernel_19458/3093675180.py:39: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  generator.load_state_dict(torch.load(generator_path, map_location=device))
+Using device: mps
+/var/folders/g_/c_f20pc566n31j9p36lcdc0w0000gn/T/ipykernel_19458/2294553458.py:39: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  generator.load_state_dict(torch.load(generator_path, map_location=device))
+
+Generating samples for dataset1
+Generator dimensions:
+embedding_dims: [7]
+total_embedding_dim: 7
+first_layer_in_dim: 71
+recommended_latent_dim: 64
+
+Latent vector shape: torch.Size([100, 64])
+Categorical covariates shape: torch.Size([100, 1])
+Embedded shape: torch.Size([100, 7])
+Generator input shape: torch.Size([100, 71])
+First layer input dim: 71
+First layer weight shape: torch.Size([256, 71])
+
+Generating samples for dataset2
+Generator dimensions:
+embedding_dims: [7]
+total_embedding_dim: 7
+first_layer_in_dim: 71
+recommended_latent_dim: 64
+
+Latent vector shape: torch.Size([100, 64])
+Categorical covariates shape: torch.Size([100, 1])
+Embedded shape: torch.Size([100, 7])
+Generator input shape: torch.Size([100, 71])
+First layer input dim: 71
+First layer weight shape: torch.Size([256, 71])
+
+Generating samples for dataset3
+Generator dimensions:
+embedding_dims: [7]
+total_embedding_dim: 7
+first_layer_in_dim: 71
+recommended_latent_dim: 64
+
+Latent vector shape: torch.Size([100, 64])
+Categorical covariates shape: torch.Size([100, 1])
+Embedded shape: torch.Size([100, 7])
+Generator input shape: torch.Size([100, 71])
+First layer input dim: 71
+First layer weight shape: torch.Size([256, 71])
+
+Generating samples for dataset4
+Generator dimensions:
+embedding_dims: [7]
+total_embedding_dim: 7
+first_layer_in_dim: 71
+recommended_latent_dim: 64
+
+Latent vector shape: torch.Size([100, 64])
+Categorical covariates shape: torch.Size([100, 1])
+Embedded shape: torch.Size([100, 7])
+Generator input shape: torch.Size([100, 71])
+First layer input dim: 71
+First layer weight shape: torch.Size([256, 71])
+
+Generating samples for dataset5
+Generator dimensions:
+embedding_dims: [7]
+total_embedding_dim: 7
+first_layer_in_dim: 71
+recommended_latent_dim: 64
+
+Latent vector shape: torch.Size([100, 64])
+Categorical covariates shape: torch.Size([100, 1])
+Embedded shape: torch.Size([100, 7])
+Generator input shape: torch.Size([100, 71])
+First layer input dim: 71
+First layer weight shape: torch.Size([256, 71])
+
+Generating samples for dataset6
+Generator dimensions:
+embedding_dims: [7]
+total_embedding_dim: 7
+first_layer_in_dim: 71
+recommended_latent_dim: 64
+
+Latent vector shape: torch.Size([100, 64])
+Categorical covariates shape: torch.Size([100, 1])
+Embedded shape: torch.Size([100, 7])
+Generator input shape: torch.Size([100, 71])
+First layer input dim: 71
+First layer weight shape: torch.Size([256, 71])
+
+Generating samples for dataset7
+Generator dimensions:
+embedding_dims: [7]
+total_embedding_dim: 7
+first_layer_in_dim: 71
+recommended_latent_dim: 64
+
+Latent vector shape: torch.Size([100, 64])
+Categorical covariates shape: torch.Size([100, 1])
+Embedded shape: torch.Size([100, 7])
+Generator input shape: torch.Size([100, 71])
+First layer input dim: 71
+First layer weight shape: torch.Size([256, 71])
+Using device: mps
+Categorical data shape: (41588, 3)
+Available categorical variables: ['dataset', 'cluster']
+
+Using categorical variables: ['dataset']
+
+Processing categorical variable: dataset
+Categories in dataset: ['dataset1' 'dataset2' 'dataset3' 'dataset4' 'dataset5' 'dataset6'
+ 'dataset7']
+Number of categories: 7
+
+Combined categorical covariates shape: (41588, 1)
+
+Vocabulary sizes for categorical variables: [7]
+x_train: tensor([[ 1.9220, -0.5685,  0.6746,  ..., -0.6917, -0.6917, -0.6917],
+        [-0.6710, -0.6710,  0.2832,  ...,  0.4299, -0.6585, -0.6585],
+        [-0.3710, -0.3710, -0.3710,  ...,  1.7406, -0.5231, -0.5231],
+        ...,
+        [ 1.3542, -0.3745, -0.3745,  ...,  2.7160, -0.6042,  0.8340],
+        [-0.1922, -0.1922, -0.1922,  ..., -0.2180, -0.2180, -0.2180],
+        [ 5.1588, -0.2053, -0.2053,  ..., -0.1762, -0.1762, -0.1762]])
+x_dim: 41588
+vocab_sizes: [7]

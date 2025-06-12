@@ -1,0 +1,62 @@
+2025-01-13 11:03:50,887 INFO    MainThread:27591 [wandb_setup.py:_flush():68] Current SDK version is 0.19.2
+2025-01-13 11:03:50,887 INFO    MainThread:27591 [wandb_setup.py:_flush():68] Configure stats pid to 27591
+2025-01-13 11:03:50,887 INFO    MainThread:27591 [wandb_setup.py:_flush():68] Loading settings from /Users/guyshani/.config/wandb/settings
+2025-01-13 11:03:50,887 INFO    MainThread:27591 [wandb_setup.py:_flush():68] Loading settings from /Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/settings
+2025-01-13 11:03:50,887 INFO    MainThread:27591 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-13 11:03:50,887 INFO    MainThread:27591 [wandb_init.py:_log_setup():523] Logging user logs to /Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250113_110350-wqbanorz/logs/debug.log
+2025-01-13 11:03:50,887 INFO    MainThread:27591 [wandb_init.py:_log_setup():524] Logging internal logs to /Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250113_110350-wqbanorz/logs/debug-internal.log
+2025-01-13 11:03:50,887 INFO    MainThread:27591 [wandb_init.py:_jupyter_setup():469] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x11e9f4f10>
+2025-01-13 11:03:50,888 INFO    MainThread:27591 [wandb_init.py:init():641] calling init triggers
+2025-01-13 11:03:50,888 INFO    MainThread:27591 [wandb_init.py:init():647] wandb.init called with sweep_config: {}
+config: {'epochs': 200, 'latent_dim': 64, 'batch_size': 32, 'nb_layers': 2, 'hdim': 256, 'lr': 0.0005, 'nb_critic': 5}
+2025-01-13 11:03:50,888 INFO    MainThread:27591 [wandb_init.py:init():674] starting backend
+2025-01-13 11:03:51,108 INFO    MainThread:27591 [wandb_init.py:init():678] sending inform_init request
+2025-01-13 11:03:51,124 INFO    MainThread:27591 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-01-13 11:03:51,125 INFO    MainThread:27591 [wandb_init.py:init():693] backend started and connected
+2025-01-13 11:03:51,127 INFO    MainThread:27591 [wandb_run.py:_label_probe_notebook():1226] probe notebook
+2025-01-13 11:03:51,128 INFO    MainThread:27591 [wandb_init.py:init():786] updated telemetry
+2025-01-13 11:03:51,141 INFO    MainThread:27591 [wandb_init.py:init():818] communicating run to backend with 90.0 second timeout
+2025-01-13 11:03:51,676 INFO    MainThread:27591 [wandb_init.py:init():868] starting run threads in backend
+2025-01-13 11:03:51,781 INFO    MainThread:27591 [wandb_run.py:_console_start():2415] atexit reg
+2025-01-13 11:03:51,781 INFO    MainThread:27591 [wandb_run.py:_redirect():2265] redirect: wrap_raw
+2025-01-13 11:03:51,781 INFO    MainThread:27591 [wandb_run.py:_redirect():2330] Wrapping output streams.
+2025-01-13 11:03:51,781 INFO    MainThread:27591 [wandb_run.py:_redirect():2355] Redirects installed.
+2025-01-13 11:03:51,783 INFO    MainThread:27591 [wandb_init.py:init():910] run started, returning control to user process
+2025-01-13 11:03:51,784 INFO    MainThread:27591 [wandb_run.py:_config_callback():1283] config_cb None None {'selected_categories': ['dataset']}
+2025-01-13 11:45:25,210 INFO    MainThread:27591 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-13 11:45:25,211 INFO    MainThread:27591 [wandb_init.py:_pause_backend():434] pausing backend
+2025-01-13 11:46:11,715 INFO    MainThread:27591 [wandb_init.py:_resume_backend():439] resuming backend
+2025-01-13 11:46:11,718 INFO    MainThread:27591 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-13 11:46:11,718 INFO    MainThread:27591 [wandb_init.py:_pause_backend():434] pausing backend
+2025-01-13 11:48:18,555 INFO    MainThread:27591 [wandb_init.py:_resume_backend():439] resuming backend
+2025-01-13 11:48:18,603 INFO    MainThread:27591 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-13 11:48:18,603 INFO    MainThread:27591 [wandb_init.py:_pause_backend():434] pausing backend
+2025-01-13 11:49:23,303 INFO    MainThread:27591 [wandb_init.py:_resume_backend():439] resuming backend
+2025-01-13 11:49:23,343 INFO    MainThread:27591 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-13 11:49:23,343 INFO    MainThread:27591 [wandb_init.py:_pause_backend():434] pausing backend
+2025-01-13 11:49:58,100 INFO    MainThread:27591 [wandb_init.py:_resume_backend():439] resuming backend
+2025-01-13 11:49:58,103 INFO    MainThread:27591 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-13 11:49:58,103 INFO    MainThread:27591 [wandb_init.py:_pause_backend():434] pausing backend
+2025-01-13 11:49:59,271 INFO    MainThread:27591 [wandb_init.py:_resume_backend():439] resuming backend
+2025-01-13 11:49:59,351 INFO    MainThread:27591 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-13 11:49:59,351 INFO    MainThread:27591 [wandb_init.py:_pause_backend():434] pausing backend
+2025-01-13 11:50:16,421 INFO    MainThread:27591 [wandb_init.py:_resume_backend():439] resuming backend
+2025-01-13 11:50:16,443 INFO    MainThread:27591 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-13 11:50:16,443 INFO    MainThread:27591 [wandb_init.py:_pause_backend():434] pausing backend
+2025-01-13 12:18:27,673 INFO    MainThread:27591 [wandb_init.py:_resume_backend():439] resuming backend
+2025-01-13 12:18:29,024 INFO    MainThread:27591 [wandb_init.py:_log_setup():523] Logging user logs to /Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250113_121829-wxud2yrm/logs/debug.log
+2025-01-13 12:18:29,024 INFO    MainThread:27591 [wandb_init.py:_log_setup():524] Logging internal logs to /Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250113_121829-wxud2yrm/logs/debug-internal.log
+2025-01-13 12:18:29,024 INFO    MainThread:27591 [wandb_init.py:init():641] calling init triggers
+2025-01-13 12:18:29,024 INFO    MainThread:27591 [wandb_init.py:init():647] wandb.init called with sweep_config: {}
+config: {'epochs': 100, 'latent_dim': 64, 'batch_size': 32, 'nb_layers': 3, 'hdim': 256, 'lr': 0.0005, 'nb_critic': 5}
+2025-01-13 12:18:29,024 INFO    MainThread:27591 [wandb_init.py:init():666] found existing run on stack: wqbanorz
+2025-01-13 12:18:29,024 INFO    MainThread:27591 [wandb_run.py:_finish():2140] finishing run guyshani-tel-aviv-university/adversarial_gene_expr/wqbanorz
+2025-01-13 12:18:29,024 ERROR   MainThread:27591 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-01-13 12:18:29,024 INFO    MainThread:27591 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-13 12:18:29,024 INFO    MainThread:27591 [wandb_init.py:_jupyter_teardown():451] cleaning up jupyter logic
+2025-01-13 12:18:29,024 INFO    MainThread:27591 [wandb_run.py:_atexit_cleanup():2380] got exitcode: 0
+2025-01-13 12:18:29,024 INFO    MainThread:27591 [wandb_run.py:_restore():2362] restore
+2025-01-13 12:18:29,025 INFO    MainThread:27591 [wandb_run.py:_restore():2368] restore done
+2025-01-13 12:18:32,925 INFO    MainThread:27591 [wandb_run.py:_footer_history_summary_info():3984] rendering history
+2025-01-13 12:18:32,926 INFO    MainThread:27591 [wandb_run.py:_footer_history_summary_info():4016] rendering summary
+2025-01-13 12:18:32,936 INFO    MainThread:27591 [wandb_run.py:_footer_sync_info():3945] logging synced files

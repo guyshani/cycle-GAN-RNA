@@ -1,0 +1,25 @@
+Starting training for 100 epochs...
+Total batches per epoch: 1299
+Using device: mps
+
+Epoch [1/100]
+Using device: mps
+Categorical data shape: (41588, 4)
+Available categorical variables: ['dataset', 'cluster', 'cell_type']
+
+Using categorical variables: ['dataset', 'cell_type']
+
+Processing categorical variable: dataset
+Categories in dataset: ['dataset1' 'dataset2' 'dataset3' 'dataset4' 'dataset5' 'dataset6'
+ 'dataset7']
+Number of categories: 7
+
+Processing categorical variable: cell_type
+Categories in cell_type: ['B cells' 'Dendritic cells' 'Endothelial cells' 'Erythrocytes'
+ 'Fibroblasts' 'Granulocytes' 'Macrophages' 'Monocytes' 'NK cells'
+ 'T cells']
+Number of categories: 10
+
+Combined categorical covariates shape: (41588, 2)
+
+Vocabulary sizes for categorical variables: [7, 10]

@@ -1,0 +1,42 @@
+Starting training for 100 epochs...
+Total batches per epoch: 31
+Using device: mps
+
+Epoch [1/100]
+  Batch [0/31] D_loss: -124.2707, G_loss: 94.1828
+  Batch [10/31] D_loss: -2.8899, G_loss: 9.2378
+  Batch [20/31] D_loss: -21.7843, G_loss: 39.8377
+  Batch [30/31] D_loss: -164.6416, G_loss: -145.0122
+
+Epoch 1 Summary:
+  Average D_loss: -22.8035
+  Average G_loss: 20.5246
+
+Models saved at epoch 1:
+Generator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/20_1_2025__normalized/saved_models/run_20250120_131951_dataset/generator_20250120_131951_dataset_epoch_1.pt
+Discriminator: /Users/guyshani/Documents/PHD/Aim_2/10x_data_mouse/20_1_2025__normalized/saved_models/run_20250120_131951_dataset/discriminator_20250120_131951_dataset_epoch_1.pt
+[34m[1mwandb[0m: [33mWARNING[0m Saving files without folders. If you want to preserve subdirectories pass base_path to wandb.save, i.e. wandb.save("/mnt/folder/file.h5", base_path="/mnt")
+
+Epoch [2/100]
+  Batch [0/31] D_loss: -36.5973, G_loss: 47.5073
+[34m[1mwandb[0m: [33mWARNING[0m Fatal error while uploading data. Some run data will not be synced, but it will still be written to disk. Use `wandb sync` at the end of the run to try uploading.
+Using device: mps
+Categorical data shape: (41588, 4)
+Available categorical variables: ['dataset', 'cluster', 'cell_type']
+
+Using categorical variables: ['dataset', 'cell_type']
+
+Processing categorical variable: dataset
+Categories in dataset: ['dataset1' 'dataset2' 'dataset3' 'dataset4' 'dataset5' 'dataset6'
+ 'dataset7']
+Number of categories: 7
+
+Processing categorical variable: cell_type
+Categories in cell_type: ['B cells' 'Dendritic cells' 'Endothelial cells' 'Erythrocytes'
+ 'Fibroblasts' 'Granulocytes' 'Macrophages' 'Monocytes' 'NK cells'
+ 'T cells']
+Number of categories: 10
+
+Combined categorical covariates shape: (41588, 2)
+
+Vocabulary sizes for categorical variables: [7, 10]

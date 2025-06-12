@@ -1,0 +1,34 @@
+{"time":"2025-01-21T12:18:32.521535+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250121_121822-5yuc3c16/logs/debug-core.log"}
+{"time":"2025-01-21T12:18:32.63582+02:00","level":"INFO","msg":"created new stream","id":"5yuc3c16"}
+{"time":"2025-01-21T12:18:32.635877+02:00","level":"INFO","msg":"stream: started","id":"5yuc3c16"}
+{"time":"2025-01-21T12:18:32.635884+02:00","level":"INFO","msg":"handler: started","stream_id":"5yuc3c16"}
+{"time":"2025-01-21T12:18:32.635896+02:00","level":"INFO","msg":"sender: started","stream_id":"5yuc3c16"}
+{"time":"2025-01-21T12:18:32.635933+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"5yuc3c16"}
+{"time":"2025-01-21T12:18:33.072727+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-21T13:15:47.128868+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.30.17.200:53368->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-01-21T13:30:09.197948+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.30.17.200:53449->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-01-21T13:40:12.330341+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.30.17.200:53463->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-01-21T14:31:16.985023+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.30.17.200:53470->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-01-21T17:21:16.319308+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T17:21:18.362771+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T17:21:22.48306+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T17:21:32.424919+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T17:22:09.573948+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.30.17.200:54297->35.186.228.49:443: read: can't assign requested address"}
+{"time":"2025-01-21T17:22:12.031814+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T17:22:16.577041+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T17:22:19.257385+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T17:22:26.502781+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T18:15:00.984738+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T18:49:02.561166+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T20:03:50.892924+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T21:03:27.34237+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-21T22:44:15.397927+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-22T00:22:04.092905+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-22T01:44:00.399376+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-22T03:19:33.296286+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-22T04:02:38.121692+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-22T05:08:56.389759+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-22T06:19:12.29057+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-22T07:54:15.071001+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-22T09:06:26.334689+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-01-22T09:48:34.308944+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/guyshani-tel-aviv-university/adversarial_gene_expr/5yuc3c16/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}

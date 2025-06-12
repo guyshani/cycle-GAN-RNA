@@ -15,14 +15,100 @@ library(SingleR)
 library(celldex)
 library(tidyverse)
 library(escape)
+library(AUCell)
+library(GSEABase)
+library(SingleCellExperiment)
+library(SimBench)
+library(parallel)
+library(sctransform)
 ```
 
-
+## Load real and generated data
 
 ```{r}
 
+# Load generated and reference data
+data.dir.gen <- "/Users/guyshani/Documents/PHD/Aim_2/test_models/5000_genes/run_20250206_184657_dataset_singler_label/"
+data.dir.ref <- "/Users/guyshani/Documents/PHD/Aim_2/test_models/5000_genes/"
+
+# real data
+real.data <- read.csv2(paste0(data.dir.ref, "full_matrix_top5000.csv"), header = TRUE, sep = ",", row.names = 1)
+real.labels <- read.csv2(paste0(data.dir.ref, "metadata_top5000.csv"), header = TRUE, sep = ",", row.names = 1)
+# generated data
+gen.data <- read.csv2(paste0(data.dir.gen, "_generated_data.csv"), header = TRUE, sep = ",")
+gen.labels <- read.csv2(paste0(data.dir.gen, "_generated_labels.csv"), header = TRUE, sep = ",", row.names = 1)
+
 ```
 
+## Create sewurat object, process and plot UMAP
+
+```{r}
+####################################
+real.sur <- CreateSeuratObject(
+  counts = real.data,
+  min.cells = 3,
+  min.features = 200,
+  assay = "RNA")
+real.sur$cell.type <- real.labels$singler_label
+real.sur[["percent.mt"]] <- PercentageFeatureSet(real.sur, pattern = "^mt-")
+real.sur <- subset(real.sur, subset = nFeature_RNA > 200 & nFeature_RNA < 6500 & 
+                                percent.mt < 10 & nCount_RNA > 500)
+real.sur <- SCTransform(real.sur) %>%
+  RunPCA() %>%
+  FindNeighbors(dims = 1:30) %>%
+  RunUMAP(dims = 1:30) %>%
+  FindClusters()
+
+DimPlot(real.sur, group.by = "cell.type")
+####################################
+
+real.sur <- CreateSeuratObject(
+  counts = real.data,
+  min.cells = 3,
+  min.features = 200,
+  assay = "RNA")
+
+real.sur@assays$RNA$data <- real.sur@assays$RNA$counts
+real.sur <- ScaleData(real.sur)
+real.sur$cell.type <- real.labels$singler_label
+real.sur <-  FindVariableFeatures(real.sur) %>%
+  RunPCA() %>%
+  FindNeighbors(dims = 1:30) %>%
+  RunUMAP(dims = 1:30) %>%
+  FindClusters()
+  
+DimPlot(real.sur, group.by = "cell.type")
+####################################
+gen.data$dataset <- NULL
+gen.data$cell_type <- NULL
+gen.data[gen.data < 0] <- 0
+
+gen.sur <- CreateSeuratObject(
+  counts = gen.data,
+  min.cells = 3,
+  min.features = 200,
+  assay = "RNA")
+
+gen.sur@assays$RNA$data <- gen.sur@assays$RNA$counts
+gen.sur <- ScaleData(gen.sur)
+gen.sur$cell.type <- gen.labels$cell_type
+gen.sur <-  FindVariableFeatures(gen.sur) %>%
+  RunPCA() %>%
+  FindNeighbors(dims = 1:30) %>%
+  RunUMAP(dims = 1:30) %>%
+  FindClusters()
+  
+DimPlot(gen.sur, group.by = "cell.type")
+####################################
+
+```
+
+
+
+
+
+
+###########################
 
 # Load data
 
@@ -76,13 +162,13 @@ counts_data <- Matrix::Matrix(as.matrix(counts_data), sparse = TRUE)
 # Create a new Seurat object with the integer counts
 s.obj.gen <- CreateSeuratObject(counts = counts_data)
 
+
 # Verify the values are integers
 # Look at a few values from the new object
 head(GetAssayData(s.obj.gen, slot = "counts")[1:5, 1:5])
 s.obj.gen <- NormalizeData(s.obj.gen)
 #s.obj.gen@assays$RNA$data[1:5,1:5]
 #t(profiles)[1:5,1:5]
-
 
 
 # Find variable features
@@ -100,7 +186,6 @@ s.obj.gen <- FindClusters(s.obj.gen, resolution = c(0.1, 0.5, 1))
 # non-linear dimensionality reduction --------------
 s.obj.gen <- RunUMAP(s.obj.gen, dims = 1:15)
 DimPlot(s.obj.gen, reduction = 'umap', group.by = 'RNA_snn_res.0.5', label = TRUE)
-
 
 
 #####  Reference data
@@ -498,6 +583,195 @@ all.markers.ref <- FindAllMarkers(enrichment.H.run.ref,
 
 head(all.markers)
 ```
+
+
+## AUCell
+
+```{r}
+path.genesets <- "~/Documents/PHD/Aim_2/gene_sets/"
+
+#' Run AUCell analysis on Seurat object
+#' @param seurat_obj Seurat object
+#' @param gene_sets Named list of gene sets or path to GMT file
+#' @param assay Assay to use (default: "RNA")
+#' @param layer Data layer to use (default: "data")
+#' @param aucMaxRank Threshold for AUCell ranking (default: 5%)
+#' @return List containing AUCell results and updated Seurat object
+run_aucell <- function(seurat_obj, 
+                      gene_sets,
+                      assay = "RNA",
+                      slot = "data",
+                      aucMaxRank = 0.05) {
+    
+    # Get expression matrix
+    expr_matrix <- GetAssayData(seurat_obj, assay = assay, layer = layer)
+    
+    # If gene_sets is a file path, load it
+    if(is.character(gene_sets) && length(gene_sets) == 1) {
+        gene_sets <- getGmt(gene_sets)
+        gene_sets <- geneIds(gene_sets)
+    }
+    
+    # Create rankings
+    cells_rankings <- AUCell_buildRankings(expr_matrix)
+    
+    # Calculate AUC scores
+    cells_AUC <- AUCell_calcAUC(gene_sets, 
+                               cells_rankings,
+                               aucMaxRank = nrow(expr_matrix) * aucMaxRank)
+    
+    # Convert to matrix for easier handling
+    auc_matrix <- getAUC(cells_AUC)
+    
+    # Add AUC scores to Seurat object
+    for(gs_name in rownames(auc_matrix)) {
+        seurat_obj[[paste0("AUCell_", make.names(gs_name))]] <- auc_matrix[gs_name,]
+    }
+    
+    # Return results
+    return(list(
+        seurat_object = seurat_obj,
+        auc_matrix = auc_matrix,
+        cells_rankings = cells_rankings,
+        cells_AUC = cells_AUC
+    ))
+}
+
+#' Plot AUCell scores distribution
+#' @param aucell_results Results from run_aucell
+#' @param gene_set Name of gene set to plot
+#' @return ggplot object
+plot_aucell_distribution <- function(aucell_results, gene_set) {
+    # Get AUC scores for the gene set
+    scores <- getAUC(aucell_results$cells_AUC)[gene_set,]
+    
+    # Create data frame for plotting
+    plot_data <- data.frame(
+        Score = scores
+    )
+    
+    # Create plot
+    p <- ggplot(plot_data, aes(x = Score)) +
+        geom_density(fill = "lightblue", alpha = 0.5) +
+        theme_minimal() +
+        labs(title = paste("AUCell Score Distribution -", gene_set),
+             x = "AUC Score",
+             y = "Density")
+    
+    return(p)
+}
+
+#' Determine active cells for gene sets
+#' @param aucell_results Results from run_aucell
+#' @param threshold_method Method for threshold ("automatic" or numeric value)
+#' @return List of cells assigned as active for each gene set
+determine_active_cells <- function(aucell_results,
+                                 threshold_method = "automatic") {
+    
+    if(threshold_method == "automatic") {
+        # Calculate thresholds using built-in method
+        thresholds <- AUCell_exploreThresholds(aucell_results$cells_AUC)
+        
+        # Get assignments using determined thresholds
+        cells_assignment <- lapply(thresholds, function(x) {
+            x$cells_assignment
+        })
+    } else if(is.numeric(threshold_method)) {
+        # Use fixed threshold
+        auc_matrix <- getAUC(aucell_results$cells_AUC)
+        cells_assignment <- apply(auc_matrix, 1, function(x) {
+            x > threshold_method
+        })
+    }
+    
+    return(cells_assignment)
+}
+
+
+# Load gene sets
+hallmark <- getGmt(paste0(path.genesets, "mh.all.v2024.1.Mm.symbols.gmt.txt"))
+wikipathways <- getGmt(paste0(path.genesets, "m2.cp.wikipathways.v2024.1.Mm.symbols.gmt.txt"))
+celltype <- getGmt(paste0(path.genesets, "m8.all.v2024.1.Mm.symbols.gmt.txt"))
+
+
+aucell.res.gen <- run_aucell(s.obj.gen, hallmark)
+aucell.res.ref <- run_aucell(s.obj.ref, hallmark)
+
+# Plot distribution for a gene set
+plot_aucell_distribution(results, "pathway1")
+ 
+# Find active cells
+active_cells <- determine_active_cells(results)
+ 
+# Visualize on UMAP
+DimPlot(results$seurat_object, 
+         group.by = "AUCell_pathway1",
+         cols = viridis::viridis(100))
+
+```
+
+
+# SimBench
+
+```{r}
+
+# create a SingleCellExperiment object
+sce.gen.new <- as.SingleCellExperiment(s.obj.gen)
+sce.ref.new <- as.SingleCellExperiment(s.obj.ref)
+
+
+# First, let's make sure the sparse matrices aren't causing issues
+# Convert to regular matrices if needed
+counts_ref <- as.matrix(assay(sce.ref, "counts"))
+counts_gen <- as.matrix(assay(sce.gen, "counts"))
+
+
+
+
+# Create new SCE objects with regular matrices
+counts_matrix <- matrix(rpois(1000*100, lambda = 5), # random count data
+                       nrow = 1000,    # 1000 genes
+                       ncol = 100)     # 100 cells
+rownames(counts_matrix) <- paste0("gene", 1:1000)
+colnames(counts_matrix) <- paste0("cell", 1:100)
+
+
+# Create cell metadata (colData)
+cell_metadata <- DataFrame(
+    celltype = sample(c("typeA", "typeB"), 7000, replace = TRUE),
+    batch = sample(1:2, 7000, replace = TRUE),
+    row.names = colnames(counts_gen)
+)
+
+# Create gene metadata (rowData)
+gene_metadata <- DataFrame(
+    chromosome = sample(1:22, 1000, replace = TRUE),
+    gene_type = sample(c("protein_coding", "lincRNA"), 1000, replace = TRUE),
+    row.names = rownames(counts_gen)
+)
+
+# Create the SCE object with all components
+sce.gen.new <- SingleCellExperiment(
+    assays = list(
+        counts = counts_gen),
+    colData = DataFrame(
+    celltype = s.obj.gen$SingleR.labels,
+    row.names = colnames(counts_gen)
+))
+
+sce.ref.new <- SingleCellExperiment(
+    assays = list(
+        counts = counts_ref),
+    colData = DataFrame(
+    celltype = s.obj.ref$SingleR.labels,
+    row.names = colnames(counts_ref)
+))
+
+
+parameter_result <- eval_parameter(real = sce.ref.new, sim = sce.gen.new, type = "raw" , method = "samplemethod")
+signal_result <- eval_signal( real = sce.ref, sim = sce.gen  )
+```
+
 
 
 

@@ -1,0 +1,18 @@
+{"time":"2025-01-12T11:01:11.099082+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/Users/guyshani/Documents/PHD/Aim_2/cycle_GAN/wandb/run-20250112_110108-rnrbz4zq/logs/debug-core.log"}
+{"time":"2025-01-12T11:01:11.211844+02:00","level":"INFO","msg":"created new stream","id":"rnrbz4zq"}
+{"time":"2025-01-12T11:01:11.211897+02:00","level":"INFO","msg":"stream: started","id":"rnrbz4zq"}
+{"time":"2025-01-12T11:01:11.211899+02:00","level":"INFO","msg":"handler: started","stream_id":"rnrbz4zq"}
+{"time":"2025-01-12T11:01:11.211928+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"rnrbz4zq"}
+{"time":"2025-01-12T11:01:11.211927+02:00","level":"INFO","msg":"sender: started","stream_id":"rnrbz4zq"}
+{"time":"2025-01-12T11:01:11.568037+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-12T13:07:46.085583+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.30.28.136:62524->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-01-12T13:42:04.085628+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 172.30.28.136:62640->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-01-12T14:00:21.230866+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-12T14:00:21.231341+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-12T14:00:22.233507+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.572651625,"progress":"16.0KB/58.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.572649209,"progress":"167B/167B"},{"desc":"uploading run_20250112_110114_dataset/discriminator_20250112_110114_dataset.pt","runtime_seconds":0.35963925,"progress":"16.0KB/40.9MB"},{"desc":"uploading run_20250112_110339_dataset/discriminator_20250112_110339_dataset.pt","runtime_seconds":0.359601209,"progress":"16.0KB/40.9MB"},{"desc":"uploading run_20250112_110606_dataset/generator_20250112_110606_dataset.pt","runtime_seconds":0.359596667,"progress":"16.0KB/41.1MB"},{"desc":"uploading run_20250112_110606_dataset/discriminator_20250112_110606_dataset.pt","runtime_seconds":0.359581708,"progress":"16.0KB/40.9MB"},{"desc":"uploading run_20250112_110825_dataset/generator_20250112_110825_dataset.pt","runtime_seconds":0.359578375,"progress":"16.0KB/41.1MB"},{"desc":"uploading config.yaml","runtime_seconds":0.359573917,"progress":"737B/737B"},{"desc":"uploading run_20250112_110825_dataset/discriminator_20250112_110825_dataset.pt","runtime_seconds":0.359569959,"progress":"80.0KB/40.9MB"},{"desc":"uploading run_20250112_110114_dataset/generator_20250112_110114_dataset.pt","runtime_seconds":0.359554583,"progress":"80.0KB/41.1MB"}],"total_operations":11}}
+{"time":"2025-01-12T14:00:51.947523+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-12T14:00:53.301992+02:00","level":"INFO","msg":"stream: closing","id":"rnrbz4zq"}
+{"time":"2025-01-12T14:00:53.302045+02:00","level":"INFO","msg":"handler: closed","stream_id":"rnrbz4zq"}
+{"time":"2025-01-12T14:00:53.302065+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rnrbz4zq"}
+{"time":"2025-01-12T14:00:53.30208+02:00","level":"INFO","msg":"sender: closed","stream_id":"rnrbz4zq"}
+{"time":"2025-01-12T14:00:53.30236+02:00","level":"INFO","msg":"stream: closed","id":"rnrbz4zq"}
